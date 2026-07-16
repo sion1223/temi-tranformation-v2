@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SwitchGo</string>
+
+    <string name="usb_devices">USB Devices</string>
+    <string name="door_test">Door Test</string>
+    <string name="open_hid">Open HID</string>
+    <string name="mcu_1_version">MCU-1 Version</string>
+    <string name="mcu_2_version">MCU-2 Version</string>
+    <string name="exit">Exit</string>
+    <string name="clear">Clear</string>
+    <string name="update_mcu_1">Update MCU-1</string>
+    <string name="update_mcu_2">Update MCU-2</string>
+    <string name="reboot_mcu_1">Reboot MCU-1</string>
+    <string name="reboot_mcu_2">Reboot MCU-2</string>
+    <string name="gate_1">Gate 1</string>
+    <string name="gate_2">Gate 2</string>
+    <string name="gate_3">Gate 3</string>
+    <string name="gate_4">Gate 4</string>
+    <string name="all_gates">All Gates</string>
+    <string name="all_open">All Open</string>
+    <string name="all_close">All Close</string>
+    <string name="left_turn">Left Turn</string>
+    <string name="right_turn">Right Turn</string>
+    <string name="flashing">Flashing</string>
+    <string name="breathing">Breathing</string>
+    <string name="constant">Constant</string>
+    <string name="gradient">Gradient</string>
+    <string name="close">Close</string>
+    <string name="sure">OK</string>
+    <string name="battery_0">Battery 0</string>
+    <string name="battery_25">Battery 25</string>
+    <string name="battery_50">Battery 50</string>
+    <string name="battery_75">Battery 75</string>
+    <string name="battery_100">Battery 100</string>
+    <string name="all_switch_status">All Switch Status</string>
+    <string name="interior_light">Interior Light</string>
+    <string name="mcu_reboot">MCU Reboot</string>
+    <string name="clear_door_block">Clear Door Block</string>
+    <string name="version_update_1">Update MCU1</string>
+    <string name="version_update_2">Update MCU2</string>
+</resources>

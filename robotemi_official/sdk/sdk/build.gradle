@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.library'
+    id "com.vanniktech.maven.publish" version "0.34.0" apply true
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdkVersion 23
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 23
+        buildConfigField 'String', 'SDK_SERVICE_CLASS_NAME', '\"com.roboteam.teamy.sdk.SdkService\"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        buildConfig true
+        aidl true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    namespace 'com.robotemi.sdk'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.google.code.gson:gson:2.9.0'
+
+    testImplementation 'junit:junit:4.13.2'
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    USB device filter for SwitchGo hardware.
+    Update the vendor-id and product-id with the actual SwitchGo VID/PID.
+-->
+<resources>
+    <!-- Example: <usb-device vendor-id="1234" product-id="5678" /> -->
+    <!-- Add the actual SwitchGo vendor-id and product-id for automatic device detection -->
+</resources>

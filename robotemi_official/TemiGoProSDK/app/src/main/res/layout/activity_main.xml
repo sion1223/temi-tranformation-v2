@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:layout_marginTop="?actionBarSize"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Button panel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <!-- Row 1: USB, MCU versions, Exit, Clear -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+
+                <Button android:id="@+id/bt_get_hid_usb" style="@style/SwitchGoButton" android:text="@string/usb_devices" />
+                <Button android:id="@+id/bt_hid_get_mcu1_version" style="@style/SwitchGoButton" android:text="@string/mcu_1_version" />
+                <Button android:id="@+id/bt_hid_get_mcu2_version" style="@style/SwitchGoButton" android:text="@string/mcu_2_version" />
+                <Button android:id="@+id/bt_exit" style="@style/SwitchGoButton" android:text="@string/exit" />
+                <Button android:id="@+id/bt_clear_display" style="@style/SwitchGoButton" android:text="@string/clear" />
+            </LinearLayout>
+
+            <!-- Row 2: Door Control -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+
+                <Button android:id="@+id/bt_switch_gate1" style="@style/SwitchGoButton" android:text="@string/gate_1" />
+                <Button android:id="@+id/bt_switch_gate2" style="@style/SwitchGoButton" android:text="@string/gate_2" />
+                <Button android:id="@+id/bt_switch_gate3" style="@style/SwitchGoButton" android:text="@string/gate_3" />
+                <Button android:id="@+id/bt_switch_gate4" style="@style/SwitchGoButton" android:text="@string/gate_4" />
+                <Button android:id="@+id/bt_all_gates_open" style="@style/SwitchGoButton" android:text="@string/all_open" />
+                <Button android:id="@+id/bt_all_gates_close" style="@style/SwitchGoButton" android:text="@string/all_close" />
+                <Button android:id="@+id/bt_all_gates" style="@style/SwitchGoButton" android:text="@string/all_gates" />
+            </LinearLayout>
+
+            <!-- Row 3: Turn Signals + Ambient Light -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <Button android:id="@+id/bt_switch_left_turn" style="@style/SwitchGoButton" android:text="@string/left_turn" />
+                <Button android:id="@+id/bt_switch_right_turn" style="@style/SwitchGoButton" android:text="@string/right_turn" />
+                <Button android:id="@+id/bt_rbg_mode1" style="@style/SwitchGoButton" android:text="@string/flashing" />
+                <Button android:id="@+id/bt_rbg_mode2" style="@style/SwitchGoButton" android:text="@string/breathing" />
+                <Button android:id="@+id/bt_rbg_mode3" style="@style/SwitchGoButton" android:text="@string/constant" />
+                <Button android:id="@+id/bt_rbg_mode4" style="@style/SwitchGoButton" android:text="@string/gradient" />
+                <Button android:id="@+id/bt_rbg_close" style="@style/SwitchGoButton" android:text="@string/close" />
+
+                <EditText android:id="@+id/et_mode" android:layout_width="50dp" android:layout_height="wrap_content"
+                    android:padding="4dp" android:inputType="numberDecimal" android:hint="0-4" />
+                <EditText android:id="@+id/et_red" android:layout_width="50dp" android:layout_height="wrap_content"
+                    android:padding="4dp" android:inputType="numberDecimal" android:hint="R" />
+                <EditText android:id="@+id/et_green" android:layout_width="50dp" android:layout_height="wrap_content"
+                    android:padding="4dp" android:inputType="numberDecimal" android:hint="G" />
+                <EditText android:id="@+id/et_blue" android:layout_width="50dp" android:layout_height="wrap_content"
+                    android:padding="4dp" android:inputType="numberDecimal" android:hint="B" />
+                <Button android:id="@+id/bt_rbg_ok" style="@style/SwitchGoButton" android:text="@string/sure" />
+            </LinearLayout>
+
+            <!-- Row 4: Battery, Sensors, Maintenance -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+
+                <Button android:id="@+id/bt_set_soc_0" style="@style/SwitchGoButton" android:text="@string/battery_0" />
+                <Button android:id="@+id/bt_set_soc_25" style="@style/SwitchGoButton" android:text="@string/battery_25" />
+                <Button android:id="@+id/bt_set_soc_50" style="@style/SwitchGoButton" android:text="@string/battery_50" />
+                <Button android:id="@+id/bt_set_soc_75" style="@style/SwitchGoButton" android:text="@string/battery_75" />
+                <Button android:id="@+id/bt_set_soc_100" style="@style/SwitchGoButton" android:text="@string/battery_100" />
+                <Button android:id="@+id/get_all_switch" style="@style/SwitchGoButton" android:text="@string/all_switch_status" />
+                <Button android:id="@+id/get_switch_lamp" style="@style/SwitchGoButton" android:text="@string/interior_light" />
+                <Button android:id="@+id/bt_mcu_reboot" style="@style/SwitchGoButton" android:text="@string/mcu_reboot" />
+                <Button android:id="@+id/bt_clear_error" style="@style/SwitchGoButton" android:text="@string/clear_door_block" />
+
+                <LinearLayout
+                    android:id="@+id/update_muc_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button android:id="@+id/bt_version_update" style="@style/SwitchGoButton"
+                        android:text="@string/version_update_1" android:enabled="false" />
+                    <Button android:id="@+id/bt_version_update2" style="@style/SwitchGoButton"
+                        android:text="@string/version_update_2" android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Log output -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/black"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/txt_sendPostRequestByForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/white" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Floating invisible trigger: tap 5 times to reveal MCU update buttons -->
+    <View
+        android:id="@+id/bt_mcu_hidden_trigger"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|left"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true" />
+
+</FrameLayout>

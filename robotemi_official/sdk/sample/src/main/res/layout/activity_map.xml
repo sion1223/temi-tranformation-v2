@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".MapActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:src="@drawable/ic_back"
+        android:tint="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibBack" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibBack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMapElements"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ibBack"
+        tools:text="123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n123\n" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutMapOperations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonBackupMap"
+                style="@style/ButtonCommon"
+                android:text="Export"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/buttonLoadMapFromPrivateFile"
+                style="@style/ButtonCommon"
+                android:text="Load map from private file" />
+
+            <Button
+                android:id="@+id/buttonLoadMapFromFileSelector"
+                style="@style/ButtonCommon"
+                android:text="Load map from file selector" />
+
+            <Button
+                android:id="@+id/buttonLoadMapFromPublicFile"
+                style="@style/ButtonCommon"
+                android:text="Load map from public file"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxLoadMapWithoutUI"
+                style="@style/ButtonCommon"
+                android:backgroundTint="@color/temi_primary_green"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Export/Load Map without UI" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLoadMapWithRepose"
+                style="@style/ButtonCommon"
+                android:backgroundTint="@color/temi_primary_green"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Load Map with Repose" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLoadMapFromPose"
+                style="@style/ButtonCommon"
+                android:backgroundTint="@color/temi_primary_green"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="10dp"
+                android:text="Load Map from Pose(x=1,y=1,yaw=1)" />
+
+            <Button
+                android:id="@+id/btnResetMap"
+                style="@style/ButtonCommon"
+                android:text="⚠️⚠️Reset Map⚠️⚠️" />
+
+            <Button
+                android:id="@+id/btnFinishMapping"
+                style="@style/ButtonCommon"
+                android:text="⚠️⚠️Finish Mapping⚠️⚠️" />
+
+            <Button
+                android:id="@+id/btnContinueMapping"
+                style="@style/ButtonCommon"
+                android:text="⚠️⚠️Continue Mapping⚠️⚠️" />
+
+            <Button
+                android:id="@+id/btnCreatePath"
+                style="@style/ButtonCommon"
+                android:text="Create Path"/>
+
+            <Button
+                android:id="@+id/btnMovePath"
+                style="@style/ButtonCommon"
+                android:text="Update Path"/>
+
+            <Button
+                android:id="@+id/btnDeletePath"
+                style="@style/ButtonCommon"
+                android:text="Delete Path"/>
+
+            <Button
+                android:id="@+id/btnUpsertLocation"
+                style="@style/ButtonCommon"
+                android:text="Add / Update Location"/>
+
+            <Button
+                android:id="@+id/btnRenameLocation"
+                style="@style/ButtonCommon"
+                android:text="Rename Location" />
+
+            <Button
+                android:id="@+id/btnCreatePathOnFloor"
+                style="@style/ButtonCommon"
+                android:text="Create Path On Floor"/>
+
+            <Button
+                android:id="@+id/btnMovePathOnFloor"
+                style="@style/ButtonCommon"
+                android:text="Update Path On Floor"/>
+
+            <Button
+                android:id="@+id/btnUpsertLocationOnFloor"
+                style="@style/ButtonCommon"
+                android:text="Add / Update Location On Floor"/>
+
+            <Button
+                android:id="@+id/btnDeletePathOnFloor"
+                style="@style/ButtonCommon"
+                android:text="Delete Path On Floor"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
