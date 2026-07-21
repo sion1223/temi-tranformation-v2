@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>temi Head 3D Library — Precision CAD</title>
+  <style>
+    :root {
+      --ink: #05090f;
+      --panel: #0a111b;
+      --panel-2: #0e1723;
+      --line: #263342;
+      --line-soft: #182331;
+      --text: #f3f7fb;
+      --muted: #8495a9;
+      --cyan: #21d4f4;
+      --cyan-soft: rgba(33, 212, 244, .12);
+      --white-08: rgba(255,255,255,.08);
+      --orange: #ffb454;
+      --font: "Inter", "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; min-height: 100%; background: #03070c; color: var(--text); font-family: var(--font); }
+    body { display: grid; place-items: start center; }
+    button, input { font: inherit; }
+
+    .app {
+      width: min(1600px, 100vw);
+      height: min(1000px, 100vh);
+      min-height: 760px;
+      overflow: hidden;
+      background: var(--ink);
+      display: grid;
+      grid-template-rows: 64px minmax(0, 1fr) 124px;
+      border: 1px solid #121b26;
+      box-shadow: 0 32px 100px rgba(0,0,0,.55);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 390px 1fr 430px;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      background: #080e16;
+      padding: 0 18px 0 24px;
+      position: relative;
+      z-index: 20;
+    }
+
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .brand-mark {
+      width: 30px; height: 30px; border: 1px solid var(--cyan); position: relative;
+      background: linear-gradient(145deg, rgba(33,212,244,.13), transparent 60%);
+      box-shadow: inset 0 0 18px rgba(33,212,244,.06);
+    }
+    .brand-mark::before, .brand-mark::after { content: ""; position: absolute; background: var(--cyan); }
+    .brand-mark::before { left: 7px; right: 7px; top: 14px; height: 1px; }
+    .brand-mark::after { top: 7px; bottom: 7px; left: 14px; width: 1px; }
+    .brand-text { font-size: 15px; font-weight: 670; letter-spacing: -.02em; white-space: nowrap; }
+    .brand-text span { color: var(--muted); font-weight: 450; margin-left: 6px; }
+
+    .breadcrumb { justify-self: center; display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; }
+    .breadcrumb strong { color: #dbe5ee; font-weight: 550; }
+    .breadcrumb i { color: #455668; font-style: normal; }
+
+    .head-actions { justify-self: end; display: flex; align-items: center; gap: 8px; }
+    .status { display: flex; align-items: center; gap: 8px; margin-right: 13px; color: #9babbc; font-size: 11px; }
+    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #48d7a1; box-shadow: 0 0 10px rgba(72,215,161,.75); }
+    .icon-button, .ghost-button, .primary-button {
+      border: 1px solid var(--line); color: #cfdae5; background: #0c141e; cursor: pointer;
+      height: 34px; transition: border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease;
+    }
+    .icon-button:hover, .ghost-button:hover { border-color: #4a6175; background: #111c28; color: white; }
+    .icon-button { width: 34px; padding: 0; display: grid; place-items: center; font-size: 15px; }
+    .ghost-button { padding: 0 14px; font-size: 11px; font-weight: 650; letter-spacing: .02em; }
+
+    .workspace { min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 384px; }
+    .viewport {
+      position: relative; overflow: hidden; border-right: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 45%, rgba(26, 55, 73, .24), transparent 38%),
+        linear-gradient(rgba(61,93,117,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(61,93,117,.07) 1px, transparent 1px),
+        #060b12;
+      background-size: auto, 40px 40px, 40px 40px, auto;
+    }
+    .viewport::before {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(5,9,15,.78), transparent 10%, transparent 90%, rgba(5,9,15,.56));
+      pointer-events: none;
+    }
+
+    .toolbar {
+      position: absolute; top: 16px; left: 18px; z-index: 8; display: flex; align-items: center;
+      background: rgba(8,14,22,.92); border: 1px solid var(--line); padding: 4px;
+      box-shadow: 0 12px 24px rgba(0,0,0,.24);
+    }
+    .tool {
+      width: 34px; height: 30px; border: 0; border-right: 1px solid var(--line-soft); color: #8193a5;
+      background: transparent; cursor: pointer; font-size: 13px;
+    }
+    .tool:last-child { border-right: 0; }
+    .tool.active, .tool:hover { background: var(--cyan-soft); color: var(--cyan); }
+
+    .view-meta { position: absolute; top: 18px; right: 20px; z-index: 8; text-align: right; }
+    .view-meta b { display: block; font-size: 10px; letter-spacing: .16em; color: #adc0d0; font-weight: 650; }
+    .view-meta span { display: block; color: #52667a; font-size: 10px; margin-top: 5px; }
+
+    .head-model {
+      position: absolute; width: 560px; height: 520px; left: 50%; top: 48%;
+      transform: translate(-50%, -50%) rotate(-2deg); transition: transform .55s cubic-bezier(.2,.8,.2,1);
+      filter: drop-shadow(0 32px 28px rgba(0,0,0,.55));
+    }
+    .viewport:hover .head-model { transform: translate(-50%, -50%) rotate(1deg) scale(1.01); }
+    .halo { position: absolute; width: 430px; height: 430px; border-radius: 50%; border: 1px solid rgba(33,212,244,.11); left: 65px; top: 25px; box-shadow: 0 0 60px rgba(33,212,244,.05), inset 0 0 60px rgba(33,212,244,.025); }
+    .halo::before, .halo::after { content: ""; position: absolute; inset: 47px; border: 1px dashed rgba(33,212,244,.10); border-radius: 50%; }
+    .halo::after { inset: 100px; border-style: solid; opacity: .55; }
+    .shell {
+      position: absolute; width: 322px; height: 278px; left: 118px; top: 90px;
+      border: 2px solid #8594a0; border-radius: 48% 48% 42% 42% / 46% 46% 54% 54%;
+      background: linear-gradient(138deg, #515e69 0%, #26323d 24%, #131c25 58%, #35434f 100%);
+      box-shadow: inset -24px -20px 48px rgba(0,0,0,.6), inset 20px 14px 26px rgba(255,255,255,.08), 0 0 0 7px rgba(139,158,172,.07);
+    }
+    .shell::before { content: ""; position: absolute; inset: 26px 18px 22px; border-radius: inherit; border: 1px solid rgba(180,199,213,.22); }
+    .shell::after { content: ""; position: absolute; width: 176px; height: 42px; border-radius: 50%; left: 72px; top: -15px; background: #18232c; border: 2px solid #73818c; box-shadow: inset 0 -12px 18px #090f15; }
+    .face-panel {
+      position: absolute; width: 248px; height: 174px; left: 155px; top: 141px;
+      border: 2px solid #52616e; border-radius: 46% 46% 38% 38% / 40% 40% 55% 55%;
+      background: linear-gradient(160deg, #0c141c, #04080d 72%); box-shadow: inset 0 0 36px #000;
+    }
+    .screen {
+      position: absolute; width: 176px; height: 105px; left: 191px; top: 174px;
+      border-radius: 12px; border: 1px solid #335264;
+      background: radial-gradient(circle at 50% 40%, rgba(33,212,244,.11), transparent 46%), #071018;
+      box-shadow: inset 0 0 24px rgba(33,212,244,.04), 0 0 16px rgba(33,212,244,.08);
+    }
+    .screen::before, .screen::after { content: ""; position: absolute; top: 43px; width: 18px; height: 7px; background: var(--cyan); border-radius: 50%; box-shadow: 0 0 12px rgba(33,212,244,.75); }
+    .screen::before { left: 39px; } .screen::after { right: 39px; }
+    .chin {
+      position: absolute; width: 164px; height: 70px; left: 197px; top: 338px;
+      clip-path: polygon(14% 0, 86% 0, 100% 35%, 77% 100%, 23% 100%, 0 35%);
+      background: linear-gradient(180deg, #33414c, #111921); border: 1px solid #667580;
+      box-shadow: inset 0 10px 16px rgba(255,255,255,.025);
+    }
+    .chin::before { content: ""; position: absolute; left: 52px; top: 19px; width: 58px; height: 12px; border-radius: 8px; background: #050a0e; border: 1px solid #273641; }
+    .ear { position: absolute; width: 54px; height: 116px; top: 178px; background: #1b2731; border: 2px solid #667580; border-radius: 18px; box-shadow: inset 0 0 20px #060b0f; }
+    .ear.left { left: 91px; transform: rotate(5deg); } .ear.right { right: 91px; transform: rotate(-5deg); }
+    .ear::after { content: ""; position: absolute; width: 20px; height: 20px; border: 2px solid var(--cyan); opacity: .5; border-radius: 50%; left: 15px; top: 46px; }
+    .neck { position: absolute; width: 120px; height: 92px; left: 219px; top: 392px; background: linear-gradient(90deg, #0c1319, #3d4b55 50%, #0b1117); border: 1px solid #63717b; clip-path: polygon(18% 0, 82% 0, 100% 100%, 0 100%); }
+    .base { position: absolute; width: 228px; height: 44px; left: 165px; top: 469px; border-radius: 50%; background: linear-gradient(180deg, #44535e, #0a1117 66%); border: 1px solid #71808a; box-shadow: 0 9px 28px rgba(0,0,0,.8); }
+    .selection {
+      position: absolute; width: 352px; height: 305px; left: 102px; top: 77px; border: 1px solid rgba(33,212,244,.42);
+      box-shadow: 0 0 18px rgba(33,212,244,.05); pointer-events: none;
+    }
+    .selection::before, .selection::after { content: ""; position: absolute; width: 8px; height: 8px; border: 1px solid var(--cyan); background: #071018; }
+    .selection::before { left: -5px; top: -5px; } .selection::after { right: -5px; bottom: -5px; }
+
+    .axis { position: absolute; left: 26px; bottom: 24px; width: 66px; height: 66px; z-index: 6; color: #70869a; font-size: 9px; }
+    .axis::before, .axis::after { content: ""; position: absolute; left: 30px; bottom: 28px; transform-origin: bottom; }
+    .axis::before { width: 1px; height: 30px; background: #5fe0a8; }
+    .axis::after { width: 30px; height: 1px; background: #ef6f73; }
+    .axis-x { position: absolute; left: 61px; bottom: 24px; color: #ef6f73; }
+    .axis-y { position: absolute; left: 27px; top: 0; color: #5fe0a8; }
+    .axis-z { position: absolute; left: 5px; bottom: 8px; color: #6ab6ff; }
+
+    .model-note { position: absolute; left: 22px; bottom: 106px; z-index: 7; padding-left: 12px; border-left: 2px solid var(--cyan); }
+    .model-note b { font-size: 11px; font-weight: 650; letter-spacing: .02em; }
+    .model-note span { display: block; color: #6e8295; font-size: 10px; margin-top: 5px; }
+    .viewport-help { position: absolute; right: 18px; bottom: 20px; display: flex; gap: 14px; color: #506478; font-size: 9px; }
+    .viewport-help i { color: #8ba0b4; font-style: normal; border: 1px solid #304050; padding: 2px 5px; margin-right: 4px; }
+
+    aside { background: var(--panel); min-height: 0; display: grid; grid-template-rows: auto 1fr auto; }
+    .aside-head { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
+    .eyebrow { color: var(--cyan); font-size: 9px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .aside-title { display: flex; justify-content: space-between; align-items: baseline; margin-top: 7px; }
+    .aside-title h2 { margin: 0; font-size: 17px; letter-spacing: -.03em; font-weight: 650; }
+    .aside-title span { color: #718599; font-size: 10px; }
+    .search { margin-top: 14px; height: 34px; display: flex; align-items: center; border: 1px solid var(--line); background: #070d14; padding: 0 10px; gap: 8px; }
+    .search span { color: #506478; font-size: 14px; }
+    .search input { border: 0; outline: 0; width: 100%; color: #c8d4df; background: transparent; font-size: 11px; }
+    .search input::placeholder { color: #506174; }
+
+    .tree { padding: 10px 10px 14px; overflow: auto; scrollbar-width: thin; scrollbar-color: #2d3a48 transparent; }
+    .tree-row {
+      min-height: 42px; display: grid; grid-template-columns: 20px 28px 1fr 28px; gap: 5px; align-items: center;
+      padding: 0 7px; border: 1px solid transparent; color: #b7c4d0; cursor: pointer; transition: background .16s, border-color .16s;
+    }
+    .tree-row:hover { background: #0f1924; }
+    .tree-row.selected { background: var(--cyan-soft); border-color: rgba(33,212,244,.31); color: #effcff; }
+    .indent { margin-left: 17px; }
+    .indent-2 { margin-left: 34px; }
+    .chev { color: #61758a; font-size: 9px; }
+    .cube { width: 16px; height: 16px; border: 1px solid #4f6579; background: linear-gradient(145deg, #263847, #0b141d); position: relative; transform: rotate(30deg); }
+    .selected .cube { border-color: var(--cyan); box-shadow: 0 0 8px rgba(33,212,244,.28); }
+    .part-label { min-width: 0; }
+    .part-label b { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 11px; font-weight: 570; }
+    .part-label small { display: block; color: #596d81; font-size: 9px; margin-top: 3px; }
+    .eye { border: 0; color: #74889b; background: transparent; width: 28px; height: 28px; padding: 0; cursor: pointer; }
+    .eye.off { color: #344656; text-decoration: line-through; }
+
+    .selection-card { margin: 0 12px 12px; border: 1px solid var(--line); background: #0d1620; }
+    .selection-card-head { padding: 12px 13px; border-bottom: 1px solid var(--line-soft); display: flex; justify-content: space-between; align-items: center; }
+    .selection-card-head b { font-size: 11px; font-weight: 620; }
+    .selection-card-head span { color: var(--cyan); font-size: 9px; }
+    .selection-info { padding: 10px 13px 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stat small { display: block; color: #64788c; font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+    .stat b { display: block; color: #c6d3de; font-size: 10px; margin-top: 4px; font-weight: 540; }
+    .selected-download { width: calc(100% - 24px); margin: 0 12px 12px; height: 36px; border: 1px solid rgba(33,212,244,.55); color: #dffcff; background: rgba(33,212,244,.10); font-size: 10px; font-weight: 650; cursor: pointer; }
+    .selected-download:hover { background: rgba(33,212,244,.18); }
+
+    .download-bar {
+      background: #080e16; border-top: 1px solid var(--line); display: grid; grid-template-columns: 330px repeat(3, 1fr); min-height: 0;
+    }
+    .download-intro { padding: 19px 24px; border-right: 1px solid var(--line); display: flex; flex-direction: column; justify-content: center; }
+    .download-intro h3 { font-size: 14px; margin: 0; font-weight: 650; letter-spacing: -.02em; }
+    .download-intro p { color: #687b8d; font-size: 10px; line-height: 1.45; margin: 7px 0 0; }
+    .file-card { border-right: 1px solid var(--line); padding: 17px 18px; display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 13px; cursor: pointer; transition: background .18s; }
+    .file-card:last-child { border-right: 0; }
+    .file-card:hover { background: #0d1722; }
+    .file-type { width: 48px; height: 48px; display: grid; place-items: center; border: 1px solid #334558; color: #9eb2c4; background: #0c141d; font-size: 10px; font-weight: 760; letter-spacing: .06em; position: relative; }
+    .file-type::after { content: ""; position: absolute; top: -1px; right: -1px; width: 10px; height: 10px; border-left: 1px solid #334558; border-bottom: 1px solid #334558; background: #080e16; }
+    .file-details b { display: block; font-size: 11px; font-weight: 610; }
+    .file-details span { display: block; color: #667a8d; font-size: 9px; margin-top: 5px; }
+    .download-icon { width: 31px; height: 31px; border: 1px solid #304255; color: var(--cyan); display: grid; place-items: center; font-size: 14px; }
+    .file-card:hover .download-icon { background: var(--cyan); color: #041016; border-color: var(--cyan); }
+
+    .toast { position: absolute; z-index: 50; left: 50%; top: 78px; transform: translate(-50%, -18px); opacity: 0; pointer-events: none; background: #eafcff; color: #071018; padding: 10px 16px; font-size: 10px; font-weight: 650; box-shadow: 0 12px 30px rgba(0,0,0,.45); transition: opacity .2s, transform .2s; }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    @media (max-width: 1100px) {
+      header { grid-template-columns: 1fr auto; } .breadcrumb { display: none; }
+      .workspace { grid-template-columns: 1fr 330px; }
+      .download-bar { grid-template-columns: 240px repeat(3, 1fr); }
+      .file-card { grid-template-columns: 40px 1fr; } .download-icon { display: none; }
+    }
+    @media (max-width: 760px) {
+      .app { height: auto; min-height: 100vh; overflow: visible; grid-template-rows: 58px auto auto; }
+      header { padding: 0 12px; } .status, .ghost-button { display: none; }
+      .workspace { display: block; } .viewport { height: 610px; border-right: 0; border-bottom: 1px solid var(--line); }
+      aside { min-height: 620px; } .download-bar { grid-template-columns: 1fr; }
+      .download-intro, .file-card { border-right: 0; border-bottom: 1px solid var(--line); }
+      .head-model { transform: translate(-50%,-50%) scale(.8); }
+    }
+  </style>
+</head>
+<body>
+  <main class="app" aria-label="temi Head 3D 라이브러리 CAD 뷰어 시안">
+    <header>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">temi Head <span>3D Library</span></div>
+      </div>
+      <nav class="breadcrumb" aria-label="현재 위치"><span>라이브러리</span><i>/</i><span>Head_2.0.33</span><i>/</i><strong>Reference Assembly</strong></nav>
+      <div class="head-actions">
+        <div class="status"><span class="status-dot"></span>모델 준비됨</div>
+        <button class="ghost-button" type="button" data-toast="링크가 복사되었습니다">공유 링크</button>
+        <button class="icon-button" type="button" title="정보" data-toast="모델 정보 패널">ⓘ</button>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <div class="viewport" aria-label="3D 조립체 뷰포트">
+        <div class="toolbar" aria-label="뷰어 도구">
+          <button class="tool active" title="회전">↻</button>
+          <button class="tool" title="이동">✥</button>
+          <button class="tool" title="확대">⌕</button>
+          <button class="tool" title="맞춤">⌗</button>
+          <button class="tool" title="단면">◩</button>
+        </div>
+        <div class="view-meta"><b>PERSPECTIVE · SHADED</b><span>1 unit = 1 mm · Z-UP</span></div>
+
+        <div class="head-model" aria-hidden="true">
+          <div class="halo"></div>
+          <div class="neck"></div><div class="base"></div>
+          <div class="ear left"></div><div class="ear right"></div>
+          <div class="shell"></div><div class="face-panel"></div><div class="screen"></div><div class="chin"></div>
+          <div class="selection"></div>
+        </div>
+
+        <div class="model-note"><b>Head_2.0.33 / 전체 조립체</b><span>선택: Main Head Shell · 148,290 faces</span></div>
+        <div class="axis"><span class="axis-x">X</span><span class="axis-y">Y</span><span class="axis-z">Z</span></div>
+        <div class="viewport-help"><span><i>LMB</i>회전</span><span><i>SHIFT</i>이동</span><span><i>SCROLL</i>확대</span></div>
+      </div>
+
+      <aside aria-label="부품 탐색기">
+        <div class="aside-head">
+          <div class="eyebrow">Assembly navigator</div>
+          <div class="aside-title"><h2>부품 탐색기</h2><span>12개 메시</span></div>
+          <label class="search"><span>⌕</span><input type="search" placeholder="부품 이름으로 검색" aria-label="부품 검색" /></label>
+        </div>
+
+        <div class="tree">
+          <div class="tree-row"><span class="chev">▼</span><span class="cube"></span><span class="part-label"><b>Head_2.0.33</b><small>ASSEMBLY · 12 PARTS</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row selected indent"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Main Head Shell</b><small>OBJ · 148,290 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Face Screen Bezel</b><small>OBJ · 32,144 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent"><span class="chev">▶</span><span class="cube"></span><span class="part-label"><b>Side Sensor Housing</b><small>GROUP · 2 PARTS</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent-2"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Sensor Ring — L</b><small>STL · 8,432 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent-2"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Sensor Ring — R</b><small>STL · 8,432 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Lower Chin Cover</b><small>OBJ · 19,608 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Neck Adapter</b><small>STL · 24,190 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+          <div class="tree-row indent"><span class="chev"></span><span class="cube"></span><span class="part-label"><b>Top Plate</b><small>STL · 11,076 FACES</small></span><button class="eye" title="표시 토글">◉</button></div>
+        </div>
+
+        <div class="selection-card">
+          <div class="selection-card-head"><b>Main Head Shell</b><span>선택됨</span></div>
+          <div class="selection-info">
+            <div class="stat"><small>크기</small><b>286 × 248 × 224 mm</b></div>
+            <div class="stat"><small>용량</small><b>18.42 MB</b></div>
+            <div class="stat"><small>버텍스</small><b>74,208</b></div>
+            <div class="stat"><small>형식</small><b>Wavefront OBJ</b></div>
+          </div>
+          <button class="selected-download" type="button" data-toast="Main Head Shell 다운로드를 준비합니다">선택 부품 다운로드 ↓</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="download-bar" aria-label="원본 파일 다운로드">
+      <div class="download-intro"><h3>원본 제작 파일</h3><p>Blender와 3D 프린팅 도구에서 바로 열 수 있는<br />검증된 원본 파일입니다.</p></div>
+      <div class="file-card" data-toast="OBJ 원본 다운로드를 준비합니다"><div class="file-type">OBJ</div><div class="file-details"><b>Reference Assembly</b><span>Blender 조립체 · 163.37 MB</span></div><div class="download-icon">↓</div></div>
+      <div class="file-card" data-toast="STL 원본 다운로드를 준비합니다"><div class="file-type">STL</div><div class="file-details"><b>All Components</b><span>전체 출력 부품 · 81.99 MB</span></div><div class="download-icon">↓</div></div>
+      <div class="file-card" data-toast="3MF 원본 다운로드를 준비합니다"><div class="file-type">3MF</div><div class="file-details"><b>Bambu Printfile</b><span>슬라이서 프로젝트 · 22.33 MB</span></div><div class="download-icon">↓</div></div>
+    </section>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script>
+    const toast = document.querySelector('.toast');
+    let toastTimer;
+    document.querySelectorAll('[data-toast]').forEach((el) => {
+      el.addEventListener('click', () => {
+        toast.textContent = el.dataset.toast;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+      });
+    });
+    document.querySelectorAll('.tree-row').forEach((row) => {
+      row.addEventListener('click', (event) => {
+        if (event.target.classList.contains('eye')) return;
+        document.querySelectorAll('.tree-row').forEach((item) => item.classList.remove('selected'));
+        row.classList.add('selected');
+        const name = row.querySelector('b')?.textContent || '부품';
+        document.querySelector('.selection-card-head b').textContent = name;
+      });
+    });
+    document.querySelectorAll('.eye').forEach((eye) => {
+      eye.addEventListener('click', () => {
+        eye.classList.toggle('off');
+        eye.textContent = eye.classList.contains('off') ? '◌' : '◉';
+      });
+    });
+    document.querySelectorAll('.tool').forEach((tool) => {
+      tool.addEventListener('click', () => {
+        document.querySelectorAll('.tool').forEach((item) => item.classList.remove('active'));
+        tool.classList.add('active');
+      });
+    });
+    document.querySelector('.search input').addEventListener('input', (event) => {
+      const query = event.target.value.trim().toLowerCase();
+      document.querySelectorAll('.tree-row').forEach((row) => {
+        row.style.display = row.textContent.toLowerCase().includes(query) ? 'grid' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>temi Head 3D Library — Museum Tech</title>
+  <style>
+    :root{
+      --black:#050505;
+      --panel:#0b0d0c;
+      --line:#272b27;
+      --line-soft:#171a17;
+      --lime:#c8ff2e;
+      --white:#f2f3ec;
+      --muted:#8d9188;
+      --danger:#ff5d3d;
+      --drawer:214px;
+    }
+    *{box-sizing:border-box}
+    html,body{width:100%;height:100%;margin:0;background:var(--black);color:var(--white);font-family:Arial,"Noto Sans KR",sans-serif;overflow:hidden}
+    button{font:inherit;color:inherit}
+    .museum{position:relative;width:100vw;height:100vh;min-width:1180px;min-height:760px;background:
+      radial-gradient(circle at 58% 36%,rgba(200,255,46,.075),transparent 25%),
+      linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),var(--black);
+      background-size:auto,64px 64px,64px 64px,auto}
+    .museum:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,5,5,.72),transparent 24%,transparent 74%,rgba(5,5,5,.78));pointer-events:none;z-index:1}
+    .topbar{position:absolute;z-index:20;left:28px;right:28px;top:22px;height:48px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-bottom:1px solid var(--line)}
+    .brand{display:flex;align-items:center;gap:13px;font-size:13px;font-weight:700;letter-spacing:.04em}
+    .brand-mark{width:12px;height:12px;border:3px solid var(--lime);border-radius:50%;box-shadow:0 0 18px rgba(200,255,46,.45)}
+    .brand span:last-child{color:var(--muted);font-weight:400}
+    .mode{display:flex;align-items:center;gap:18px;font-size:11px;letter-spacing:.16em;color:var(--muted)}
+    .mode b{font-weight:700;color:var(--white);padding-bottom:14px;border-bottom:2px solid var(--lime)}
+    .top-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px}
+    .pill{border:1px solid var(--line);background:rgba(8,8,8,.7);border-radius:99px;padding:8px 12px;font-size:11px;letter-spacing:.05em;color:var(--muted)}
+    .pill.live{color:var(--lime);border-color:rgba(200,255,46,.3)}
+    .hero-copy{position:absolute;z-index:4;left:28px;top:100px;pointer-events:none}
+    .eyebrow{display:flex;align-items:center;gap:9px;color:var(--lime);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+    .eyebrow:before{content:"";width:22px;height:1px;background:var(--lime)}
+    h1{margin:8px 0 0;font-size:clamp(66px,7.1vw,114px);line-height:.78;letter-spacing:-.075em;font-weight:900;text-transform:uppercase}
+    h1 span{display:block;color:transparent;-webkit-text-stroke:1px rgba(242,243,236,.38);margin-left:100px}
+    .model-meta{position:absolute;z-index:5;left:31px;top:330px;width:210px}
+    .model-meta .label{font-size:9px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;margin-bottom:12px}
+    .model-meta .title{font-size:15px;font-weight:700;line-height:1.35}
+    .model-meta .sub{font-family:Consolas,monospace;font-size:10px;color:var(--muted);margin-top:6px}
+    .meta-rule{width:38px;height:1px;background:var(--lime);margin:16px 0}
+    .statline{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line-soft);font-size:10px;color:var(--muted)}
+    .statline b{color:var(--white);font-weight:400;font-family:Consolas,monospace}
+    .viewport{position:absolute;inset:75px 0 var(--drawer);overflow:hidden;perspective:1000px}
+    .axis{position:absolute;left:50%;top:50%;width:1px;height:520px;background:linear-gradient(transparent,rgba(200,255,46,.18),transparent);transform:translate(-50%,-50%)}
+    .axis:after{content:"Y";position:absolute;top:30px;left:8px;color:rgba(200,255,46,.5);font:9px Consolas}
+    .stage-ring{position:absolute;left:55%;top:48%;width:560px;height:210px;border:1px solid rgba(200,255,46,.18);border-radius:50%;transform:translate(-50%,-50%) rotateX(68deg);box-shadow:0 0 80px rgba(200,255,46,.035),inset 0 0 60px rgba(200,255,46,.025)}
+    .stage-ring:before,.stage-ring:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.06);border-radius:50%;inset:34px}
+    .stage-ring:after{inset:72px}
+    .head-object{position:absolute;z-index:3;left:55%;top:48%;width:430px;height:470px;transform:translate(-50%,-50%) rotate(-2deg);filter:drop-shadow(0 38px 34px rgba(0,0,0,.8));transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+    .head-object:hover{transform:translate(-50%,-50%) rotate(2deg) scale(1.02)}
+    .skull{position:absolute;left:66px;top:15px;width:300px;height:354px;background:linear-gradient(135deg,#30332f 0%,#171917 28%,#252925 48%,#0d0f0e 80%);border:1px solid #555a53;border-radius:48% 46% 36% 38%/38% 39% 52% 54%;box-shadow:inset 22px 9px 34px rgba(255,255,255,.065),inset -30px -28px 50px rgba(0,0,0,.8),0 0 0 7px rgba(200,255,46,.015);overflow:hidden}
+    .skull:before{content:"";position:absolute;inset:18px 28px 45px;border:1px dashed rgba(255,255,255,.15);border-radius:46%;transform:rotate(-5deg)}
+    .skull:after{content:"TEMI / HEAD UNIT 033";position:absolute;right:-73px;top:126px;transform:rotate(90deg);font:8px Consolas;color:rgba(255,255,255,.26);letter-spacing:.18em}
+    .face{position:absolute;z-index:2;left:82px;top:97px;width:268px;height:209px;background:linear-gradient(160deg,#151716,#070807 55%,#121412);border:2px solid #41463f;border-radius:40% 42% 45% 43%/42% 42% 48% 50%;box-shadow:inset 0 0 35px #000,0 0 0 1px rgba(200,255,46,.12)}
+    .face:before{content:"";position:absolute;left:29px;right:29px;top:30px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,255,46,.4),transparent)}
+    .visor{position:absolute;left:38px;right:38px;top:54px;height:64px;border-radius:55px;background:linear-gradient(180deg,#090b0a,#181c18);border:1px solid #363c35;box-shadow:inset 0 12px 16px rgba(255,255,255,.025)}
+    .eye{position:absolute;top:19px;width:23px;height:23px;border:2px solid var(--lime);border-radius:50%;box-shadow:0 0 16px rgba(200,255,46,.45),inset 0 0 8px rgba(200,255,46,.25)}
+    .eye:after{content:"";position:absolute;left:7px;top:7px;width:5px;height:5px;background:var(--lime);border-radius:50%}
+    .eye.left{left:46px}.eye.right{right:46px}
+    .speaker{position:absolute;left:103px;top:145px;width:60px;height:18px;border:1px solid #393e38;border-radius:2px;background:repeating-linear-gradient(90deg,#242824 0 2px,#0b0c0b 2px 5px)}
+    .temple{position:absolute;z-index:1;top:125px;width:45px;height:122px;background:linear-gradient(90deg,#171917,#3a3e39);border:1px solid #51564f;border-radius:10px}
+    .temple.left{left:46px;transform:rotate(8deg)}.temple.right{right:44px;transform:rotate(-8deg) scaleX(-1)}
+    .ear{position:absolute;top:35px;left:9px;width:25px;height:42px;border:1px solid #656a62;border-radius:4px;background:#101210;box-shadow:inset 0 0 0 5px #222621}
+    .neck{position:absolute;z-index:0;left:142px;top:338px;width:150px;height:92px;background:linear-gradient(90deg,#111,#383c37 48%,#0d0e0d);clip-path:polygon(18% 0,82% 0,100% 100%,0 100%);border-top:1px solid #5e645b}
+    .base{position:absolute;left:95px;top:405px;width:240px;height:38px;background:linear-gradient(180deg,#333730,#0d0f0d);border:1px solid #4f544d;border-radius:50%}
+    .base:after{content:"";position:absolute;left:30px;right:30px;top:13px;height:8px;border-radius:50%;background:#080908;border:1px solid #282b27}
+    .hotspot{position:absolute;z-index:5;width:10px;height:10px;border:2px solid var(--lime);border-radius:50%;background:#070807;box-shadow:0 0 12px var(--lime)}
+    .hotspot:after{content:attr(data-label);position:absolute;left:14px;top:-8px;white-space:nowrap;border-left:1px solid var(--lime);padding:4px 8px;color:var(--lime);background:rgba(5,5,5,.8);font:9px Consolas;letter-spacing:.08em}
+    .hotspot.h1{left:317px;top:102px}.hotspot.h2{left:97px;top:241px}.hotspot.h3{left:269px;top:376px}
+    .toolbar{position:absolute;z-index:8;left:277px;top:390px;display:flex;flex-direction:column;border:1px solid var(--line);background:rgba(10,11,10,.88);backdrop-filter:blur(12px)}
+    .tool{width:42px;height:42px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--muted);font-size:16px;cursor:pointer;transition:.2s}.tool:last-child{border-bottom:0}.tool:hover,.tool.active{background:var(--lime);color:var(--black)}
+    .download-card{position:absolute;z-index:8;right:28px;top:113px;width:262px;background:rgba(10,11,10,.82);border:1px solid var(--line);backdrop-filter:blur(14px)}
+    .panel-head{padding:16px 17px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+    .panel-head b{font-size:11px;letter-spacing:.11em}.panel-head span{font:9px Consolas;color:var(--muted)}
+    .download-list{padding:7px}
+    .file-row{width:100%;display:grid;grid-template-columns:36px 1fr auto;align-items:center;gap:10px;padding:10px;border:1px solid transparent;background:none;text-align:left;cursor:pointer;transition:.2s}
+    .file-row:hover{border-color:rgba(200,255,46,.4);background:rgba(200,255,46,.035)}
+    .format{font:700 10px Consolas;color:var(--lime);width:36px;height:30px;border:1px solid rgba(200,255,46,.4);display:grid;place-items:center}
+    .file-name{font-size:10px;font-weight:700}.file-detail{font:8px Consolas;color:var(--muted);margin-top:3px}
+    .arrow{color:var(--muted);font-size:16px}
+    .selected-download{margin:7px 7px 14px;width:calc(100% - 14px);height:38px;border:0;background:var(--lime);color:var(--black);font-size:10px;font-weight:800;letter-spacing:.04em;cursor:pointer}
+    .selection-card{position:absolute;z-index:8;right:28px;top:412px;width:262px;border:1px solid var(--line);background:rgba(10,11,10,.82);padding:14px 16px;backdrop-filter:blur(12px)}
+    .selection-card .micro{font:8px Consolas;color:var(--lime);letter-spacing:.14em}.selection-card h3{font-size:15px;margin:8px 0 4px}.selection-card p{font-size:9px;color:var(--muted);margin:0}.selection-actions{display:flex;gap:6px;margin-top:12px}.selection-actions button{flex:1;border:1px solid var(--line);background:transparent;padding:8px;font-size:9px;cursor:pointer}.selection-actions button:hover{border-color:var(--lime);color:var(--lime)}
+    .corner-note{position:absolute;z-index:4;right:30px;bottom:calc(var(--drawer) + 20px);font:8px Consolas;color:#666;writing-mode:vertical-rl;letter-spacing:.14em}
+    .drawer{position:absolute;z-index:30;left:0;right:0;bottom:0;height:var(--drawer);background:#090a09;border-top:1px solid #363a34;transition:transform .45s cubic-bezier(.2,.85,.2,1);box-shadow:0 -20px 55px rgba(0,0,0,.55)}
+    .drawer.collapsed{transform:translateY(calc(var(--drawer) - 44px))}
+    .drawer-top{height:44px;display:grid;grid-template-columns:270px 1fr auto;align-items:center;padding:0 28px;border-bottom:1px solid var(--line)}
+    .drawer-title{font-size:10px;font-weight:800;letter-spacing:.14em}.drawer-title em{font-style:normal;color:var(--lime);margin-left:7px}
+    .filters{display:flex;gap:18px}.filter{border:0;background:none;color:var(--muted);font-size:9px;cursor:pointer;padding:14px 0}.filter.active{color:var(--white);border-bottom:1px solid var(--lime)}
+    .drawer-toggle{display:flex;align-items:center;gap:8px;border:0;background:none;color:var(--muted);font-size:9px;cursor:pointer;letter-spacing:.08em}.chev{display:inline-block;transition:.4s}.collapsed .chev{transform:rotate(180deg)}
+    .parts{display:grid;grid-template-columns:repeat(6,1fr);height:170px}
+    .part{position:relative;border-right:1px solid var(--line);padding:14px 15px;background:linear-gradient(135deg,rgba(255,255,255,.018),transparent);cursor:pointer;transition:.2s}
+    .part:last-child{border-right:0}.part:hover,.part.selected{background:rgba(200,255,46,.055)}.part.selected:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--lime)}
+    .part-index{font:8px Consolas;color:#5f645c}.part.selected .part-index{color:var(--lime)}
+    .part-shape{height:72px;display:grid;place-items:center;position:relative}
+    .part-shape i{display:block;width:74px;height:48px;border:1px solid #555b53;background:linear-gradient(145deg,#30342f,#0f110f);box-shadow:inset 8px 6px 12px rgba(255,255,255,.03),9px 11px 15px rgba(0,0,0,.4);transform:rotate(-8deg);border-radius:30%}
+    .part:nth-child(2) .part-shape i{width:48px;height:60px;border-radius:9px;transform:rotate(12deg)}.part:nth-child(3) .part-shape i{width:82px;height:27px;border-radius:50%;transform:rotate(-3deg)}.part:nth-child(4) .part-shape i{width:30px;height:65px;border-radius:4px}.part:nth-child(5) .part-shape i{width:62px;height:45px;clip-path:polygon(15% 0,85% 0,100% 100%,0 100%);border-radius:0}.part:nth-child(6) .part-shape i{width:68px;height:52px;border-radius:50% 45% 30% 35%}
+    .part-name{font-size:10px;font-weight:700}.part-code{font:8px Consolas;color:var(--muted);margin-top:4px}
+    .eye-toggle{position:absolute;right:12px;bottom:13px;border:0;background:none;color:#70756d;font-size:12px;cursor:pointer}.eye-toggle.off{color:#30332f;text-decoration:line-through}
+    .scan{position:absolute;z-index:4;left:40%;right:27%;top:31%;height:1px;background:linear-gradient(90deg,transparent,var(--lime),transparent);opacity:.25;box-shadow:0 0 14px var(--lime);animation:scan 4.8s ease-in-out infinite}
+    @keyframes scan{0%,100%{transform:translateY(-80px);opacity:0}20%,80%{opacity:.28}50%{transform:translateY(250px)}}
+    .grain{position:absolute;inset:0;z-index:40;pointer-events:none;opacity:.045;background-image:repeating-radial-gradient(circle at 20% 30%,#fff 0 1px,transparent 1px 4px);background-size:7px 7px;mix-blend-mode:screen}
+    @media(max-width:1200px){.model-meta{display:none}.toolbar{left:30px}.head-object{left:50%}.stage-ring{left:50%}.download-card,.selection-card{right:18px}h1 span{margin-left:40px}.parts{grid-template-columns:repeat(4,1fr)}.part:nth-child(n+5){display:none}}
+  </style>
+</head>
+<body>
+  <main class="museum">
+    <header class="topbar">
+      <div class="brand"><i class="brand-mark"></i><strong>temi</strong><span>HEAD 3D LIBRARY</span></div>
+      <nav class="mode"><b>3D 뷰어</b><span>파일 정보</span><span>조립 가이드</span></nav>
+      <div class="top-actions"><span class="pill live">● WEBGL READY</span><span class="pill">KR⌄</span></div>
+    </header>
+
+    <section class="hero-copy">
+      <div class="eyebrow">Digital Artifact / 033</div>
+      <h1>HEAD<span>ARCHIVE</span></h1>
+    </section>
+
+    <aside class="model-meta">
+      <div class="label">On display</div>
+      <div class="title">temi Head Assembly<br>Alpha 2.0.33</div>
+      <div class="sub">REF_ASSEMBLY_OBJ</div>
+      <div class="meta-rule"></div>
+      <div class="statline"><span>구성 요소</span><b>18 MESHES</b></div>
+      <div class="statline"><span>정점</span><b>2,481,903</b></div>
+      <div class="statline"><span>스케일</span><b>1:1 / mm</b></div>
+    </aside>
+
+    <section class="viewport" aria-label="3D 모델 인터랙티브 뷰포트">
+      <div class="axis"></div><div class="stage-ring"></div><div class="scan"></div>
+      <div class="head-object" aria-label="temi 로봇 헤드 3D 모델 목업">
+        <div class="neck"></div><div class="base"></div>
+        <div class="temple left"><i class="ear"></i></div><div class="temple right"><i class="ear"></i></div>
+        <div class="skull"></div>
+        <div class="face"><div class="visor"><i class="eye left"></i><i class="eye right"></i></div><div class="speaker"></div></div>
+        <button class="hotspot h1" data-label="TOP_COVER_01" aria-label="상단 커버 선택"></button>
+        <button class="hotspot h2" data-label="SIDE_FRAME_L" aria-label="왼쪽 프레임 선택"></button>
+        <button class="hotspot h3" data-label="NECK_BRACKET" aria-label="목 브래킷 선택"></button>
+      </div>
+      <div class="toolbar" aria-label="3D 뷰 도구">
+        <button class="tool active" title="회전">↻</button><button class="tool" title="이동">✥</button><button class="tool" title="확대">＋</button><button class="tool" title="전체 보기">⌗</button>
+      </div>
+    </section>
+
+    <aside class="download-card">
+      <div class="panel-head"><b>원본 파일</b><span>03 FILES</span></div>
+      <div class="download-list">
+        <button class="file-row"><span class="format">OBJ</span><span><span class="file-name">Reference Assembly</span><span class="file-detail">163.37 MB · 조립 원본</span></span><span class="arrow">↓</span></button>
+        <button class="file-row"><span class="format">STL</span><span><span class="file-name">All Components</span><span class="file-detail">81.99 MB · 프린트 메시</span></span><span class="arrow">↓</span></button>
+        <button class="file-row"><span class="format">3MF</span><span><span class="file-name">Bambu Printfile</span><span class="file-detail">22.33 MB · 슬라이서 프로젝트</span></span><span class="arrow">↓</span></button>
+      </div>
+      <button class="selected-download">선택한 부품 다운로드 ↓</button>
+    </aside>
+
+    <aside class="selection-card">
+      <div class="micro">CURRENT SELECTION</div><h3>Face Frame Assembly</h3><p>FACE_FRAME_A · 14.82 MB</p>
+      <div class="selection-actions"><button>단독 보기</button><button>정보 열기</button></div>
+    </aside>
+    <div class="corner-note">DRAG TO ROTATE · SCROLL TO ZOOM · SHIFT + DRAG TO PAN</div>
+
+    <section class="drawer" id="drawer">
+      <div class="drawer-top">
+        <div class="drawer-title">부품 인벤토리 <em>18</em></div>
+        <div class="filters"><button class="filter active">전체</button><button class="filter">외장</button><button class="filter">프레임</button><button class="filter">브래킷</button><button class="filter">전자부품</button></div>
+        <button class="drawer-toggle" id="drawerToggle"><span>패널 접기</span><i class="chev">⌄</i></button>
+      </div>
+      <div class="parts">
+        <article class="part selected"><div class="part-index">01 / SELECTED</div><div class="part-shape"><i></i></div><div class="part-name">Face Frame</div><div class="part-code">FACE_FRAME_A</div><button class="eye-toggle">◉</button></article>
+        <article class="part"><div class="part-index">02</div><div class="part-shape"><i></i></div><div class="part-name">Side Frame L</div><div class="part-code">SIDE_FRAME_L</div><button class="eye-toggle">◉</button></article>
+        <article class="part"><div class="part-index">03</div><div class="part-shape"><i></i></div><div class="part-name">Top Cover</div><div class="part-code">TOP_COVER_01</div><button class="eye-toggle">◉</button></article>
+        <article class="part"><div class="part-index">04</div><div class="part-shape"><i></i></div><div class="part-name">Camera Mount</div><div class="part-code">CAM_MOUNT_B</div><button class="eye-toggle">◉</button></article>
+        <article class="part"><div class="part-index">05</div><div class="part-shape"><i></i></div><div class="part-name">Neck Bracket</div><div class="part-code">NECK_BRKT_02</div><button class="eye-toggle">◉</button></article>
+        <article class="part"><div class="part-index">06</div><div class="part-shape"><i></i></div><div class="part-name">Rear Shell</div><div class="part-code">REAR_SHELL_C</div><button class="eye-toggle">◉</button></article>
+      </div>
+    </section>
+    <div class="grain"></div>
+  </main>
+  <script>
+    const drawer=document.getElementById('drawer');
+    document.getElementById('drawerToggle').addEventListener('click',()=>{
+      drawer.classList.toggle('collapsed');
+      document.querySelector('#drawerToggle span').textContent=drawer.classList.contains('collapsed')?'패널 펼치기':'패널 접기';
+    });
+    document.querySelectorAll('.part').forEach(part=>part.addEventListener('click',e=>{
+      if(e.target.classList.contains('eye-toggle'))return;
+      document.querySelectorAll('.part').forEach(p=>p.classList.remove('selected'));part.classList.add('selected');
+      document.querySelector('.selection-card h3').textContent=part.querySelector('.part-name').textContent;
+      document.querySelector('.selection-card p').textContent=part.querySelector('.part-code').textContent+' · 선택됨';
+    }));
+    document.querySelectorAll('.eye-toggle').forEach(btn=>btn.addEventListener('click',e=>{e.stopPropagation();btn.classList.toggle('off');btn.textContent=btn.classList.contains('off')?'○':'◉'}));
+    document.querySelectorAll('.tool').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tool').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}));
+    document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}));
+  </script>
+</body>
+</html>
