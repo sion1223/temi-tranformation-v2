@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TemiDelivery" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorPrimaryDark">@color/brand_blue_dark</item>
+        <item name="colorAccent">@color/action_green</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/screen_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/screen_background</item>
+        <item name="android:navigationBarColor">@color/screen_background</item>
+    </style>
+</resources>

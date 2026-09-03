@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/screen_title"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRobotConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:text="@string/refresh_robot"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnFeatureSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:text="@string/feature_settings"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnKillApp"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/error_red"
+                android:text="@string/kill_app"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvKioskStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnKioskSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="6dp"
+            android:text="@string/kiosk_setup_button"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/groupFeatureSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/panel_background"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvSchoolAssistantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feature_settings_title"
+                android:textColor="@color/brand_blue"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSchoolAssistantDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/feature_settings_description"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/groupSchoolQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchAiAssistant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_ai_assistant" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchSpeechOutput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_speech_output" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchVoiceInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_voice_input" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchKeepScreenOn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_keep_screen_on" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchImmersive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_immersive" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchBlockBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/setting_block_back" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchDeliveryControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_delivery_controls" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/setting_voice_mode"
+                android:textColor="@color/text_secondary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerVoiceMode"
+                android:layout_width="match_parent"
+                android:layout_height="52dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBasketIntegration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/setting_basket_integration" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etBasketUrl"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="2"
+                    android:hint="@string/basket_url_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textUri" />
+
+                <EditText
+                    android:id="@+id/etBasketDeviceId"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/basket_device_id_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/etBasketToken"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:hint="@string/basket_token_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveFeatureSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:text="@string/save_apply_settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupSchoolAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/panel_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_assistant_title"
+                android:textColor="@color/brand_blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/school_assistant_description"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSchoolQuestion"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:hint="@string/school_question_hint"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:maxLength="300"
+                    android:paddingHorizontal="14dp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/btnAskSchool"
+                    android:layout_width="220dp"
+                    android:layout_height="64dp"
+                    android:backgroundTint="@color/brand_blue"
+                    android:text="@string/find_teacher"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupVoiceInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnVoiceQuestion"
+                    android:layout_width="250dp"
+                    android:layout_height="58dp"
+                    android:text="@string/voice_question_start"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVoiceStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/voice_ready"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSchoolAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/school_answer_ready"
+                android:textColor="@color/text_primary"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupMissionOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/panel_background"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/current_mission"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvMissionPhase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMissionMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/brand_blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/groupFailure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/error_background"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_required"
+                        android:textColor="@color/error_red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvFailure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/text_primary"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/panel_background"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/configured_route"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/saved_locations"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSavedLocations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCurrentPose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/groupBasketStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/panel_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/basket_title"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBasketStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRefreshBasket"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:text="@string/refresh_basket"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnBasketSafeLock"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/error_red"
+                android:text="@string/basket_safe_lock"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupAiGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ai_guide_title"
+                    android:textColor="@color/brand_blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGuideItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAiGuideStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnExplainSupply"
+                android:layout_width="230dp"
+                android:layout_height="68dp"
+                android:backgroundTint="@color/brand_blue"
+                android:text="@string/explain_supply"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupPrimaryActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ButtonStyle">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/action_green"
+                android:text="@string/start_delivery"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnConfirmPickup"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/brand_blue"
+                android:text="@string/confirm_pickup"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/retry_navigation"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSkip"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/skip_stop"
+                android:textSize="17sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupSecondaryActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="ButtonStyle">
+
+            <Button
+                android:id="@+id/btnReturn"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/return_now"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/cancel_and_stop"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/prepare_new_mission"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnEmergencyStop"
+                android:layout_width="0dp"
+                android:layout_height="62dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/error_red"
+                android:enabled="false"
+                android:text="@string/emergency_stop"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "enabled": false,
+  "baseUrl": "http://192.168.104.252",
+  "deviceId": "basket-01",
+  "deviceToken": "",
+  "connectTimeoutMillis": 1500,
+  "readTimeoutMillis": 2000,
+  "staleAfterMillis": 3000
+}

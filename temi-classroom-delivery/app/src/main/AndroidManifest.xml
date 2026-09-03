@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Requested only when the administrator enables OpenAI microphone input. -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- robotemi SDK's broad sample-era storage permissions are not needed by this feature. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"
+        tools:node="remove" />
+
+    <application
+        android:name=".TemiDeliveryApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_robot_delivery"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TemiDelivery">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            tools:ignore="DiscouragedApi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Makes the application visible as a temi skill. Navigation, saved-location
+             lookup, getPosition(), and TTS do not require a temi runtime permission. -->
+        <meta-data
+            android:name="com.robotemi.sdk.metadata.SKILL"
+            android:value="@string/app_name" />
+
+        <!-- temi Launcher can select this skill as the home/Kiosk application. -->
+        <meta-data
+            android:name="com.robotemi.sdk.metadata.KIOSK"
+            android:value="true" />
+
+        <!-- Required for the explicit administrator action that disables Kiosk. -->
+        <meta-data
+            android:name="com.robotemi.sdk.metadata.PERMISSIONS"
+            android:value="com.robotemi.permission.settings" />
+
+        <!-- temi Launcher reopens the selected Kiosk app after boot. The receiver
+             only waits for SDK readiness and never launches an Activity itself. -->
+        <receiver
+            android:name=".TemiBootCompleteReceiver"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.robotemi.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

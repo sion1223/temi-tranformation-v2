@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Local classroom testing can use the teacher PC's http:// LAN address.
+         Release builds keep Android's HTTPS-only default. -->
+    <application android:usesCleartextTraffic="true" />
+</manifest>

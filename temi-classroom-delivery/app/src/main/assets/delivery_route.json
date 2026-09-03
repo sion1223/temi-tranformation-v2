@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "name": "1교시 과학 수업용품 배부",
+  "speed": "VERY_SLOW",
+  "highAccuracyArrival": true,
+  "returnDestination": {
+    "type": "saved_location",
+    "name": "교탁",
+    "label": "교탁"
+  },
+  "stops": [
+    {
+      "id": "group-1",
+      "recipient": "1모둠 학생들",
+      "supply": "과학 실험 키트",
+      "quantity": 1,
+      "guideItemId": "science-kit",
+      "destination": {
+        "type": "saved_location",
+        "name": "배부-1",
+        "label": "1모둠"
+      }
+    },
+    {
+      "id": "group-2",
+      "recipient": "2모둠 학생들",
+      "supply": "과학 실험 키트",
+      "quantity": 1,
+      "guideItemId": "science-kit",
+      "destination": {
+        "type": "saved_location",
+        "name": "배부-2",
+        "label": "2모둠"
+      }
+    },
+    {
+      "id": "group-3",
+      "recipient": "3모둠 학생들",
+      "supply": "과학 실험 키트",
+      "quantity": 1,
+      "guideItemId": "science-kit",
+      "destination": {
+        "type": "saved_location",
+        "name": "배부-3",
+        "label": "3모둠"
+      }
+    }
+  ]
+}

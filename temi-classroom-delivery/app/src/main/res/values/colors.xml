@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="screen_background">#F3F6FA</color>
+    <color name="panel_background_color">#FFFFFFFF</color>
+    <color name="text_primary">#172033</color>
+    <color name="text_secondary">#5E687A</color>
+    <color name="brand_blue">#1769E0</color>
+    <color name="brand_blue_dark">#0E4BA8</color>
+    <color name="action_green">#16824B</color>
+    <color name="status_ok">#087A45</color>
+    <color name="status_warning">#A75B00</color>
+    <color name="error_red">#B42318</color>
+    <color name="error_background">#FFF0EE</color>
+</resources>

@@ -1,0 +1,23 @@
+{
+  "name": "temi-ai-guide-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Teacher-managed supply guide backend for the temi classroom delivery app.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file=.env --env-file-if-exists=.env.local dist/src/index.js",
+    "test": "npm run build && node --test dist/test/config.test.js dist/test/directory-http.test.js dist/test/guide-service.test.js dist/test/http-server.test.js dist/test/nvidia-generator.test.js dist/test/openai-generator.test.js dist/test/provider-fallback.test.js dist/test/school-answer-service.test.js dist/test/staff-directory.test.js dist/test/transcription-http.test.js dist/test/transcription.test.js",
+    "check": "npm run test"
+  },
+  "dependencies": {
+    "openai": "7.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "typescript": "7.0.2"
+  }
+}
