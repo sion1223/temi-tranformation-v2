@@ -21,7 +21,7 @@ class TemiVoiceActivationController(
         registered = true
         robot.addWakeupWordListener(this)
         robot.addAsrListener(this)
-        onStatus("'Hey temi' 호출을 기다리는 중입니다.")
+        onStatus("'Hey temi' 호출을 기다리는 중입니다. 이동 명령이나 질문을 말할 수 있습니다.")
     }
 
     fun stop() {
@@ -53,11 +53,11 @@ class TemiVoiceActivationController(
         if (!registered || !awaitingAnswer) return
         awaitingAnswer = false
         val normalized = asrResult.trim()
+        runCatching { robot.finishConversation() }
         if (normalized.isEmpty()) {
             onStatus("음성을 알아듣지 못했습니다. 다시 불러 주세요.")
             return
         }
-        runCatching { robot.finishConversation() }
         onStatus("temi 내장 음성 인식 완료")
         onTranscript(normalized)
     }

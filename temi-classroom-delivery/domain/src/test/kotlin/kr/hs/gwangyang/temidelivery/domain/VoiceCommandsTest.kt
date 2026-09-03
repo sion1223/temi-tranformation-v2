@@ -19,6 +19,7 @@ class VoiceCommandInterpreterTest {
             "홈 베이스로 이동해 줘",
             "충전기로 가 주세요",
             "충전하러 가",
+            "홈베이스로 가세요",
         )
 
         phrases.forEach { phrase ->
@@ -60,6 +61,14 @@ class VoiceCommandInterpreterTest {
         assertEquals(
             VoiceCommandInterpretation.NotACommand,
             interpreter.interpret("홈베이스가 어디에 있나요?", emptyList()),
+        )
+    }
+
+    @Test
+    fun `ordinary Korean text ending in ga particle is not treated as navigation`() {
+        assertEquals(
+            VoiceCommandInterpretation.NotACommand,
+            interpreter.interpret("진로 상담 담당자가?", listOf("상담실")),
         )
     }
 

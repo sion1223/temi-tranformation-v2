@@ -93,10 +93,12 @@ class VoiceCommandInterpreter {
             "멈춰",
             "멈춰줘",
             "멈춰주세요",
+            "멈추세요",
             "정지",
             "정지해",
             "정지해줘",
             "정지해주세요",
+            "정지하세요",
             "이동멈춰",
             "이동을멈춰",
             "주행정지",
@@ -111,6 +113,7 @@ class VoiceCommandInterpreter {
             "따라와",
             "따라와줘",
             "따라와주세요",
+            "따라오세요",
             "나를따라와",
             "나를따라와줘",
             "나를따라오세요",
@@ -128,6 +131,7 @@ class VoiceCommandInterpreter {
             "충전하러가",
             "충전하러가줘",
             "충전하러가주세요",
+            "충전하러가세요",
             "홈베이스로복귀해",
             "홈베이스로복귀해줘",
             "홈베이스로돌아가",
@@ -160,6 +164,10 @@ class VoiceCommandInterpreter {
             "까지이동해주세요",
             "로이동해주세요",
             "에이동해주세요",
+            "으로이동하세요",
+            "까지이동하세요",
+            "로이동하세요",
+            "에이동하세요",
             "으로이동해줘",
             "까지이동해줘",
             "로이동해줘",
@@ -168,10 +176,18 @@ class VoiceCommandInterpreter {
             "까지가주세요",
             "로가주세요",
             "에가주세요",
+            "으로가세요",
+            "까지가세요",
+            "로가세요",
+            "에가세요",
             "으로돌아가줘",
             "로돌아가줘",
             "으로복귀해줘",
             "로복귀해줘",
+            "으로돌아가세요",
+            "로돌아가세요",
+            "으로복귀하세요",
+            "로복귀하세요",
             "으로이동해",
             "까지이동해",
             "로이동해",
@@ -189,11 +205,12 @@ class VoiceCommandInterpreter {
             "로가",
             "에가",
             "이동해주세요",
+            "이동하세요",
             "이동해줘",
             "가주세요",
+            "가세요",
             "이동해",
             "가줘",
-            "가",
         )
     }
 }
@@ -297,6 +314,14 @@ class HandleVoiceCommandUseCase(
                     ?: "기존 배부 작업을 정지하지 못했습니다."
                 return VoiceCommandResult.Failed(
                     "기존 작업을 안전하게 정지하지 못해 음성 이동 명령을 실행하지 않았습니다: $reason",
+                )
+            }
+        } else {
+            val stopFailure = runCatching { robotGateway.stopMovement() }.exceptionOrNull()
+            if (stopFailure != null) {
+                return VoiceCommandResult.Failed(
+                    "기존 움직임을 안전하게 정지하지 못해 새 음성 명령을 실행하지 않았습니다: " +
+                        stopFailure.safeMessage(),
                 )
             }
         }

@@ -93,7 +93,6 @@
             android:visibility="gone">
 
             <TextView
-                android:id="@+id/tvSchoolAssistantTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/feature_settings_title"
@@ -102,7 +101,6 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvSchoolAssistantDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
@@ -111,7 +109,6 @@
                 android:textSize="14sp" />
 
             <LinearLayout
-                android:id="@+id/groupSchoolQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -246,6 +243,7 @@
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/tvSchoolAssistantTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/school_assistant_title"
@@ -254,6 +252,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvSchoolAssistantDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -262,6 +261,7 @@
                 android:textSize="15sp" />
 
             <LinearLayout
+                android:id="@+id/groupSchoolQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

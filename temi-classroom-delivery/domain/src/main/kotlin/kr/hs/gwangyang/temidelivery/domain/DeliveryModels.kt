@@ -22,10 +22,12 @@ sealed interface Destination {
     ) : Destination
 }
 
-enum class DeliverySpeed {
-    VERY_SLOW,
-    SLOW,
-    MEDIUM,
+enum class DeliverySpeed(
+    val maxMetersPerSecond: Float,
+) {
+    VERY_SLOW(0.2f),
+    SLOW(0.5f),
+    MEDIUM(0.7f),
 }
 
 data class DeliveryStop(

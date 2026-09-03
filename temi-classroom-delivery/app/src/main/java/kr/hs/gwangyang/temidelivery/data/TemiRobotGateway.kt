@@ -7,6 +7,7 @@ import com.robotemi.sdk.listeners.OnLocationsUpdatedListener
 import com.robotemi.sdk.listeners.OnRobotReadyListener
 import com.robotemi.sdk.navigation.model.Position
 import com.robotemi.sdk.navigation.model.SpeedLevel
+import com.robotemi.sdk.permission.Permission
 import kr.hs.gwangyang.temidelivery.domain.DeliverySpeed
 import kr.hs.gwangyang.temidelivery.domain.Destination
 import kr.hs.gwangyang.temidelivery.domain.NavigationEvent
@@ -91,7 +92,10 @@ class TemiRobotGateway(
 
     override fun refreshRobotState() {
         val ready = robot.isReady
-        if (ready) applyStartupSafetyStop()
+        if (ready) {
+            applyStartupSafetyStop()
+            applyDefaultMovementSpeeds()
+        }
         _isReady.value = ready
         _savedLocations.value = if (ready) {
             robot.locations.sortedWith(String.CASE_INSENSITIVE_ORDER)
@@ -117,7 +121,7 @@ class TemiRobotGateway(
         speed: DeliverySpeed,
         highAccuracyArrival: Boolean,
     ) {
-        val sdkSpeed = speed.toSdkSpeed()
+        val sdkSpeed = speed.toSdkNavigationSpeed()
         when (destination) {
             is Destination.SavedLocation -> robot.goTo(
                 location = destination.name,
@@ -143,7 +147,7 @@ class TemiRobotGateway(
     }
 
     override fun followMe(speed: DeliverySpeed) {
-        robot.beWithMe(speed.toSdkSpeed())
+        robot.beWithMe(speed.toSdkFollowSpeed())
     }
 
     override fun speak(text: String) {
@@ -168,9 +172,38 @@ class TemiRobotGateway(
         }
     }
 
-    private fun DeliverySpeed.toSdkSpeed() = when (this) {
-        DeliverySpeed.VERY_SLOW -> SpeedLevel.VERY_SLOW
-        DeliverySpeed.SLOW -> SpeedLevel.SLOW
+    /** Keep temi's launcher defaults low for movement started outside explicit app goTo calls. */
+    private fun applyDefaultMovementSpeeds() {
+        val canChangeSettings = runCatching {
+            robot.checkSelfPermission(Permission.SETTINGS) == Permission.GRANTED
+        }.getOrDefault(false)
+        if (!canChangeSettings) return
+
+        runCatching {
+            if (robot.goToSpeed != SpeedLevel.VERY_SLOW) {
+                robot.goToSpeed = SpeedLevel.VERY_SLOW
+            }
+        }
+        runCatching {
+            if (robot.getFollowSpeed() != SpeedLevel.SLOW) {
+                robot.setFollowSpeed(SpeedLevel.SLOW)
+            }
+        }
+    }
+
+    /**
+     * Use an explicit max speed for every request. In particular, the app's VERY_SLOW
+     * policy is 0.2 m/s, below temi's 0.3 m/s VERY_SLOW preset.
+     */
+    private fun DeliverySpeed.toSdkNavigationSpeed() =
+        SpeedLevel.customSpeed(maxMetersPerSecond)
+
+    /** temi follow mode supports SLOW as its lowest speed and ignores custom speeds. */
+    private fun DeliverySpeed.toSdkFollowSpeed() = when (this) {
+        DeliverySpeed.VERY_SLOW,
+        DeliverySpeed.SLOW,
+        -> SpeedLevel.SLOW
+
         DeliverySpeed.MEDIUM -> SpeedLevel.MEDIUM
     }
 

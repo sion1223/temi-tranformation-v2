@@ -12,8 +12,8 @@ android {
         // The target robot runs Android 11 (API 30). Keeping targetSdk at 30 avoids
         // introducing newer platform behavior changes on this sideloaded robot app.
         targetSdk = 30
-        versionCode = 7
-        versionName = "0.4.2"
+        versionCode = 8
+        versionName = "0.4.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
