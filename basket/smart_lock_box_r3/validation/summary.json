@@ -1,0 +1,61 @@
+{
+  "revision": "R3-A4",
+  "tested_at_utc": "2026-09-08T15:36:41.166838+00:00",
+  "cad_and_software_pass": true,
+  "physical_hardware_pass": null,
+  "physical_paper_detection_tested": false,
+  "release_motion_samples": 632,
+  "animation_frames": 144,
+  "locked_contact_degrees": 0.2,
+  "unexpected_static_intersections": 0,
+  "firmware_host_checks": {
+    "core_tests": 207,
+    "sketch_tests": 28,
+    "python_protocol_tests": 10
+  },
+  "arduino_board": "arduino:avr:nano:cpu=atmega328",
+  "flash_bytes": 20504,
+  "static_ram_bytes": 999,
+  "stack_headroom_bytes": 1049,
+  "note": "Headroom is a link-time allocation, not a measured runtime stack high-water mark. I/O in sketch tests is mocked.",
+  "hardware_release_blockers": [
+    "5 g/A4 repeated physical detection and drift",
+    "actual load cell/switch/actuator installation",
+    "payload and retention-force rating",
+    "thermal and low-voltage operation",
+    "watchdog/BOD on actual Nano",
+    "robot motion adapter and mounting/head sweep",
+    "power source or protected battery selection"
+  ],
+  "sha256": {
+    "smart_lock_box_r3.blend": "6ed63694638368050c0eb22d69837bc0f2a68b9f92c67729d8eb310fe0f39053",
+    "smart_lock_box_r3.glb": "d1fd8f25d4bcac98fd59172f11b9864f2a24be60a8f2406c6e0ab6a12414332f",
+    "design_parameters.json": "eca2bef72f881aa9d70f910dff1ebe9091a2cdf7cef98c68b658fbbc7619f826",
+    "build_r3.py": "5de6e5fba027295193b381f21fc3bc38ac86eda226f20d152638a0dd334d9805",
+    "verify_geometry.py": "8c0715039ed82d8e54fe33679377780030bc73420f3322e4a0d45b1bc64b7949",
+    "audit_static.py": "7b5c44376b2b8b6852ac1132c714901e90b0d1ae1e323ccd9127eba3fa12bd8c",
+    "tools/box_client.py": "67068f81435be2c1585b8ec57ead298f16db041fda517bcf0036b1aab47739ea",
+    "firmware/smart_lock_box/auth.h": "a9ce6c6380a59a84e0ba2138d4d0d47c02960fbd248050edea5f486d9a5d138d",
+    "firmware/smart_lock_box/control.h": "a8d23848bb70992fb9816c552a9d6badf770d6784d597d64c39293c4cb8f1e49",
+    "firmware/smart_lock_box/Crypto.h": "6b30881d791681f6c7fb84698758e615632e3f9232fdbb59dd55fefc2f38467f",
+    "firmware/smart_lock_box/SHA256.h": "60f51f88b26468d430b29b885774b7e330f1f7309dfb36b80405e0f239173944",
+    "firmware/smart_lock_box/smart_lock_box.ino": "9ccb6a1aa7431ab102fb4de13e0103e2edb68feafe192435be321ef1e9b54dde",
+    "firmware/smart_lock_box/src/Crypto/Crypto.cpp": "ee661a18648ccf5e04bb62b4a012e29f1ad214d08e7897fa73fd7c2c317d8ff7",
+    "firmware/smart_lock_box/src/Crypto/Crypto.h": "9fa162c8380948d9e5d5e1b05ccb238119333bb2277ed9568c5484e8b99c26bb",
+    "firmware/smart_lock_box/src/Crypto/Hash.cpp": "e194af2180148e815f4852f1ba90ad98aa0cad469fb79b077846d2641c24aaae",
+    "firmware/smart_lock_box/src/Crypto/Hash.h": "f15a140cc06ae2b7bead192e5d08c86e6a8c4f6d3fc42147666e7d40cfd2407b",
+    "firmware/smart_lock_box/src/Crypto/SHA256.cpp": "a53c030e47c60e4638aa22b667907b5f3eefd0c283ad3d8c083ce56cba4c7be3",
+    "firmware/smart_lock_box/src/Crypto/SHA256.h": "9a5c177cfc7ea1aff0536a64eee2ee0c6534e9cf752c1349b6d6aec6966cd218",
+    "firmware/smart_lock_box/src/Crypto/utility/EndianUtil.h": "00b98849950847786f2fba9c94c4da3e5a2f1785440455f618c4b775b86fc1d0",
+    "firmware/smart_lock_box/src/Crypto/utility/ProgMemUtil.h": "b540e8494892f13ceafb77d3b982f678510a3f41258d1a7517b7d4ac409c3ec8",
+    "firmware/smart_lock_box/src/Crypto/utility/RotateUtil.h": "8c134e9afa92b28793bc65160a38bb013a31eff9155adcc7371ec8c40cfd0a23"
+  },
+  "glb_label_revalidated_utc": "2026-09-08T15:41:51.582838+00:00",
+  "documentation": {
+    "pdf_pages": 8,
+    "text_out_of_page_bounds": [],
+    "all_pages_rendered": true,
+    "physical_test_rows": 180,
+    "physical_rows_all_not_run": true
+  }
+}

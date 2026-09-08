@@ -1,0 +1,269 @@
+{
+  "scope": "Sampled surface intersections plus containment. No contact-force, stiffness, thermal, printed-part tolerances or actual robot mounting simulation.",
+  "sampled_release_poses": 632,
+  "moving_meshes": 10,
+  "fixed_meshes": 95,
+  "released_motion_intersections": {},
+  "actual_animation_frames": 144,
+  "animation_intersections": {},
+  "locked_first_contact_deg": 0.2,
+  "latch_tolerance_cases": [
+    {
+      "offset_mm": [
+        -0.3,
+        -0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        -0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        -0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        -0.3,
+        0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        -0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        -0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        -0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0,
+        0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        -0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        -0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        -0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0.3,
+        -0.3
+      ],
+      "first_contact_deg": 0.25,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0.3,
+        0
+      ],
+      "first_contact_deg": 0.2,
+      "released_at_rest": true
+    },
+    {
+      "offset_mm": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "first_contact_deg": 0.1,
+      "released_at_rest": true
+    }
+  ],
+  "weighing_assembly_intersections_0_to_0p6mm": {},
+  "fabrication_nonmanifold": [],
+  "tray_size_mm": [
+    213.5,
+    308.0,
+    3.0
+  ],
+  "a4_210x297_fits": true,
+  "closed_storage_depth_mm": 19.0,
+  "stowed_top_mm": 252.1999969482422,
+  "stowed_protrusion_above_78_mm": 174.1999969482422,
+  "excluded": "wires and compliant switch levers, threaded interference inside purchased load cell, actual load cell deflection shape",
+  "hardware_tests_done": false,
+  "geometry_pass": true
+}

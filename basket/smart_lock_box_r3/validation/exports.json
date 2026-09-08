@@ -1,0 +1,16 @@
+{
+  "scale_ok": true,
+  "closed_size_metres_X_Yup_Z": [
+    0.255000019741245,
+    0.07800001157261469,
+    0.324000030647964
+  ],
+  "animation_count": 1,
+  "animation_targets": [
+    "R3_lock_bolt_4p3mm",
+    "RIG_도어_Y축회전_하강"
+  ],
+  "stl_units": "millimetres",
+  "print_stl_count": 30,
+  "fabrication_reference_stl_count": 10
+}

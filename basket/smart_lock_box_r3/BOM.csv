@@ -1,0 +1,39 @@
+﻿reference,part,quantity,procurement_note
+U1,Arduino Nano ATmega328P 5 V,1,검증한 AVR core 1.8.8. watchdog 복구 가능한 부트로더를 실제 확인
+LC1,Zemic L6D-C3-3kg-0.40B,1,"총 하중 3 kg, 플랫폼 250×350 mm. 실제 형상·M6·출구 확인"
+U2,"HX711 carrier, external AVDD 5 V configuration",1,10 SPS / A gain128. 내부 4.3 V 모듈을 5 V로 오인하지 않음
+L1,Adafruit 5065 / HD2728L-12-28A,1,"12 V 솔레노이드, 4.3 mm 모델 스트로크. 스프링·스위치 실측"
+U3,Pololu D24V10F5,1,"12→5 V, Nano 5V 입력"
+Q1,IRLZ44N,1,5 V 게이트 논리레벨 MOSFET
+D0,SB310,1,입력 역극성 보호
+D1,1N4007,1,"코일 플라이백, 띠=코일 +"
+F1,T1A DC fuse + holder,1,입력 퓨즈. 허용 전압·차단용량 확인
+J0,12 V panel connector,1,"안정화 외부 12 V, 입력 공급원은 사용자 미선정"
+"S1,S2",Low force lever microswitch,2,"후퇴/전진; 긴 레버 조정 외형, 정확한 구매품 미선정"
+"S3,S4",Reed switch + magnet,2,"도어/격납, 실제 감지거리 확인"
+"S5,S6",Panel/deck installed switch,2,"정상 장착시 GND 접점 닫힘, 단선시 고장"
+U4,3.3 V UART BLE module,1,"실물 미선정, 27×13 mm 예약 외형"
+U5,MCP1700-3302 or specified 3.3 V LDO,1,"5 V 입력, 입출력 각 1 µF"
+"RG,RPD",220 Ω / 47 kΩ,각 1,게이트 직렬/풀다운
+"RV1,RV2",100 kΩ / 33 kΩ 1%,각 1,A6 전압 분압
+R1K,1 kΩ,4,A6 직렬 / LED / BLE RX 분압 상단 / 예비
+RB,2 kΩ,1,BLE RX 분압 하단
+RHX,100 Ω matched,2,HX711 차동 입력 각 1개
+FB1,Low DCR ferrite bead,1,HX711/셀 아날로그 5 V
+C12,470 µF 25 V,1,보호 12 V 버스
+C5,47 µF,1,5 V 버스
+CHX,10 µF + 100 nF,각 1,AVDD 근접
+CDIFF,100 nF,1,HX711 INA+~INA-
+CADC,100 nF,1,A6 GND 필터
+CBYP,100 nF,4,보드 바이패스
+CLDO,1 µF,2,LDO 입출력
+LED,Status LED,1,D6 / 직렬 1 kΩ
+J1..J4,Keyed connector pairs,4 세트,"2P 코일, 8P 상태, 5P 셀, 4P 탬퍼"
+P1,213.5×308×3 mm aluminium tray,1,"상면 나사 플러시, 모서리 디버링; 사하중 약 0.53 kg"
+P2,Fixed electronics protection deck,1,"Z41~44, 셀 스페이서/키퍼 개구"
+K1,1.5 mm stainless keeper,1,"밑면 체결, 절곡·인장 시험 필요"
+"G1,G2",Metal door guides,2,기존 가이드 형상. 상단 1 mm 구간 강도 미검증
+LID,8 mm machined door,1,도어 밑면 블라인드 키퍼 체결
+MECH,"Base, wall parts, spacers, stops, screws",1 세트,STL/형상참고. 큰 부품은 출력기/가공 방식 결정 필요
+HARNESS,Shielded cell cable + coil/signal harness,1 세트,셀 신호/코일 전류 분리; 정비 여장 및 그로밋
+BATTERY,NOT SELECTED / NOT FITTED,0,배터리 요구 시 보호팩+전용충전+12 V 승강압 및 체결 검증 추가

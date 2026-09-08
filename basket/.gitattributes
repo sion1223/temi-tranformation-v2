@@ -1,0 +1,2 @@
+# Preserve the exact bytes recorded in the R3 validation/package manifests.
+smart_lock_box_r3/** -text

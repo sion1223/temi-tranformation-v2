@@ -1,0 +1,18 @@
+Sketch uses 20504 bytes (66%) of program storage space. Maximum is 30720 bytes.
+Global variables use 999 bytes (48%) of dynamic memory, leaving 1049 bytes for local variables. Maximum is 2048 bytes.
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp: In function 'void* operator new(std::size_t, std::nothrow_t)':
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp:59:60: warning: unused parameter 'tag' [-Wunused-parameter]
+ void * operator new(std::size_t size, const std::nothrow_t tag) noexcept {
+                                                            ^~~
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp: In function 'void* operator new [](std::size_t, const std::nothrow_t&)':
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp:68:63: warning: unused parameter 'tag' [-Wunused-parameter]
+ void * operator new[](std::size_t size, const std::nothrow_t& tag) noexcept {
+                                                               ^~~
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp: In function 'void operator delete(void*, const std::nothrow_t&)':
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp:103:55: warning: unused parameter 'tag' [-Wunused-parameter]
+ void operator delete(void* ptr, const std::nothrow_t& tag) noexcept {
+                                                       ^~~
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp: In function 'void operator delete [](void*, const std::nothrow_t&)':
+C:\Users\sions\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.8\cores\arduino\new.cpp:106:57: warning: unused parameter 'tag' [-Wunused-parameter]
+ void operator delete[](void* ptr, const std::nothrow_t& tag) noexcept {
+                                                         ^~~

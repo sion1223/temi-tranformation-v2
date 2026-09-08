@@ -1,0 +1,14 @@
+{
+  "basis": "Current basket native file matches archived R2; v2 differs",
+  "original_files_unchanged": true,
+  "sha256": {
+    "smart_lock_box.blend": "e7e2699b10d669a692eb17d8f95a8b7336813259c8fd563e881be162358a9f58",
+    "smart_lock_box_model.zip": "9e0f639377ae4142f64fea0cf3bf4ab4f234a7ee5b2211a60fa16b68d2a576f3",
+    "smart_lock_box_v2.zip": "9cbe690a942e7ca0626b86f5241934aaa772d00d68c48b0adb42713967e4c181",
+    "assembly_and_circuit.pdf": "5400d3b3d3ccbab5bee3d6d4ac713265c791c22fb1b51b2ebe46286740543e56"
+  },
+  "r2_blend_sha256": "e7e2699b10d669a692eb17d8f95a8b7336813259c8fd563e881be162358a9f58",
+  "v2_blend_sha256": "15814907f86b7decb40fb41760398d777a4721004cad11319b92e501e062b0a0",
+  "crypto": "Subset of rweather/arduinolibs Crypto, downloaded 2026-09-09 KST. Original MIT licence notices preserved in each file. Exact file hashes are in package_manifest.json.",
+  "manufacturing_status": "prototype CAD only; no physical paper/load/lock/thermal/robot qualification"
+}

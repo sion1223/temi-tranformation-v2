@@ -1,0 +1,35 @@
+{
+  "revision": "R3-A4",
+  "requirements": {
+    "storage": "one undivided weighing tray over a protected electronics floor",
+    "minimum_item": "one A4 sheet, 80 g/m2, nominal 4.9896 g",
+    "maximum_payload": "not specified; 1000 g provisional software limit, not a certified load rating"
+  },
+  "outside_mm": [255, 324, 78],
+  "tray_min_mm": [24, 8, 48],
+  "tray_max_mm": [237.5, 316, 51],
+  "fixed_deck_z_mm": [41, 44],
+  "cell": {
+    "candidate": "Zemic L6D-C3-3kg-0.40B",
+    "capacity_g": 3000,
+    "platform_limit_mm": [250, 350],
+    "envelope_mm": [30, 130, 22],
+    "min_mm": [115.75, 42, 14],
+    "geometry_status": "manufacturer envelope; procurement drawing and mounting pattern must be checked before machining"
+  },
+  "power": {
+    "input": "regulated 12 V DC, current-limited bench supply for prototype",
+    "internal_battery": false,
+    "robot_port_verified": false
+  },
+  "sensor_acceptance": {
+    "sample_rate_hz": 10,
+    "stable_window_samples": 20,
+    "stable_peak_to_peak_g": 0.8,
+    "occupied_on_g": 3.0,
+    "occupied_off_g": 1.0,
+    "paper_positions": 9,
+    "repetitions_per_position": 10,
+    "required_real_hardware_test": true
+  }
+}

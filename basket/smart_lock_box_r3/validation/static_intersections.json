@@ -1,0 +1,112 @@
+{
+  "all_pairs": [
+    {
+      "pair": [
+        "R3_deck_support",
+        "R3_deck_inside_M3"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "R3_deck_support.001",
+        "R3_deck_inside_M3.001"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "R3_deck_support.002",
+        "R3_deck_inside_M3.002"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "R3_deck_support.003",
+        "R3_deck_inside_M3.003"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "R3_captive_front_panel",
+        "R3_panel_inside_M3"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "R3_captive_front_panel",
+        "R3_panel_inside_M3.001"
+      ],
+      "reason": "M3 thread engagement (thread envelope)"
+    },
+    {
+      "pair": [
+        "도어_본체",
+        "도어_숄더볼트_앞"
+      ],
+      "reason": "Original shoulder bolt threaded engagement"
+    },
+    {
+      "pair": [
+        "도어_본체",
+        "도어_숄더볼트_뒤"
+      ],
+      "reason": "Original shoulder bolt threaded engagement"
+    },
+    {
+      "pair": [
+        "잠금_5065_프레임",
+        "잠금_5065_코일"
+      ],
+      "reason": "Internal parts of one purchased solenoid; envelope-only CAD"
+    },
+    {
+      "pair": [
+        "잠금_5065_프레임",
+        "잠금_5065_플랜지"
+      ],
+      "reason": "Internal parts of one purchased solenoid; envelope-only CAD"
+    },
+    {
+      "pair": [
+        "잠금_5065_프레임",
+        "R3_lock_bolt_4p3mm"
+      ],
+      "reason": "Internal parts of one purchased solenoid; envelope-only CAD"
+    },
+    {
+      "pair": [
+        "R3_cell_loaded_M6",
+        "R3_L6D_3kg_envelope"
+      ],
+      "reason": "M6 thread engagement in manufacturer sensor"
+    },
+    {
+      "pair": [
+        "R3_cell_loaded_M6.001",
+        "R3_L6D_3kg_envelope"
+      ],
+      "reason": "M6 thread engagement in manufacturer sensor"
+    },
+    {
+      "pair": [
+        "R3_cell_fixed_M6",
+        "R3_L6D_3kg_envelope"
+      ],
+      "reason": "M6 thread engagement in manufacturer sensor"
+    },
+    {
+      "pair": [
+        "R3_cell_fixed_M6.001",
+        "R3_L6D_3kg_envelope"
+      ],
+      "reason": "M6 thread engagement in manufacturer sensor"
+    }
+  ],
+  "unexpected": [],
+  "pass": true,
+  "scope": "Rest assembly, mesh surfaces/containment. Only explicit threaded joints and internal solenoid envelopes accepted."
+}

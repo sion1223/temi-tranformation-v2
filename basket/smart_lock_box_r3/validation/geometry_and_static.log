@@ -1,0 +1,49 @@
+00:00.813  blend            | Read blend: "C:\Users\sions\OneDrive\바탕 화면\temi tranformation v2\basket\revision_r3\release\smart_lock_box_r3.blend"
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+{
+  "scope": "Sampled surface intersections plus containment. No contact-force, stiffness, thermal, printed-part tolerances or actual robot mounting simulation.",
+  "sampled_release_poses": 632,
+  "moving_meshes": 10,
+  "fixed_meshes": 95,
+  "released_motion_intersections": {},
+  "actual_animation_frames": 144,
+  "animation_intersections": {},
+  "locked_first_contact_deg": 0.2,
+  "weighing_assembly_intersections_0_to_0p6mm": {},
+  "fabrication_nonmanifold": [],
+  "tray_size_mm": [
+    213.5,
+    308.0,
+    3.0
+  ],
+  "a4_210x297_fits": true,
+  "closed_storage_depth_mm": 19.0,
+  "stowed_top_mm": 252.1999969482422,
+  "stowed_protrusion_above_78_mm": 174.1999969482422,
+  "excluded": "wires and compliant switch levers, threaded interference inside purchased load cell, actual load cell deflection shape",
+  "hardware_tests_done": false,
+  "geometry_pass": true
+}
+STATIC_PAIRS 15
+R3_deck_support / R3_deck_inside_M3
+R3_deck_support.001 / R3_deck_inside_M3.001
+R3_deck_support.002 / R3_deck_inside_M3.002
+R3_deck_support.003 / R3_deck_inside_M3.003
+R3_captive_front_panel / R3_panel_inside_M3
+R3_captive_front_panel / R3_panel_inside_M3.001
+도어_본체 / 도어_숄더볼트_앞
+도어_본체 / 도어_숄더볼트_뒤
+잠금_5065_프레임 / 잠금_5065_코일
+잠금_5065_프레임 / 잠금_5065_플랜지
+잠금_5065_프레임 / R3_lock_bolt_4p3mm
+R3_cell_loaded_M6 / R3_L6D_3kg_envelope
+R3_cell_loaded_M6.001 / R3_L6D_3kg_envelope
+R3_cell_fixed_M6 / R3_L6D_3kg_envelope
+R3_cell_fixed_M6.001 / R3_L6D_3kg_envelope
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

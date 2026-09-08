@@ -1,0 +1,446 @@
+{
+  "revision": "R3-A4",
+  "physical_tests": "NOT_RUN",
+  "files": {
+    "assembly_and_circuit_r3.pdf": {
+      "sha256": "261d9775c737223c3f86485a9a0d092c8af2ecdad749b5981b03750d466a5706",
+      "bytes": 3009140
+    },
+    "audit_static.py": {
+      "sha256": "7b5c44376b2b8b6852ac1132c714901e90b0d1ae1e323ccd9127eba3fa12bd8c",
+      "bytes": 1857
+    },
+    "BOM.csv": {
+      "sha256": "3b60822a3c4f296502fab0ce786777ca260ece2c1cb381ddb7fa096f06041c63",
+      "bytes": 2737
+    },
+    "build_r3.py": {
+      "sha256": "5de6e5fba027295193b381f21fc3bc38ac86eda226f20d152638a0dd334d9805",
+      "bytes": 19630
+    },
+    "design_parameters.json": {
+      "sha256": "eca2bef72f881aa9d70f910dff1ebe9091a2cdf7cef98c68b658fbbc7619f826",
+      "bytes": 1173
+    },
+    "drawings/01_single_tray_open.png": {
+      "sha256": "cc06e590f47b266029594ee7d6b25dfda4906345d00c437e74bc1405140f7704",
+      "bytes": 1166174
+    },
+    "drawings/02_a4_fit.png": {
+      "sha256": "51b3dc62e88fa72bd78795c9a21fdea12f5fc2c7b036c6551e115714fd864ebc",
+      "bytes": 1168748
+    },
+    "drawings/03_lower_electronics.png": {
+      "sha256": "d070706e9b8fdc118a6d57f32bcb195d6ef36ce1ffdafc53cc7367232d62c31d",
+      "bytes": 1260382
+    },
+    "drawings/04_single_point_load_path.png": {
+      "sha256": "e9dcb3b390e7bdb240b1f2a37376e92f249a935bd417846198d0ec90d59ddbd2",
+      "bytes": 1102717
+    },
+    "drawings/05_underfloor_latch.png": {
+      "sha256": "f00dc14177752042158e67a1ec7b29d546cbc968989b5e7f47e7d36309ab3570",
+      "bytes": 1147860
+    },
+    "drawings/06_stowed_elevation.png": {
+      "sha256": "02e00ed650799bd96c11a5e66739c24caf606b1d52635e918f8502bcae04b9a9",
+      "bytes": 1102896
+    },
+    "drawings/07_double_floor_exploded.png": {
+      "sha256": "ad714a99ad6ee15e4eae23f338f22db03af55559be5f745e928417a3127270d4",
+      "bytes": 1161379
+    },
+    "fabrication/R3_base_255x324.stl": {
+      "sha256": "a6d654ed8f0009718f839cdb4bfb36b6740f3109274cdda5f7721a72a8c41e82",
+      "bytes": 27084
+    },
+    "fabrication/R3_cell_fixed_pedestal.stl": {
+      "sha256": "ee85a8b515294593a9ebff1023a6ea5198b3f41392526cb2c08f192367c97f70",
+      "bytes": 14084
+    },
+    "fabrication/R3_cell_loaded_spacer.stl": {
+      "sha256": "f25928324fa83f30dc785ea8b193a2a136f2d4e87815e459e4c2e12ef10d9ba7",
+      "bytes": 13884
+    },
+    "fabrication/R3_door_keeper.stl": {
+      "sha256": "51e38f405b647efcca8e98cfa7ba8c083ea6cc0cbfdf03cf94b45aeffc623b2e",
+      "bytes": 16984
+    },
+    "fabrication/R3_fixed_electronics_deck.stl": {
+      "sha256": "88b46a2ef04d774b83697ad86f8cacbd8b905575d9598343f113443e10244be2",
+      "bytes": 49484
+    },
+    "fabrication/R3_lock_base.stl": {
+      "sha256": "2a0af6630305e129c923d1f251ed0612440b7de02a623eb60dc97d061e5f309a",
+      "bytes": 27284
+    },
+    "fabrication/R3_single_weighing_tray.stl": {
+      "sha256": "8c17ae639933a62679f1522f70e5474395f6482be9160e6126f4a3deff62b297",
+      "bytes": 27084
+    },
+    "fabrication/도어_가이드판_뒤.stl": {
+      "sha256": "a1c9374f62a873805127c65332c91ecda35b3ced58fee23632cc4c02bcf82c4c",
+      "bytes": 1684
+    },
+    "fabrication/도어_가이드판_앞.stl": {
+      "sha256": "86c73df05e779b08b051e3d8e6a2633d0551ffb93ecc7e1f486c02f2d9ac00a3",
+      "bytes": 1684
+    },
+    "fabrication/도어_본체.stl": {
+      "sha256": "0c06cc07c222477579593158afc954deb053d4979848c2e1979a22853dcee745",
+      "bytes": 41284
+    },
+    "firmware/smart_lock_box/auth.h": {
+      "sha256": "a9ce6c6380a59a84e0ba2138d4d0d47c02960fbd248050edea5f486d9a5d138d",
+      "bytes": 4239
+    },
+    "firmware/smart_lock_box/control.h": {
+      "sha256": "a8d23848bb70992fb9816c552a9d6badf770d6784d597d64c39293c4cb8f1e49",
+      "bytes": 4142
+    },
+    "firmware/smart_lock_box/Crypto.h": {
+      "sha256": "6b30881d791681f6c7fb84698758e615632e3f9232fdbb59dd55fefc2f38467f",
+      "bytes": 32
+    },
+    "firmware/smart_lock_box/SHA256.h": {
+      "sha256": "60f51f88b26468d430b29b885774b7e330f1f7309dfb36b80405e0f239173944",
+      "bytes": 32
+    },
+    "firmware/smart_lock_box/smart_lock_box.ino": {
+      "sha256": "9ccb6a1aa7431ab102fb4de13e0103e2edb68feafe192435be321ef1e9b54dde",
+      "bytes": 9586
+    },
+    "firmware/smart_lock_box/src/Crypto/Crypto.cpp": {
+      "sha256": "ee661a18648ccf5e04bb62b4a012e29f1ad214d08e7897fa73fd7c2c317d8ff7",
+      "bytes": 4105
+    },
+    "firmware/smart_lock_box/src/Crypto/Crypto.h": {
+      "sha256": "9fa162c8380948d9e5d5e1b05ccb238119333bb2277ed9568c5484e8b99c26bb",
+      "bytes": 1598
+    },
+    "firmware/smart_lock_box/src/Crypto/Hash.cpp": {
+      "sha256": "e194af2180148e815f4852f1ba90ad98aa0cad469fb79b077846d2641c24aaae",
+      "bytes": 6396
+    },
+    "firmware/smart_lock_box/src/Crypto/Hash.h": {
+      "sha256": "f15a140cc06ae2b7bead192e5d08c86e6a8c4f6d3fc42147666e7d40cfd2407b",
+      "bytes": 2080
+    },
+    "firmware/smart_lock_box/src/Crypto/SHA256.cpp": {
+      "sha256": "a53c030e47c60e4638aa22b667907b5f3eefd0c283ad3d8c083ce56cba4c7be3",
+      "bytes": 8313
+    },
+    "firmware/smart_lock_box/src/Crypto/SHA256.h": {
+      "sha256": "9a5c177cfc7ea1aff0536a64eee2ee0c6534e9cf752c1349b6d6aec6966cd218",
+      "bytes": 1862
+    },
+    "firmware/smart_lock_box/src/Crypto/utility/EndianUtil.h": {
+      "sha256": "00b98849950847786f2fba9c94c4da3e5a2f1785440455f618c4b775b86fc1d0",
+      "bytes": 2444
+    },
+    "firmware/smart_lock_box/src/Crypto/utility/ProgMemUtil.h": {
+      "sha256": "b540e8494892f13ceafb77d3b982f678510a3f41258d1a7517b7d4ac409c3ec8",
+      "bytes": 2146
+    },
+    "firmware/smart_lock_box/src/Crypto/utility/RotateUtil.h": {
+      "sha256": "8c134e9afa92b28793bc65160a38bb013a31eff9155adcc7371ec8c40cfd0a23",
+      "bytes": 30758
+    },
+    "firmware/smart_lock_box_r3_nano.hex": {
+      "sha256": "e8116ba6d45136644591f5a8d71414f20d82a0e0f4b5a8fc5bd0be10d3964946",
+      "bytes": 57687
+    },
+    "HARDWARE_ACCEPTANCE.md": {
+      "sha256": "721d2e5fc2151260ff6d318176dc5dc579525f7206cce24ebe63084ad12206b3",
+      "bytes": 4269
+    },
+    "hardware_measurements.csv": {
+      "sha256": "71d962a90a45d4de80b4a99c8f2016ed591ca4e80b10149cdeb6329adcd1dea7",
+      "bytes": 6536
+    },
+    "make_documents.py": {
+      "sha256": "6f9849b7c6aec954b49c5a1373684c114e619f6a77acc3807f729cf30f2d61be",
+      "bytes": 17796
+    },
+    "make_package.py": {
+      "sha256": "bf5c4ab8c7908c5828158846bee8673fe6b5a483a2b4c54cf37cb31aedb6ebb6",
+      "bytes": 1583
+    },
+    "merge_glb_animations.py": {
+      "sha256": "a2e148865c0834b11c7a84f5ef085f774cf223d1fba56507de6933eeb04ae994",
+      "bytes": 1263
+    },
+    "netlist.md": {
+      "sha256": "3e54d91961003d0c6a8c5e916144d2ac8f1b028951541d13e7ecad8f41c47937",
+      "bytes": 4875
+    },
+    "object_inventory.json": {
+      "sha256": "bca6d78c08941b35ab437482b44908f8747814f4afd23ae15578bb0fe09d7e29",
+      "bytes": 26881
+    },
+    "placement.csv": {
+      "sha256": "7a86d18e0edd02b930bb49ff6741a47f26afe3238cc20fa3c75179bd8e05214d",
+      "bytes": 9018
+    },
+    "README.md": {
+      "sha256": "f806d4c4b5646df2d405d8d84317d6223d4b7a5a569aec90a6da4844972c46ac",
+      "bytes": 13540
+    },
+    "render_r3.py": {
+      "sha256": "589d4f2f4132f5c94bda258dc2c63b56531ecb93090d5f1087d7b0cf1c68d374",
+      "bytes": 4750
+    },
+    "review_scene.blend": {
+      "sha256": "232df54792dd8d342fe537faf470a6829cc9e1824f59ecad1bf4f64f4b476bde",
+      "bytes": 317554
+    },
+    "revision_manifest.json": {
+      "sha256": "c79552aece247e65b2ab0fead93efb2d64f78ab0b04ff4078ec3f9fd5b076953",
+      "bytes": 1000
+    },
+    "run_validation.py": {
+      "sha256": "5a1e1286076712a89235b27c380bb59108c13c65d6872657eb1fa94dec39d432",
+      "bytes": 4129
+    },
+    "smart_lock_box_r3.blend": {
+      "sha256": "6ed63694638368050c0eb22d69837bc0f2a68b9f92c67729d8eb310fe0f39053",
+      "bytes": 326415
+    },
+    "smart_lock_box_r3.glb": {
+      "sha256": "d1fd8f25d4bcac98fd59172f11b9864f2a24be60a8f2406c6e0ab6a12414332f",
+      "bytes": 833688
+    },
+    "source_r2.blend": {
+      "sha256": "e7e2699b10d669a692eb17d8f95a8b7336813259c8fd563e881be162358a9f58",
+      "bytes": 366225
+    },
+    "STL_print/R3_Arduino_Nano_spacer.001.stl": {
+      "sha256": "933566ebb5341ec34d2854c1fc1a9946667a07be9872ed381d64a3b5450bb388",
+      "bytes": 6284
+    },
+    "STL_print/R3_Arduino_Nano_spacer.stl": {
+      "sha256": "a599df3b2341d0714626d191d882b469be6ad4de5b3a3b00999eb483d268ca0b",
+      "bytes": 6284
+    },
+    "STL_print/R3_BLE_3V3_spacer.001.stl": {
+      "sha256": "4119fe58b856260841f2cc6ea8df813150a5f2933b1bd9de83dca27ea303ec79",
+      "bytes": 6284
+    },
+    "STL_print/R3_BLE_3V3_spacer.stl": {
+      "sha256": "960c2ac4cea513a41180f1c185ed1cde4475da991ebdcf1e3e58c29fc3ce37c4",
+      "bytes": 6284
+    },
+    "STL_print/R3_captive_front_panel.stl": {
+      "sha256": "1bd0c6ef19c201c55d2f290b47dbc6e6a55908efd0067ea86b5e31fcbd1460d6",
+      "bytes": 29384
+    },
+    "STL_print/R3_D24V10F5_spacer.001.stl": {
+      "sha256": "9f37ac43489100738518057f1ac8c1957a6999440316768da0daed002cb3800c",
+      "bytes": 6284
+    },
+    "STL_print/R3_D24V10F5_spacer.stl": {
+      "sha256": "6a3310aa954ff2a234bd4084919a81374135eab72b8c66c7b6d6f6f05ab8c391",
+      "bytes": 6284
+    },
+    "STL_print/R3_deck_support.001.stl": {
+      "sha256": "8cd23b030e3b0bc9f9746d3a6aacc5edf3c83aad32bf2cb4f1673a40489387ed",
+      "bytes": 7084
+    },
+    "STL_print/R3_deck_support.002.stl": {
+      "sha256": "e1d6c236e2cd6a7e62c98367ef2a2e94cea108a7f29b0d39d1197a8aa54d7b4e",
+      "bytes": 7084
+    },
+    "STL_print/R3_deck_support.003.stl": {
+      "sha256": "6f9cfe3d02c91327c27febb2a4dad6af0590b951d28651009b994838cc004165",
+      "bytes": 7084
+    },
+    "STL_print/R3_deck_support.stl": {
+      "sha256": "034a29b4cb67f306a05c95e8f04bde4816d2cc5c1cc39af64742a3ba29b08859",
+      "bytes": 7084
+    },
+    "STL_print/R3_front_top_seal.stl": {
+      "sha256": "f8b410eab450748d0a8b889a4e8768f3e471b600e51e04a504e41a9092eb5cbe",
+      "bytes": 684
+    },
+    "STL_print/R3_front_wall.stl": {
+      "sha256": "60fda014af1e59b3e04155d779e63e2207e73210c03999237ebd8ef4a3d29748",
+      "bytes": 1684
+    },
+    "STL_print/R3_HX711_5V_carrier_spacer.001.stl": {
+      "sha256": "3db74c9e32f398dc53f0bc11eb08308abd30956a24d02bde0d044d209f28515a",
+      "bytes": 6284
+    },
+    "STL_print/R3_HX711_5V_carrier_spacer.stl": {
+      "sha256": "dc6f8044050ceb3d40dac0ae9e8fa4f454b9f7f7d32e3d3f53bc1e76748d8bba",
+      "bytes": 6284
+    },
+    "STL_print/R3_LDO_level_shift_spacer.001.stl": {
+      "sha256": "632498c43d9e9cac8cb7477f4be0f29c9666e5719bf136d23974f1b0ab7444c4",
+      "bytes": 6284
+    },
+    "STL_print/R3_LDO_level_shift_spacer.stl": {
+      "sha256": "47925cbef50f0b5d382fbe118c2a1c1125e34fd05f6bdfd25111dd2b8296110b",
+      "bytes": 6284
+    },
+    "STL_print/R3_MOSFET_driver_spacer.001.stl": {
+      "sha256": "d049113d82b2759f213c2208130938852f1a3900ae76791c6da90e26f13d0f7c",
+      "bytes": 6284
+    },
+    "STL_print/R3_MOSFET_driver_spacer.stl": {
+      "sha256": "b5bd178d3ac7f3104271e8e26dcbea13a73676bef80569fadf92f454a8ff0f12",
+      "bytes": 6284
+    },
+    "STL_print/R3_overload_stop.001.stl": {
+      "sha256": "64e2933237a907a58606924fce320292c463ceea5d86639dfd158535ada78d98",
+      "bytes": 6284
+    },
+    "STL_print/R3_overload_stop.002.stl": {
+      "sha256": "10b2146df4b385f4ea01cc8995669f53482b3d60372e22d43f2d4283e98a23b0",
+      "bytes": 6284
+    },
+    "STL_print/R3_overload_stop.003.stl": {
+      "sha256": "81a7938e01a240f3c518987e38b75a7f22d45771db9f9c16327443d9514378fc",
+      "bytes": 6284
+    },
+    "STL_print/R3_overload_stop.stl": {
+      "sha256": "b3599f4f3a535af711b14bea7e2b47e9dd7a4c86307ec23192507e98200d8e71",
+      "bytes": 6284
+    },
+    "STL_print/R3_power_sense_100k33k_spacer.001.stl": {
+      "sha256": "6f395b1669b472cae77bfe963ed1d7b8cf075de1f7a1473a49ff106314994869",
+      "bytes": 6284
+    },
+    "STL_print/R3_power_sense_100k33k_spacer.stl": {
+      "sha256": "6e4b206bf7314dca1a9d5423bc86c88ab4e9b32438b3a10c2c0a4c4ac565ef14",
+      "bytes": 6284
+    },
+    "STL_print/R3_rear_top_seal.stl": {
+      "sha256": "c28bd0976888e4ee3099171b9a7bb2576c5f05b6ecb8a68a41fbd949aba3f9e1",
+      "bytes": 684
+    },
+    "STL_print/R3_rear_wall.stl": {
+      "sha256": "aeba2a5eca12b4a87c72cc0490d57225ecbb659a42b995a39c8e2d6d83e423d9",
+      "bytes": 684
+    },
+    "STL_print/R3_right_top_seal.stl": {
+      "sha256": "811c82636a48d37109dc8c2aa9f32a5c5496080cf0bedd610b38517156dd2559",
+      "bytes": 684
+    },
+    "STL_print/R3_right_wall.stl": {
+      "sha256": "43128ad6fb4e07616655394b027a91a07a93dff9c8a041d05bc967b01bf5cbf2",
+      "bytes": 3484
+    },
+    "STL_print/셸_격납슬롯내벽.stl": {
+      "sha256": "95d1743a0011c5e46b715628f80cdaf322958e98d37e6b8e7dec1d2f9a564770",
+      "bytes": 2984
+    },
+    "tests/core_tests.cpp": {
+      "sha256": "7468800eb85c9eb1417b11f39ccf29ff2cb159a32dc274d4ee870db1d68dd625",
+      "bytes": 7754
+    },
+    "tests/fakes/Arduino.h": {
+      "sha256": "2ef53864f051fd96b17bd477611c53e06846b1883b52a2621adedfde3f914f7e",
+      "bytes": 1103
+    },
+    "tests/fakes/avr/interrupt.h": {
+      "sha256": "c2b0afcad36c1150ec7783b4a2d0c22976b8579ed9e48e429a60996751a06c63",
+      "bytes": 302
+    },
+    "tests/fakes/avr/wdt.h": {
+      "sha256": "4f9c768b4657e36e7fc11312aab8bd7b484a5a5d78178a6a162bb11eb5d7e9d3",
+      "bytes": 115
+    },
+    "tests/fakes/EEPROM.h": {
+      "sha256": "6260024601e2d1106f1367399835594f6ad1c585addf42d91216bb740e6ddb69",
+      "bytes": 274
+    },
+    "tests/fakes/SoftwareSerial.h": {
+      "sha256": "3a3941ee8e19e7eb2e0bf1730a7473092992bf24e4c90dd0e62923f8fa7617b4",
+      "bytes": 104
+    },
+    "tests/sketch_tests.cpp": {
+      "sha256": "539d53f120a024dc5f5929e32b7dd818975ab85f4d7f8ebb2d3731a3a30981ed",
+      "bytes": 3472
+    },
+    "tests/test_protocol.py": {
+      "sha256": "1036b5a1a5793903ec8e71a938108758355faa3fc0678a5ac2b9054d6fdf9179",
+      "bytes": 2279
+    },
+    "tools/box_client.py": {
+      "sha256": "67068f81435be2c1585b8ec57ead298f16db041fda517bcf0036b1aab47739ea",
+      "bytes": 6173
+    },
+    "validate_documents.py": {
+      "sha256": "167b1fab505f47b23d4e9ae9268f90e718d65f1b6e724d474a00b3ff4f567299",
+      "bytes": 1289
+    },
+    "validate_exports.py": {
+      "sha256": "8bac58a8b948958d867b2ac9564640ed7f5259694844f08263f3cf25eaa6ba45",
+      "bytes": 2329
+    },
+    "validation/avr_compile.log": {
+      "sha256": "95f40ccc24e251185720b5eea1537aae9a8ebb96385f2c74b2774c06bd401048",
+      "bytes": 2060
+    },
+    "validation/core_tests.log": {
+      "sha256": "8fdb775a97d938a9d4d2a56c335bbb5c397e42f1ada37258b035a3d88b21eb4f",
+      "bytes": 209
+    },
+    "validation/core_tests.pdb": {
+      "sha256": "a94402c075a4203244484eef0db4cce4fe7c008a3a6c7a800d2b48dad239a6d9",
+      "bytes": 2658304
+    },
+    "validation/core_tests_compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "validation/documents.json": {
+      "sha256": "1f667d59bf008f64f7e1b8abd23c3d94830d0a6b2eb9ec4df083affbbc101969",
+      "bytes": 155
+    },
+    "validation/exports.json": {
+      "sha256": "2450af0e7024fc5946d487376acf82168f4539e9e57b676d6f100814ee10e0fe",
+      "bytes": 357
+    },
+    "validation/exports.log": {
+      "sha256": "8e0e6dbb3d53807b03b0e4eb30d9c45d65d1a9d5c147d442f84df6b98b038043",
+      "bytes": 372
+    },
+    "validation/geometry.json": {
+      "sha256": "b724da496fad9cad1c81496f164f24d051000d4bffce689d2ce87f2d7a087fd7",
+      "bytes": 5039
+    },
+    "validation/geometry_and_static.log": {
+      "sha256": "8d8c16f85427920683f17504677cc99566de669d7a2cc588609d4439c1db93ff",
+      "bytes": 2066
+    },
+    "validation/protocol_tests.log": {
+      "sha256": "7fa2c3f39772ba088198b95aa567e627f67c3902377d56005c27e26c62e660a9",
+      "bytes": 114
+    },
+    "validation/sketch_tests.log": {
+      "sha256": "7aad48e74ff58ab99d7ed5abb4bad33f31be4ed28befe53361a037442ed377fa",
+      "bytes": 27
+    },
+    "validation/sketch_tests.pdb": {
+      "sha256": "b722b99b18dd9116bad833c3c8412199947c16892af4a85013143e77c97eff78",
+      "bytes": 3424256
+    },
+    "validation/sketch_tests_compile.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "validation/static_intersections.json": {
+      "sha256": "f0f046cdc387a37c37ac74c45ffece251bdb4819029890da8eb5a85677299671",
+      "bytes": 2737
+    },
+    "validation/summary.json": {
+      "sha256": "bdf69a836e2954e91cf51a4385ad2f73f0774136be4f400ec1b19be55b9967b5",
+      "bytes": 3708
+    },
+    "verify_geometry.py": {
+      "sha256": "8c0715039ed82d8e54fe33679377780030bc73420f3322e4a0d45b1bc64b7949",
+      "bytes": 5616
+    }
+  }
+}
