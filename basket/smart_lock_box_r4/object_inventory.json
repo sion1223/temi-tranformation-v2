@@ -17,7 +17,7 @@
   {
     "name": "R3_base_255x324",
     "kind": "sheet_fabrication",
-    "revision": "R3",
+    "revision": "R4",
     "min_mm": [
       0.0,
       0.0,
@@ -2892,6 +2892,396 @@
       163.0,
       290.0,
       27.0
+    ]
+  },
+  {
+    "name": "R4_carry_handle_front",
+    "kind": "metal_fabrication",
+    "revision": "R4",
+    "min_mm": [
+      85.00000762939453,
+      -74.0,
+      -4.0
+    ],
+    "max_mm": [
+      206.0,
+      34.0,
+      52.000003814697266
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_12",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.8499984741211,
+      7.849999904632568,
+      -14.0
+    ],
+    "max_mm": [
+      96.1500015258789,
+      16.149999618530273,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_12_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.5,
+      7.5,
+      -5.0
+    ],
+    "max_mm": [
+      96.5,
+      16.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_12_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.80000305175781,
+      7.800000190734863,
+      -11.0
+    ],
+    "max_mm": [
+      96.19999694824219,
+      16.200000762939453,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_28",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.8499984741211,
+      23.850000381469727,
+      -14.0
+    ],
+    "max_mm": [
+      96.1500015258789,
+      32.150001525878906,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_28_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.5,
+      23.5,
+      -5.0
+    ],
+    "max_mm": [
+      96.5,
+      32.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_92_28_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.80000305175781,
+      23.799999237060547,
+      -11.0
+    ],
+    "max_mm": [
+      96.19999694824219,
+      32.20000076293945,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_12",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.85000610351562,
+      7.849999904632568,
+      -14.0
+    ],
+    "max_mm": [
+      203.14999389648438,
+      16.149999618530273,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_12_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.5,
+      7.5,
+      -5.0
+    ],
+    "max_mm": [
+      203.5,
+      16.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_12_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.8000030517578,
+      7.800000190734863,
+      -11.0
+    ],
+    "max_mm": [
+      203.1999969482422,
+      16.200000762939453,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_28",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.85000610351562,
+      23.850000381469727,
+      -14.0
+    ],
+    "max_mm": [
+      203.14999389648438,
+      32.150001525878906,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_28_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.5,
+      23.5,
+      -5.0
+    ],
+    "max_mm": [
+      203.5,
+      32.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_front_M4_199_28_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.8000030517578,
+      23.799999237060547,
+      -11.0
+    ],
+    "max_mm": [
+      203.1999969482422,
+      32.20000076293945,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_carry_handle_rear",
+    "kind": "metal_fabrication",
+    "revision": "R4",
+    "min_mm": [
+      85.00000762939453,
+      290.0,
+      -4.0
+    ],
+    "max_mm": [
+      206.0,
+      398.0,
+      52.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_12",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.8499984741211,
+      307.8500061035156,
+      -14.0
+    ],
+    "max_mm": [
+      96.1500015258789,
+      316.1499938964844,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_12_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.5,
+      307.5,
+      -5.0
+    ],
+    "max_mm": [
+      96.5,
+      316.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_12_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.80000305175781,
+      307.79998779296875,
+      -11.0
+    ],
+    "max_mm": [
+      96.19999694824219,
+      316.20001220703125,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_28",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.8499984741211,
+      291.8500061035156,
+      -14.0
+    ],
+    "max_mm": [
+      96.1500015258789,
+      300.1499938964844,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_28_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.5,
+      291.5,
+      -5.0
+    ],
+    "max_mm": [
+      96.5,
+      300.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_92_28_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      87.80000305175781,
+      291.79998779296875,
+      -11.0
+    ],
+    "max_mm": [
+      96.19999694824219,
+      300.20001220703125,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_12",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.85000610351562,
+      307.8500061035156,
+      -14.0
+    ],
+    "max_mm": [
+      203.14999389648438,
+      316.1499938964844,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_12_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.5,
+      307.5,
+      -5.0
+    ],
+    "max_mm": [
+      203.5,
+      316.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_12_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.8000030517578,
+      307.79998779296875,
+      -11.0
+    ],
+    "max_mm": [
+      203.1999969482422,
+      316.20001220703125,
+      -5.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_28",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.85000610351562,
+      291.8500061035156,
+      -14.0
+    ],
+    "max_mm": [
+      203.14999389648438,
+      300.1499938964844,
+      6.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_28_washer",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.5,
+      291.5,
+      -5.0
+    ],
+    "max_mm": [
+      203.5,
+      300.5,
+      -4.0
+    ]
+  },
+  {
+    "name": "R4_handle_rear_M4_199_28_locknut",
+    "kind": "purchased_envelope",
+    "revision": "R4",
+    "min_mm": [
+      194.8000030517578,
+      291.79998779296875,
+      -11.0
+    ],
+    "max_mm": [
+      203.1999969482422,
+      300.20001220703125,
+      -5.0
     ]
   }
 ]

@@ -5,10 +5,12 @@
   "axis_collision_pairs": {},
   "sequence_invariant_failures": [],
   "fabrication_nonmanifold": [],
-  "retained_R3_meshes_checked": 77,
+  "retained_R3_meshes_checked": 76,
   "retained_mesh_extent_errors": [],
   "analytical_contact_cases": 121,
   "analytical_errors": [],
+  "carry_handle_assembly_meshes": 26,
+  "carry_handle_static_collisions": [],
   "scope": "Nominal sampled mesh intersections for tray/lid vs rigid obstacles; explicit joint-interface exclusions. Not full FEA, tolerances, belt tooth meshing, sensor force, spring/damper proof or robot-mounted validation.",
   "excluded_joint_interfaces": [
     "hinge axle/bearings/hubs/springs",

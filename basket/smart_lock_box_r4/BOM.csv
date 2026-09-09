@@ -31,3 +31,8 @@ TRAY,213.5x308x3mm aluminium tray and lips,1,fabricate_metal,10mm paper stack en
 GUARDS,Column covers and slot bellows,1,fabricate_after_fit,CAD covers are partial; moving slot sealing must be fitted
 FASTENERS,M3_M4_M6 hardware collars keys and shims,1,select_lengths_after_fit,Do not print load-bearing metal shaft or use loose unretained pulleys
 R3_REUSE,R3 shell electronics L6D HX711 latch and Nano,1,reuse_modified_interfaces,See README for changed walls deck keeper clearance and load path
+HANDLE,Front and rear welded steel carrying handle,2,fabricate_metal,14mm solid grip; 11mm legs; 4mm under-base feet; use both handles together
+HANDLE_BOLT,M4x20 countersunk bolt,8,candidate,90deg head flush with base top; verify actual head dimensions against countersink
+HANDLE_WASHER,M4 washer 9mm OD 1mm thick,8,candidate,Under handle feet
+HANDLE_NUT,M4 locking nut,8,candidate,6mm maximum axial envelope; verify actual nut and thread engagement
+BASE_HANDLE,R3 base with eight handle mounting holes,1,modify_existing,4.5mm through holes and 90deg countersinks; see CARRY_HANDLES.md

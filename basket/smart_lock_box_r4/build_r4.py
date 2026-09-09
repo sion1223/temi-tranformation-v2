@@ -5,6 +5,7 @@ All model coordinates and STL coordinates are millimetres. GLB is metres.
 Motor, bearing, spring, damper and screw threads are procurement envelopes.
 """
 import bpy
+import bmesh
 import math
 import json
 import sys
@@ -298,6 +299,56 @@ line('R4_motor_supply_route',[(170,18,10),(153,200,10),(176,235,12)],.9)
 line('R4_M1_signal_route',[(125,236,23),(85,201,26),(25,15,28),(9,-30,20)],.45,color='sensor')
 line('R4_M2_power_route',[(180,230,26),(90,209,30),(72,30,29),(50,-22,-12)],.65)
 line('R4_M3_power_route',[(216,230,26),(232,180,29),(234,25,29),(229,-22,-12)],.65)
+
+# Fixed front/rear carrying handles: welded steel, bolted through the base.
+# Feet run below the shell and between the motor bodies, so the removable
+# electronics panel and the weighing/moving parts carry no handle load.
+base=changed(bpy.data.objects['R3_base_255x324'])
+hp=P['carry_handles']
+handle_group='17_R4_carry_handles'
+def cone(name,p,r1,r2,h,**kw):
+    bpy.ops.mesh.primitive_cone_add(vertices=40,radius1=r1,radius2=r2,depth=h,
+                                  location=(p[0],p[1],p[2]+h/2))
+    return finish(bpy.context.object,name,**kw)
+for tag,side in [('front',-1),('rear',1)]:
+    wall_y=0 if side<0 else 324
+    grip_y=wall_y+side*hp['projection_mm']
+    x1,x2=hp['leg_x_mm'];z=hp['grip_z_mm'];r=hp['grip_diameter_mm']/2
+    handle=cyl('R4_carry_handle_'+tag,(x1,grip_y,z),r,x2-x1,'X',
+               color='motor',group=handle_group)
+    for x in (x1,x2):
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=32,ring_count=16,radius=r,
+                                            location=(x,grip_y,z))
+        boolean(handle,finish(bpy.context.object,'WELDED_END'),'UNION')
+        boolean(handle,cyl('WELDED_LEG',(x,grip_y,-1),5.5,z+1),'UNION')
+        y1,y2=sorted((wall_y+side*(hp['projection_mm']+8),wall_y-side*34))
+        boolean(handle,box('WELDED_FOOT',(x-6,y1,-4),(x+6,y2,0)),'UNION')
+        for offset in hp['base_bolt_insets_mm']:
+            y=wall_y-side*offset
+            hole(handle,(x,y,-5),2.25,6)
+            hole(base,(x,y,-1),2.25,8)
+            boolean(base,cone('COUNTERSINK',(x,y,3.9),2.2,4.4,2.2))
+            name='R4_handle_'+tag+'_M4_'+str(x)+'_'+str(offset)
+            bolt=cyl(name,(x,y,-14),2,17.9,kind='purchased_envelope',group=handle_group)
+            boolean(bolt,cone('CSK_HEAD',(x,y,3.85),2,4.15,2.15),'UNION')
+            bolt['part']='M4 x 20 countersunk through-bolt; smooth thread/head envelope'
+            ring(name+'_washer',(x,y,-5),4.5,2.2,1,kind='purchased_envelope',group=handle_group)
+            nut=ring(name+'_locknut',(x,y,-11),4.2,2.1,6,kind='purchased_envelope',group=handle_group)
+            nut['part']='M4 locking nut clearance envelope: OD8.4 x 6 mm maximum; select actual retained fastener'
+    handle['material']='Welded steel: diameter 14 grip, diameter 11 legs, 4 mm feet; deburr all edges'
+    handle['load_path']='Grip -> welded legs and under-base feet -> four M4 through-bolts -> fixed 6 mm base'
+    handle['use']='Use both handles together with lid closed and tray parked; not a robot lifting point'
+    handle['hardware_tested']=False
+sc['carry_handles']='Two fixed steel carrying handles; front/rear; independent of lid, lift and load cell'
+# Exact booleans leave coincident seam vertices around countersinks and welds.
+# Join only sub-micron duplicates; preserve the designed clearances and shape.
+for o in [base]+[o for o in sc.objects if o.type=='MESH' and
+                o.name.startswith(('R4_carry_handle_','R4_handle_'))]:
+    bm=bmesh.new();bm.from_mesh(o.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=.0001)
+    bmesh.ops.dissolve_degenerate(bm,edges=list(bm.edges),dist=.0001)
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(o.data);bm.free();o.data.update()
 
 # Animate the coupled mechanisms and lock bolt. Do not use elapsed time as a real limit sensor.
 bolt=bpy.data.objects['R3_lock_bolt_4p3mm'];bolt_rest=bolt.location.copy()

@@ -51,5 +51,18 @@
   "belt_efficiency_assumed": 0.8,
   "fps": 24,
   "frame_end": 1644,
-  "physical_hardware_tested": false
+  "physical_hardware_tested": false,
+  "carry_handles": {
+    "quantity": 2,
+    "locations": ["front", "rear"],
+    "leg_x_mm": [92, 199],
+    "projection_mm": 66,
+    "grip_z_mm": 45,
+    "grip_diameter_mm": 14,
+    "base_bolt_insets_mm": [12, 28],
+    "fasteners": "8 x M4 x 20 countersunk through-bolts with washers and locking nuts",
+    "material": "welded steel; 4 mm feet; 11 mm solid legs; 14 mm solid grip",
+    "mount": "fixed 6 mm base; independent of lid, tray, electronics panel and load cell",
+    "rated_carry_load_kg": null
+  }
 }

@@ -16,7 +16,8 @@ assert len(doc.get('animations',[]))==1, 'Export the complete cycle as a single 
 nodes={n.get('name'):n for n in doc['nodes']}
 assert 'R4_EXPORT_METRES' in nodes
 assert all(abs(s-.001)<1e-8 for s in nodes['R4_EXPORT_METRES']['scale'])
-for name in ('R4_LID_FIXED_HINGE','R4_TRAY_LIFT_TILT','R4_M2_LOW_CARRIAGE','R4_M3_HIGH_CARRIAGE'):
+for name in ('R4_LID_FIXED_HINGE','R4_TRAY_LIFT_TILT','R4_M2_LOW_CARRIAGE','R4_M3_HIGH_CARRIAGE',
+             'R4_carry_handle_front','R4_carry_handle_rear'):
     assert name in nodes, name
 report={'format':'glTF 2.0 GLB','bytes':len(data),'animations':1,
         'metric_root_scale':nodes['R4_EXPORT_METRES']['scale'],

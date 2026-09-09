@@ -11,8 +11,13 @@
   },
   {
     "path": "BOM.csv",
-    "bytes": 3514,
-    "sha256": "5e899adb60512b60ad4f432c579066cc8479b878debb7e89d959a26568494676"
+    "bytes": 4100,
+    "sha256": "82c8e9e81770fe07f54e1af3cea153bf507ae20b2135f32db78e2f616f571b81"
+  },
+  {
+    "path": "CARRY_HANDLES.md",
+    "bytes": 2565,
+    "sha256": "8e723b7247cbb1f4d38939de86145a76b5963778c1068798cee9982ad08e177f"
   },
   {
     "path": "CONTROL_AND_WIRING.md",
@@ -26,13 +31,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 6808,
-    "sha256": "7c0a1c46592bc58899d14a173fdddf18e3af76bb80002dea649c92ba984e86f8"
+    "bytes": 7760,
+    "sha256": "969eb8a81e761c3e5f45358fb5b848b1ed4a032b5846b2f637895460e4a634ec"
   },
   {
     "path": "build_r4.py",
-    "bytes": 21486,
-    "sha256": "94d43c09fc427127298413d080dab345aa8d0aced409c6102ad0afdb7ecb39db"
+    "bytes": 24712,
+    "sha256": "b8f97d72c0d7971b1ba78bbaca113416a5f666f8cc3212148286174b8a56dece"
   },
   {
     "path": "controller_reference.hpp",
@@ -41,23 +46,23 @@
   },
   {
     "path": "drawings/01_open_raised.webp",
-    "bytes": 29674,
-    "sha256": "ce3df0145d077fceedbfdb79b695bdca16c11b21f13df156149c8e0449ee1062"
+    "bytes": 31724,
+    "sha256": "5979512b13b09586b9ddf14f421d4e8ff752874b8266f25b920bbcf85caeefb7"
   },
   {
     "path": "drawings/02_closed.webp",
-    "bytes": 22466,
-    "sha256": "3d537e6d196b0d9427a768e0752fd4cb210aedbc9eef100e9aaeb406d20b335c"
+    "bytes": 25004,
+    "sha256": "fe705cc4efc2554a4feed487ec8e57b84723ff408a826dd09c560d69f0434955"
   },
   {
     "path": "drawings/03_front_low_left_high_right.webp",
-    "bytes": 12290,
-    "sha256": "2d3a426be870c4190c2843cadf0749ac6dcb8e97848df691642f412eef5d73db"
+    "bytes": 13194,
+    "sha256": "837da955addc8527c93c7494a116beff961857eb0b3d684ab28ae0ac2db6beb8"
   },
   {
     "path": "drawings/04_drive_cutaway.webp",
-    "bytes": 37938,
-    "sha256": "834b5fa8396c7cf85bcf8d25c79d53c02f33c3350e8c9ea57118fb93d42bc317"
+    "bytes": 39558,
+    "sha256": "385a13c6e99c46f994c120544afab14fe741f04ba056c58e4985281f190aa0e5"
   },
   {
     "path": "engineering_summary.json",
@@ -76,18 +81,23 @@
   },
   {
     "path": "object_inventory.json",
-    "bytes": 44389,
-    "sha256": "dc3ad558b1a2048d09b1c383e5082c7ceb82080fb8a8a55d1aa9f5754c1b5a92"
+    "bytes": 51137,
+    "sha256": "49fa893c120e384a80c006042d37612492c960a2407f758e721c09f78d3c09ac"
   },
   {
     "path": "package_review.py",
-    "bytes": 1805,
-    "sha256": "1d69436443fcaa05bfdc6fee32f740de47f3d1d743d5646065e66971ea4d2adf"
+    "bytes": 1866,
+    "sha256": "1ba3034bbcc099a069647a4195b409e7265837b4ddee828c40def3a0cae80b59"
   },
   {
     "path": "parameters.json",
-    "bytes": 1181,
-    "sha256": "08e52346fec7681b7d1807c1f9339257251213a03e3ef094cf19a2dffde0d832"
+    "bytes": 1690,
+    "sha256": "d91dad498316a37c09793794d5b73ef7e1d55a76ca13570e40b74f7dc9eb94ab"
+  },
+  {
+    "path": "parts/R3_base_255x324.stl",
+    "bytes": 126684,
+    "sha256": "8701ec0bc4bd029b423234bfec1c58ef7ba6e1f3c0d5cc4cd33a93b7975d4f31"
   },
   {
     "path": "parts/R3_captive_front_panel.stl",
@@ -255,6 +265,16 @@
     "sha256": "fb134d22fead3d6791f66a014524be8dcc94d355829f7a3eaed070c6ce5f0292"
   },
   {
+    "path": "parts/R4_carry_handle_front.stl",
+    "bytes": 117784,
+    "sha256": "7e1858dd8b8740b3ab9cb91520ba96944694bba49d6960fdbf567f6c6e8963d1"
+  },
+  {
+    "path": "parts/R4_carry_handle_rear.stl",
+    "bytes": 117984,
+    "sha256": "57f6df632c6e03b1869d797356656ec4671e37eadc9defcb41355ddbaea2ae0c"
+  },
+  {
     "path": "parts/R4_fixed_hinge_plate_312.stl",
     "bytes": 25284,
     "sha256": "5ed7d49f68ec4da8853a425d8660fb6f368630674c80e18b35a96f17e6133bf4"
@@ -356,13 +376,13 @@
   },
   {
     "path": "smart_lock_box_r4.blend",
-    "bytes": 516843,
-    "sha256": "c20baf1256838e2da0d4faf6605e13fb988a2b4d93d69f67c2fe84450fef85b1"
+    "bytes": 638098,
+    "sha256": "b524a186333cfb66ebf22bc99706a506f3dc7bf0a8cff083be9f4d7f9e022b2a"
   },
   {
     "path": "smart_lock_box_r4.glb",
-    "bytes": 2506016,
-    "sha256": "e90762226f61340921dab22a93d282a02ed2cd9c2fb4ff8b90a0c345ef38a93e"
+    "bytes": 3316548,
+    "sha256": "a84dd7f6851931371d59e437ef6504dc4c3d7009061f168298d12943a506690e"
   },
   {
     "path": "tests/controller_test.cpp",
@@ -371,8 +391,8 @@
   },
   {
     "path": "validate_r4.py",
-    "bytes": 6977,
-    "sha256": "e1ff15823f023d85b375d32770c01c57c08dda5e8806b38267db5d8ca0e0474f"
+    "bytes": 8666,
+    "sha256": "ae29c463121ade0cb66ad05b2ba29e7c7d01ee44d7c9eb0a8744e99f4b674bb1"
   },
   {
     "path": "validation/controller.txt",
@@ -382,16 +402,16 @@
   {
     "path": "validation/envelopes.json",
     "bytes": 461,
-    "sha256": "541f56708feb5d537e7dd79841149d91ebfdf20526db4b62d479ded7342d219e"
+    "sha256": "696ba183a4489f067ed2fdb014071a11fd0f9d012729573b4e388ee73ac2ef0d"
   },
   {
     "path": "validation/exports.json",
     "bytes": 257,
-    "sha256": "40c6debb326eb44ac16dd653f9f76b8d86be8f5f858979242c0743a6173c7bcb"
+    "sha256": "e0aff9d3bc0a811b31343414ec8db3d15b6019f52f3d0846f08ac206631a6048"
   },
   {
     "path": "validation/geometry.json",
-    "bytes": 953,
-    "sha256": "972e2d63948597ac5ac710b7db0580f9ac076b705fa5995db7a30536a92ba691"
+    "bytes": 1031,
+    "sha256": "63d461bcc11de6cba11168143b373611a1f0a423f4e9c57276e7a97712dbeafd"
   }
 ]

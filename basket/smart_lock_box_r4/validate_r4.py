@@ -30,6 +30,19 @@ def hit(a,b):
     if any(a[3][i]<=b[2][i]+.02 or b[3][i]<=a[2][i]+.02 for i in range(3)):return False
     return bool(a[0].overlap(b[0])) or inside(a[1][0],b) or inside(b[1][0],a)
 
+def overlap_volume(a,b):
+    # Under-base feet intentionally share a face with the base at Z=0.
+    # Exact intersection volume distinguishes that seating face from intrusion.
+    probe=a.copy();probe.data=a.data.copy();sc.collection.objects.link(probe)
+    probe.parent=None;probe.matrix_world=a.matrix_world.copy()
+    bpy.context.view_layer.objects.active=probe
+    mod=probe.modifiers.new('Static handle interference','BOOLEAN')
+    mod.operation='INTERSECT';mod.solver='EXACT';mod.object=b
+    bpy.ops.object.modifier_apply(modifier=mod.name)
+    bm=bmesh.new();bm.from_mesh(probe.data);volume=abs(bm.calc_volume());bm.free()
+    data=probe.data;bpy.data.objects.remove(probe,do_unlink=True);bpy.data.meshes.remove(data)
+    return volume
+
 objects=[o for o in sc.objects if o.type=='MESH']
 tray=[o for o in objects if o.get('moving_tray') and o.get('kind')!='reference_only']
 lid=[o for o in objects if o.parent and o.parent.name=='R4_LID_FIXED_HINGE']
@@ -78,6 +91,21 @@ for o in objects:
     bm=bmesh.new();bm.from_mesh(o.data);n=sum(not e.is_manifold for e in bm.edges);bm.free()
     if n:nonmanifold.append([o.name,n])
 sc.frame_set(1);bpy.context.view_layer.update()
+# A new carrying assembly must also clear fixed motor bodies, guards, the
+# electronics panel and electronics. Mating faces may touch; holes are real.
+handles=[o for o in objects if o.name.startswith(('R4_carry_handle_','R4_handle_'))]
+handle_static_collisions=[]
+parked={o.name:geom(o) for o in objects if o.get('kind')!='reference_only'}
+seen=set()
+for h in handles:
+    if h.parent or h.animation_data:invariants.append([1,h.name+' must stay on the fixed base'])
+    for other,g in parked.items():
+        pair=tuple(sorted((h.name,other)))
+        if other==h.name or pair in seen:continue
+        seen.add(pair)
+        if hit(parked[h.name],g):
+            volume=overlap_volume(h,bpy.data.objects[other])
+            if volume>.01:handle_static_collisions.append({'parts':list(pair),'overlap_mm3':volume})
 # Count retained R3 mesh objects and compare extents of unmodified objects to inventory.
 old=json.loads((ROOT.parent/'smart_lock_box_r3/object_inventory.json').read_text())
 retained=[];differences=[]
@@ -100,10 +128,11 @@ report=dict(source_blender_warning='R3 was written by Blender 5.2; opened in 4.5
     sampled_frames=len(frames),collision_pairs=collisions,axis_collision_pairs=axis_collisions,sequence_invariant_failures=invariants,
     fabrication_nonmanifold=nonmanifold,retained_R3_meshes_checked=len(retained),retained_mesh_extent_errors=differences,
     analytical_contact_cases=121,analytical_errors=analytic,
+    carry_handle_assembly_meshes=len(handles),carry_handle_static_collisions=handle_static_collisions,
     scope='Nominal sampled mesh intersections for tray/lid vs rigid obstacles; explicit joint-interface exclusions. Not full FEA, tolerances, belt tooth meshing, sensor force, spring/damper proof or robot-mounted validation.',
     excluded_joint_interfaces=['hinge axle/bearings/hubs/springs','lead screw/nut/guide bush/shaft clamps','tray cradle and intentional roller/slot contact','wires/belts are routing envelopes'],
     hardware_tested=False)
-report['pass']=not(collisions or axis_collisions or invariants or nonmanifold or differences or analytic)
+report['pass']=not(collisions or axis_collisions or invariants or nonmanifold or differences or analytic or handle_static_collisions)
 (ROOT/'validation').mkdir(exist_ok=True)
 (ROOT/'validation/geometry.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 envelopes={}
