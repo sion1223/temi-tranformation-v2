@@ -1,0 +1,3404 @@
+[
+  {
+    "name": "셸_격납슬롯내벽",
+    "kind": "print",
+    "part": "",
+    "bounds_mm": [
+      [
+        13.5,
+        12.000999450683594,
+        36.0
+      ],
+      [
+        19.5,
+        311.9989929199219,
+        100.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "R3_base_255x324",
+    "kind": "sheet_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        255.0,
+        324.0,
+        6.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "R3_right_wall",
+    "kind": "print",
+    "part": "",
+    "bounds_mm": [
+      [
+        243.0,
+        6.0,
+        36.0
+      ],
+      [
+        255.0,
+        318.0,
+        100.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "도어_가이드판_앞",
+    "kind": "metal_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        6.0,
+        36.0
+      ],
+      [
+        22.0,
+        12.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "도어_가이드판_뒤",
+    "kind": "metal_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        312.0,
+        36.0
+      ],
+      [
+        22.0,
+        318.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "도어_본체",
+    "kind": "print",
+    "part": "",
+    "bounds_mm": [
+      [
+        5.0,
+        12.5,
+        100.0
+      ],
+      [
+        251.0,
+        311.5,
+        108.0
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "도어_숄더볼트_앞",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        6.5,
+        6.5,
+        101.5
+      ],
+      [
+        11.5,
+        22.0,
+        106.5
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "도어_숄더볼트_뒤",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        6.5,
+        302.0,
+        101.5
+      ],
+      [
+        11.5,
+        317.5,
+        106.5
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "잠금_5065_프레임",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        209.00001525878906,
+        49.20000076293945,
+        50.0
+      ],
+      [
+        236.00001525878906,
+        70.80001068115234,
+        67.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "잠금_5065_코일",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        211.00001525878906,
+        52.500003814697266,
+        53.0
+      ],
+      [
+        233.50001525878906,
+        67.50000762939453,
+        65.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "잠금_5065_플랜지",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        209.00001525878906,
+        46.000003814697266,
+        50.0
+      ],
+      [
+        236.00001525878906,
+        74.00000762939453,
+        51.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "R3_lock_bolt_4p3mm",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        234.50001525878906,
+        57.500003814697266,
+        53.5
+      ],
+      [
+        242.00001525878906,
+        62.500003814697266,
+        63.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "R3_lock_base",
+    "kind": "metal_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        205.0,
+        44.0,
+        42.0
+      ],
+      [
+        238.0,
+        77.0,
+        50.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "R3_door_keeper",
+    "kind": "metal_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        239.0,
+        52.0,
+        50.5
+      ],
+      [
+        250.0,
+        68.0,
+        101.5
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "R3_keeper_blind_M2p5",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        244.75,
+        53.25,
+        99.79999542236328
+      ],
+      [
+        247.25,
+        55.75,
+        105.5999984741211
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "R3_keeper_inside_head",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        243.64999389648438,
+        52.150001525878906,
+        97.80000305175781
+      ],
+      [
+        248.35000610351562,
+        56.849998474121094,
+        99.80000305175781
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "R3_keeper_blind_M2p5.001",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        244.75,
+        64.25,
+        99.79999542236328
+      ],
+      [
+        247.25,
+        66.75,
+        105.5999984741211
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "R3_keeper_inside_head.001",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        243.64999389648438,
+        63.150001525878906,
+        97.80000305175781
+      ],
+      [
+        248.35000610351562,
+        67.8499984741211,
+        99.80000305175781
+      ]
+    ],
+    "parent": "RIG_도어_Y축회전_하강"
+  },
+  {
+    "name": "R3_cell_loaded_M6",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        117.94999694824219,
+        154.6999969482422,
+        60.0
+      ],
+      [
+        128.5500030517578,
+        165.3000030517578,
+        80.94999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "R3_cell_loaded_M6.001",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        132.9499969482422,
+        154.6999969482422,
+        60.0
+      ],
+      [
+        143.5500030517578,
+        165.3000030517578,
+        80.94999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "R3_single_weighing_tray",
+    "kind": "sheet_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        24.0,
+        8.0,
+        78.0
+      ],
+      [
+        237.5,
+        316.0,
+        81.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "R3_L6D_3kg_envelope",
+    "kind": "purchased_envelope",
+    "part": "Zemic L6D-C3-3kg-0.40B; actual beam/holes supplied by manufacturer",
+    "bounds_mm": [
+      [
+        115.75,
+        42.0,
+        44.0
+      ],
+      [
+        145.75,
+        172.0,
+        66.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "R3_cell_loaded_spacer",
+    "kind": "metal_fabrication",
+    "part": "",
+    "bounds_mm": [
+      [
+        115.75,
+        147.0,
+        66.0
+      ],
+      [
+        145.75,
+        172.0,
+        78.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_front_wall",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        6.0
+      ],
+      [
+        255.0,
+        6.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_captive_service_panel",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        25.5,
+        1.0,
+        8.5
+      ],
+      [
+        240.5,
+        5.0,
+        65.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_rear_wall",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        318.0,
+        6.0
+      ],
+      [
+        255.0,
+        324.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_right_lower_extension",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        243.0,
+        6.0,
+        6.0
+      ],
+      [
+        255.0,
+        318.0,
+        36.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_right_top_seal",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        251.5,
+        6.0,
+        100.0
+      ],
+      [
+        255.0,
+        318.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_left_outer_wall",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        12.0,
+        6.0
+      ],
+      [
+        4.0,
+        312.0,
+        108.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_slot_inner_extension",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        13.5,
+        12.0,
+        6.0
+      ],
+      [
+        19.5,
+        312.0,
+        36.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_guide_lower_support_6",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        6.0,
+        6.0
+      ],
+      [
+        22.0,
+        12.0,
+        36.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_guide_lower_support_312",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        0.0,
+        312.0,
+        6.0
+      ],
+      [
+        22.0,
+        318.0,
+        36.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_panel_internal_ear_29",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        26.0,
+        4.0,
+        60.0
+      ],
+      [
+        32.0,
+        20.0,
+        66.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_panel_internal_ear_229",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        226.0,
+        4.0,
+        60.0
+      ],
+      [
+        232.0,
+        20.0,
+        66.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_post_37_185",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        34.0,
+        182.0,
+        6.0
+      ],
+      [
+        40.0,
+        188.0,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_post_37_300",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        34.0,
+        297.0,
+        6.0
+      ],
+      [
+        40.0,
+        303.0,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_post_224_185",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        221.0,
+        182.0,
+        6.0
+      ],
+      [
+        227.0,
+        188.0,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_post_224_300",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        221.0,
+        297.0,
+        6.0
+      ],
+      [
+        227.0,
+        303.0,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lock_pedestal_210_48",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        208.0,
+        46.0,
+        6.0
+      ],
+      [
+        212.0,
+        50.0,
+        42.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lock_pedestal_210_72",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        208.0,
+        70.0,
+        6.0
+      ],
+      [
+        212.0,
+        74.0,
+        42.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lock_pedestal_233_48",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        231.0,
+        46.0,
+        6.0
+      ],
+      [
+        235.0,
+        50.0,
+        42.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lock_pedestal_233_72",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        231.0,
+        70.0,
+        6.0
+      ],
+      [
+        235.0,
+        74.0,
+        42.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_shaft_socket_84_140",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        77.0,
+        133.0,
+        6.0
+      ],
+      [
+        91.0,
+        147.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_shaft_socket_84_270",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        77.0,
+        263.0,
+        6.0
+      ],
+      [
+        91.0,
+        277.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_shaft_socket_194_140",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        187.0,
+        133.0,
+        6.0
+      ],
+      [
+        201.0,
+        147.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_shaft_socket_194_270",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        187.0,
+        263.0,
+        6.0
+      ],
+      [
+        201.0,
+        277.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_PQ12_fixed_mount",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        124.0,
+        200.0,
+        6.0
+      ],
+      [
+        136.0,
+        210.0,
+        16.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_limit_switch_backplate_58",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        58.0,
+        203.0,
+        6.0
+      ],
+      [
+        71.0,
+        206.0,
+        72.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_limit_switch_foot_58",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        55.0,
+        203.0,
+        6.0
+      ],
+      [
+        74.0,
+        209.0,
+        9.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_limit_switch_backplate_210",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        210.0,
+        203.0,
+        6.0
+      ],
+      [
+        223.0,
+        206.0,
+        72.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_limit_switch_foot_210",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        207.0,
+        203.0,
+        6.0
+      ],
+      [
+        226.0,
+        209.0,
+        9.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_latch_retracted",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        242.79998779296875,
+        86.69999694824219,
+        44.0
+      ],
+      [
+        245.0,
+        99.5,
+        54.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_latch_extended",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        226.0,
+        35.80000305175781,
+        6.0
+      ],
+      [
+        239.0,
+        39.0,
+        54.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_panel",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        65.0,
+        12.800000190734863,
+        6.0
+      ],
+      [
+        78.0,
+        15.800000190734863,
+        62.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_deck",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        205.0,
+        299.79998779296875,
+        6.0
+      ],
+      [
+        218.0,
+        302.79998779296875,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_closed",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        243.10000610351562,
+        297.79998779296875,
+        89.0
+      ],
+      [
+        249.0,
+        300.79998779296875,
+        100.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_switch_mount_stowed",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        20.0,
+        151.8000030517578,
+        6.0
+      ],
+      [
+        33.0,
+        154.8000030517578,
+        44.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_cradle_side_76",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        76.0,
+        40.0,
+        34.0
+      ],
+      [
+        92.0,
+        290.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_cradle_side_186",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        186.0,
+        40.0,
+        34.0
+      ],
+      [
+        202.0,
+        290.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_cradle_front",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        92.0,
+        40.0,
+        34.0
+      ],
+      [
+        186.0,
+        68.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_cradle_rear",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        92.0,
+        280.0,
+        34.0
+      ],
+      [
+        186.0,
+        290.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_cell_fixed_pedestal",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        112.75,
+        42.0,
+        37.0
+      ],
+      [
+        148.75,
+        67.0,
+        44.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_overload_stop_80_44",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        78.0,
+        42.0,
+        37.0
+      ],
+      [
+        82.0,
+        46.0,
+        77.19999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_overload_stop_80_284",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        78.0,
+        282.0,
+        37.0
+      ],
+      [
+        82.0,
+        286.0,
+        77.19999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_overload_stop_198_44",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        196.0,
+        42.0,
+        37.0
+      ],
+      [
+        200.0,
+        46.0,
+        77.19999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_overload_stop_198_284",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        196.0,
+        282.0,
+        37.0
+      ],
+      [
+        200.0,
+        286.0,
+        77.19999694824219
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bearing_holder_84_140",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        76.0,
+        132.0,
+        30.0
+      ],
+      [
+        92.0,
+        148.0,
+        43.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_84_140_-10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        72.0,
+        137.0,
+        34.0
+      ],
+      [
+        76.0,
+        143.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_84_140_10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        92.0,
+        137.0,
+        34.0
+      ],
+      [
+        96.0,
+        143.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bearing_holder_84_270",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        76.0,
+        262.0,
+        30.0
+      ],
+      [
+        92.0,
+        278.0,
+        43.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_84_270_-10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        72.0,
+        267.0,
+        34.0
+      ],
+      [
+        76.0,
+        273.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_84_270_10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        92.0,
+        267.0,
+        34.0
+      ],
+      [
+        96.0,
+        273.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bearing_holder_194_140",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        186.0,
+        132.0,
+        30.0
+      ],
+      [
+        202.0,
+        148.0,
+        43.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_194_140_-10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        182.0,
+        137.0,
+        34.0
+      ],
+      [
+        186.0,
+        143.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_194_140_10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        202.0,
+        137.0,
+        34.0
+      ],
+      [
+        206.0,
+        143.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bearing_holder_194_270",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        186.0,
+        262.0,
+        30.0
+      ],
+      [
+        202.0,
+        278.0,
+        43.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_194_270_-10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        182.0,
+        267.0,
+        34.0
+      ],
+      [
+        186.0,
+        273.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_bushing_tab_194_270_10",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        202.0,
+        267.0,
+        34.0
+      ],
+      [
+        206.0,
+        273.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_bracket_100_110",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        88.0,
+        106.0,
+        26.0
+      ],
+      [
+        94.0,
+        114.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_bracket_100_250",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        88.0,
+        246.0,
+        26.0
+      ],
+      [
+        94.0,
+        254.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_bracket_178_110",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        184.0,
+        106.0,
+        26.0
+      ],
+      [
+        190.0,
+        114.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_bracket_178_250",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        184.0,
+        246.0,
+        26.0
+      ],
+      [
+        190.0,
+        254.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_limit_flag_58",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        67.0,
+        193.0,
+        34.0
+      ],
+      [
+        73.0,
+        201.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_flag_bridge_58",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        70.0,
+        193.0,
+        34.0
+      ],
+      [
+        76.0,
+        196.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_limit_flag_210",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        219.0,
+        193.0,
+        34.0
+      ],
+      [
+        225.0,
+        201.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_flag_bridge_210",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        202.0,
+        193.0,
+        34.0
+      ],
+      [
+        225.0,
+        196.0,
+        37.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_slide_spacer_100",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        92.0,
+        169.0,
+        14.0
+      ],
+      [
+        108.0,
+        191.0,
+        16.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_slider_bar_100",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        91.5,
+        82.0,
+        16.0
+      ],
+      [
+        108.5,
+        280.0,
+        18.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_POM_ramp_100_110",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        95.0,
+        86.0,
+        18.0
+      ],
+      [
+        105.0,
+        111.0,
+        55.986122131347656
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_POM_ramp_100_250",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        95.0,
+        226.0,
+        18.0
+      ],
+      [
+        105.0,
+        251.0,
+        55.986122131347656
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_slide_spacer_178",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        170.0,
+        169.0,
+        14.0
+      ],
+      [
+        186.0,
+        191.0,
+        16.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_slider_bar_178",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        169.5,
+        82.0,
+        16.0
+      ],
+      [
+        186.5,
+        280.0,
+        18.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_POM_ramp_178_110",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        173.0,
+        86.0,
+        18.0
+      ],
+      [
+        183.0,
+        111.0,
+        55.986122131347656
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_POM_ramp_178_250",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        173.0,
+        226.0,
+        18.0
+      ],
+      [
+        183.0,
+        251.0,
+        55.986122131347656
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_slider_crossbar",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        94.0,
+        268.0,
+        16.0
+      ],
+      [
+        184.0,
+        280.0,
+        18.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_output_link",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        127.0,
+        249.0,
+        18.0
+      ],
+      [
+        133.0,
+        273.0,
+        20.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_PQ12_link_clevis",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        124.0,
+        245.0,
+        14.5
+      ],
+      [
+        136.0,
+        252.0,
+        24.5
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_panel_M3_29",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        27.5,
+        14.5,
+        60.0
+      ],
+      [
+        30.5,
+        17.5,
+        73.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_panel_M3_229",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        227.5,
+        14.5,
+        60.0
+      ],
+      [
+        230.5,
+        17.5,
+        73.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_M3_37_185",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        35.5,
+        183.5,
+        64.0
+      ],
+      [
+        38.5,
+        186.5,
+        74.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_M3_37_300",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        35.5,
+        298.5,
+        64.0
+      ],
+      [
+        38.5,
+        301.5,
+        74.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_M3_224_185",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        222.5,
+        183.5,
+        64.0
+      ],
+      [
+        225.5,
+        186.5,
+        74.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_M3_224_300",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        222.5,
+        298.5,
+        64.0
+      ],
+      [
+        225.5,
+        301.5,
+        74.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_cell_fixed_M6_123.25",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        120.25,
+        51.0,
+        34.0
+      ],
+      [
+        126.25,
+        57.0,
+        56.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_cell_fixed_M6_138.25",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        135.25,
+        51.0,
+        34.0
+      ],
+      [
+        141.25,
+        57.0,
+        56.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_6mm_shaft_84_140",
+    "kind": "purchased_envelope",
+    "part": "6 mm hardened smooth rod, cut to 68 mm",
+    "bounds_mm": [
+      [
+        81.0,
+        137.0,
+        7.0
+      ],
+      [
+        87.0,
+        143.0,
+        75.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_LM6UU_84_140",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg LM6UU 6x12x19",
+    "bounds_mm": [
+      [
+        78.0,
+        134.0,
+        27.0
+      ],
+      [
+        90.0,
+        146.0,
+        46.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_6mm_shaft_84_270",
+    "kind": "purchased_envelope",
+    "part": "6 mm hardened smooth rod, cut to 68 mm",
+    "bounds_mm": [
+      [
+        81.0,
+        267.0,
+        7.0
+      ],
+      [
+        87.0,
+        273.0,
+        75.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_LM6UU_84_270",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg LM6UU 6x12x19",
+    "bounds_mm": [
+      [
+        78.0,
+        264.0,
+        27.0
+      ],
+      [
+        90.0,
+        276.0,
+        46.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_6mm_shaft_194_140",
+    "kind": "purchased_envelope",
+    "part": "6 mm hardened smooth rod, cut to 68 mm",
+    "bounds_mm": [
+      [
+        191.0,
+        137.0,
+        7.0
+      ],
+      [
+        197.0,
+        143.0,
+        75.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_LM6UU_194_140",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg LM6UU 6x12x19",
+    "bounds_mm": [
+      [
+        188.0,
+        134.0,
+        27.0
+      ],
+      [
+        200.0,
+        146.0,
+        46.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_6mm_shaft_194_270",
+    "kind": "purchased_envelope",
+    "part": "6 mm hardened smooth rod, cut to 68 mm",
+    "bounds_mm": [
+      [
+        191.0,
+        267.0,
+        7.0
+      ],
+      [
+        197.0,
+        273.0,
+        75.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_LM6UU_194_270",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg LM6UU 6x12x19",
+    "bounds_mm": [
+      [
+        188.0,
+        264.0,
+        27.0
+      ],
+      [
+        200.0,
+        276.0,
+        46.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_MGN7_200_rail_100",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg SS_MGN7-200L with MGN7C",
+    "bounds_mm": [
+      [
+        96.5,
+        78.0,
+        6.000000476837158
+      ],
+      [
+        103.5,
+        278.0,
+        11.200000762939453
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MGN7C_100",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        91.5,
+        168.75,
+        10.0
+      ],
+      [
+        108.5,
+        191.25,
+        14.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_623ZZ_100_110",
+    "kind": "purchased_envelope",
+    "part": "623ZZ 3x10x4 mm",
+    "bounds_mm": [
+      [
+        98.0,
+        105.0,
+        24.0
+      ],
+      [
+        102.0,
+        115.0,
+        34.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_shoulder_M3_100_110",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        88.0,
+        108.5,
+        27.5
+      ],
+      [
+        104.0,
+        111.5,
+        30.5
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_623ZZ_100_250",
+    "kind": "purchased_envelope",
+    "part": "623ZZ 3x10x4 mm",
+    "bounds_mm": [
+      [
+        98.0,
+        245.0,
+        24.0
+      ],
+      [
+        102.0,
+        255.0,
+        34.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_shoulder_M3_100_250",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        88.0,
+        248.5,
+        27.5
+      ],
+      [
+        104.0,
+        251.5,
+        30.5
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_MGN7_200_rail_178",
+    "kind": "purchased_envelope",
+    "part": "RobotDigg SS_MGN7-200L with MGN7C",
+    "bounds_mm": [
+      [
+        174.5,
+        78.0,
+        6.000000476837158
+      ],
+      [
+        181.5,
+        278.0,
+        11.200000762939453
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MGN7C_178",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        169.5,
+        168.75,
+        10.0
+      ],
+      [
+        186.5,
+        191.25,
+        14.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_623ZZ_178_110",
+    "kind": "purchased_envelope",
+    "part": "623ZZ 3x10x4 mm",
+    "bounds_mm": [
+      [
+        176.0,
+        105.0,
+        24.0
+      ],
+      [
+        180.0,
+        115.0,
+        34.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_shoulder_M3_178_110",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        174.0,
+        108.5,
+        27.5
+      ],
+      [
+        190.0,
+        111.5,
+        30.5
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_623ZZ_178_250",
+    "kind": "purchased_envelope",
+    "part": "623ZZ 3x10x4 mm",
+    "bounds_mm": [
+      [
+        176.0,
+        245.0,
+        24.0
+      ],
+      [
+        180.0,
+        255.0,
+        34.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_roller_shoulder_M3_178_250",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        174.0,
+        248.5,
+        27.5
+      ],
+      [
+        190.0,
+        251.5,
+        30.5
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_PQ12_BODY",
+    "kind": "purchased_envelope",
+    "part": "Actuonix PQ12-100-12-S",
+    "bounds_mm": [
+      [
+        114.0,
+        208.0,
+        12.5
+      ],
+      [
+        135.5,
+        244.5,
+        27.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_PQ12_rear_eye",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        127.0,
+        202.0,
+        17.5
+      ],
+      [
+        133.0,
+        208.0,
+        22.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_PQ12_rod",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        127.0999984741211,
+        244.5,
+        17.100000381469727
+      ],
+      [
+        132.89999389648438,
+        248.0,
+        22.899999618530273
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_PQ12_rod_eye",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        127.0999984741211,
+        245.10000610351562,
+        17.5
+      ],
+      [
+        132.89999389648438,
+        250.89999389648438,
+        22.5
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_PQ12_M3_pin_205",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        128.5,
+        203.5,
+        16.0
+      ],
+      [
+        131.5,
+        206.5,
+        25.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_PQ12_M3_pin_248",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        128.5,
+        246.5,
+        16.0
+      ],
+      [
+        131.5,
+        249.5,
+        25.0
+      ]
+    ],
+    "parent": "SLIDER_Y_18mm"
+  },
+  {
+    "name": "L_DOWN_58",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        58.0,
+        197.0,
+        26.5
+      ],
+      [
+        70.80000305175781,
+        202.79998779296875,
+        33.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DOWN_58_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        58.0,
+        198.0,
+        33.0
+      ],
+      [
+        71.0,
+        201.79998779296875,
+        33.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_UP_58",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        58.0,
+        197.0,
+        64.5
+      ],
+      [
+        70.80000305175781,
+        202.79998779296875,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_UP_58_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        58.0,
+        198.0,
+        64.0
+      ],
+      [
+        71.0,
+        201.79998779296875,
+        64.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DOWN_210",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        210.0,
+        197.0,
+        26.5
+      ],
+      [
+        222.79998779296875,
+        202.79998779296875,
+        33.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DOWN_210_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        210.0,
+        198.0,
+        33.0
+      ],
+      [
+        223.0,
+        201.79998779296875,
+        33.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_UP_210",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        210.0,
+        197.0,
+        64.5
+      ],
+      [
+        222.79998779296875,
+        202.79998779296875,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_UP_210_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        210.0,
+        198.0,
+        64.0
+      ],
+      [
+        223.0,
+        201.79998779296875,
+        64.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_latch_retracted",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        237.0,
+        86.69999694824219,
+        46.5
+      ],
+      [
+        242.79998779296875,
+        99.5,
+        53.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_latch_retracted_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        238.0,
+        86.5999984741211,
+        53.0
+      ],
+      [
+        241.79998779296875,
+        99.5999984741211,
+        53.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_latch_extended",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        226.0,
+        30.000001907348633,
+        46.5
+      ],
+      [
+        238.79998779296875,
+        35.80000305175781,
+        53.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_latch_extended_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        226.0,
+        31.000001907348633,
+        53.0
+      ],
+      [
+        239.0,
+        34.80000305175781,
+        53.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_panel_seated",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        65.0,
+        6.999999523162842,
+        54.0
+      ],
+      [
+        77.80000305175781,
+        12.799999237060547,
+        60.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_panel_seated_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        65.0,
+        7.999999523162842,
+        60.5
+      ],
+      [
+        78.0,
+        11.799999237060547,
+        61.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_seated",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        205.0,
+        294.0,
+        64.0
+      ],
+      [
+        217.79998779296875,
+        299.79998779296875,
+        70.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_deck_seated_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        205.0,
+        295.0,
+        70.5
+      ],
+      [
+        218.0,
+        298.79998779296875,
+        71.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lid_closed",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        243.10000610351562,
+        285.0,
+        91.5
+      ],
+      [
+        248.89999389648438,
+        297.79998779296875,
+        98.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lid_closed_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        244.10000610351562,
+        284.8999938964844,
+        98.0
+      ],
+      [
+        247.89999389648438,
+        297.8999938964844,
+        98.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lid_stowed",
+    "kind": "purchased_envelope",
+    "part": "D2F-01L",
+    "bounds_mm": [
+      [
+        20.0,
+        146.0,
+        36.0
+      ],
+      [
+        32.79999923706055,
+        151.79998779296875,
+        42.5
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_lid_stowed_lever",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        20.0,
+        147.0,
+        42.5
+      ],
+      [
+        33.0,
+        150.79998779296875,
+        43.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_Nano",
+    "kind": "purchased_envelope",
+    "part": "Arduino A000005 18x45 mm",
+    "bounds_mm": [
+      [
+        39.0,
+        20.0,
+        12.0
+      ],
+      [
+        57.0,
+        65.0,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_Nano_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        41.0,
+        22.0,
+        13.59999942779541
+      ],
+      [
+        55.0,
+        63.0,
+        24.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_Nano_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        39.5,
+        20.5,
+        6.0
+      ],
+      [
+        42.5,
+        23.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_Nano_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        53.5,
+        61.5,
+        6.0
+      ],
+      [
+        56.5,
+        64.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_HX711",
+    "kind": "purchased_envelope",
+    "part": "Adafruit 5974",
+    "bounds_mm": [
+      [
+        40.0,
+        113.0,
+        12.0
+      ],
+      [
+        65.5,
+        136.0,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_HX711_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        42.0,
+        115.0,
+        13.600000381469727
+      ],
+      [
+        63.5,
+        134.0,
+        24.100000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_HX711_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        40.5,
+        113.5,
+        6.0
+      ],
+      [
+        43.5,
+        116.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_HX711_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        62.0,
+        132.5,
+        6.0
+      ],
+      [
+        65.0,
+        135.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_BLE",
+    "kind": "purchased_envelope",
+    "part": "Adafruit 2479 UART Friend",
+    "bounds_mm": [
+      [
+        39.0,
+        260.0,
+        12.0
+      ],
+      [
+        60.0,
+        292.0,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_BLE_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        41.0,
+        262.0,
+        13.600000381469727
+      ],
+      [
+        58.0,
+        290.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_BLE_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        39.5,
+        260.5,
+        6.0
+      ],
+      [
+        42.5,
+        263.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_BLE_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        56.5,
+        288.5,
+        6.0
+      ],
+      [
+        59.5,
+        291.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_D24V10F5",
+    "kind": "purchased_envelope",
+    "part": "Pololu 2831",
+    "bounds_mm": [
+      [
+        160.0,
+        20.0,
+        12.0
+      ],
+      [
+        177.77999877929688,
+        32.70000076293945,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_D24V10F5_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        162.0,
+        22.0,
+        13.600000381469727
+      ],
+      [
+        175.77999877929688,
+        30.700000762939453,
+        15.559999465942383
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_D24V10F5_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        160.5,
+        20.5,
+        6.0
+      ],
+      [
+        163.5,
+        23.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_D24V10F5_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        174.27999877929688,
+        29.200000762939453,
+        6.0
+      ],
+      [
+        177.27999877929688,
+        32.20000076293945,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DRV8876",
+    "kind": "purchased_envelope",
+    "part": "Pololu 4036",
+    "bounds_mm": [
+      [
+        207.0,
+        220.0,
+        12.0
+      ],
+      [
+        222.20001220703125,
+        237.79998779296875,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DRV8876_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        209.0,
+        222.0,
+        13.600000381469727
+      ],
+      [
+        220.20001220703125,
+        235.79998779296875,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DRV8876_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        207.5,
+        220.5,
+        6.0
+      ],
+      [
+        210.5,
+        223.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_DRV8876_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        218.6999969482422,
+        234.3000030517578,
+        6.0
+      ],
+      [
+        221.6999969482422,
+        237.3000030517578,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MCP23017",
+    "kind": "purchased_envelope",
+    "part": "Adafruit 5346",
+    "bounds_mm": [
+      [
+        34.0,
+        210.0,
+        12.0
+      ],
+      [
+        77.0,
+        228.0,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MCP23017_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        36.0,
+        212.0,
+        13.600000381469727
+      ],
+      [
+        75.0,
+        226.0,
+        17.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MCP23017_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        34.5,
+        210.5,
+        6.0
+      ],
+      [
+        37.5,
+        213.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_MCP23017_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        73.5,
+        224.5,
+        6.0
+      ],
+      [
+        76.5,
+        227.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_power_and_latch_board",
+    "kind": "purchased_envelope",
+    "part": "Custom perfboard IRLZ44N / diode / fuses / capacitors",
+    "bounds_mm": [
+      [
+        203.0,
+        112.0,
+        12.0
+      ],
+      [
+        233.0,
+        167.0,
+        13.600000381469727
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_power_and_latch_board_components",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        205.0,
+        114.0,
+        13.59999942779541
+      ],
+      [
+        231.0,
+        165.0,
+        27.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_power_and_latch_board_standoff",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        203.5,
+        112.5,
+        6.0
+      ],
+      [
+        206.5,
+        115.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_power_and_latch_board_standoff.001",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        229.5,
+        163.5,
+        6.0
+      ],
+      [
+        232.5,
+        166.5,
+        12.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_IRLZ44N",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        208.0,
+        120.0,
+        14.0
+      ],
+      [
+        218.0,
+        124.5,
+        31.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_FUSE_MAIN",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        160.0,
+        9.0,
+        12.0
+      ],
+      [
+        185.0,
+        17.0,
+        20.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_FUSE_MOTOR",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        207.0,
+        180.0,
+        12.0
+      ],
+      [
+        232.0,
+        188.0,
+        20.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_12V_jack",
+    "kind": "purchased_envelope",
+    "part": "",
+    "bounds_mm": [
+      [
+        174.0,
+        2.0,
+        19.0
+      ],
+      [
+        182.0,
+        13.0,
+        27.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_fixed_guard_deck",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        30.0,
+        16.0,
+        71.0
+      ],
+      [
+        232.0,
+        308.0,
+        74.0
+      ]
+    ],
+    "parent": null
+  },
+  {
+    "name": "L_moving_skirt_left",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        25.0,
+        10.0,
+        44.0
+      ],
+      [
+        25.799999237060547,
+        314.0,
+        78.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_moving_skirt_right",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        235.70001220703125,
+        10.0,
+        44.0
+      ],
+      [
+        236.5,
+        314.0,
+        78.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_moving_skirt_front",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        25.800003051757812,
+        10.0,
+        74.0
+      ],
+      [
+        235.6999969482422,
+        10.799999237060547,
+        78.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_moving_skirt_rear",
+    "kind": "custom",
+    "part": "",
+    "bounds_mm": [
+      [
+        25.800003051757812,
+        313.20001220703125,
+        44.0
+      ],
+      [
+        235.6999969482422,
+        314.0,
+        78.0
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  },
+  {
+    "name": "L_A4_reference",
+    "kind": "reference",
+    "part": "",
+    "bounds_mm": [
+      [
+        25.75,
+        13.5,
+        81.14999389648438
+      ],
+      [
+        235.75,
+        310.5,
+        81.25
+      ]
+    ],
+    "parent": "LIFT_VERTICAL_27mm"
+  }
+]

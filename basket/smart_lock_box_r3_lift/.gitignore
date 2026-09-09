@@ -1,0 +1,8 @@
+*.blend1
+__pycache__/
+sources/*.pdf
+sources/*.png
+source_inspection.json
+validation_build.log
+review_scene.blend
+validation/*.log

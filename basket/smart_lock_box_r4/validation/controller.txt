@@ -1,1 +1,0 @@
-PASS: complete sensor-driven cycle; boot, latch jam, skew, stale data, obstruction, movement, NaN, contradictory contacts, fault latch, coil timeout

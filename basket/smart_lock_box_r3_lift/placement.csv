@@ -1,0 +1,190 @@
+﻿name,kind,part,xmin,ymin,zmin,xmax,ymax,zmax,parent
+셸_격납슬롯내벽,print,,13.5,12.000999450683594,36.0,19.5,311.9989929199219,100.0,
+R3_base_255x324,sheet_fabrication,,0.0,0.0,0.0,255.0,324.0,6.0,
+R3_right_wall,print,,243.0,6.0,36.0,255.0,318.0,100.0,
+도어_가이드판_앞,metal_fabrication,,0.0,6.0,36.0,22.0,12.0,108.0,
+도어_가이드판_뒤,metal_fabrication,,0.0,312.0,36.0,22.0,318.0,108.0,
+도어_본체,print,,5.0,12.5,100.0,251.0,311.5,108.0,RIG_도어_Y축회전_하강
+도어_숄더볼트_앞,purchased_envelope,,6.5,6.5,101.5,11.5,22.0,106.5,RIG_도어_Y축회전_하강
+도어_숄더볼트_뒤,purchased_envelope,,6.5,302.0,101.5,11.5,317.5,106.5,RIG_도어_Y축회전_하강
+잠금_5065_프레임,purchased_envelope,,209.00001525878906,49.20000076293945,50.0,236.00001525878906,70.80001068115234,67.5,
+잠금_5065_코일,purchased_envelope,,211.00001525878906,52.500003814697266,53.0,233.50001525878906,67.50000762939453,65.5,
+잠금_5065_플랜지,purchased_envelope,,209.00001525878906,46.000003814697266,50.0,236.00001525878906,74.00000762939453,51.0,
+R3_lock_bolt_4p3mm,purchased_envelope,,234.50001525878906,57.500003814697266,53.5,242.00001525878906,62.500003814697266,63.5,
+R3_lock_base,metal_fabrication,,205.0,44.0,42.0,238.0,77.0,50.0,
+R3_door_keeper,metal_fabrication,,239.0,52.0,50.5,250.0,68.0,101.5,RIG_도어_Y축회전_하강
+R3_keeper_blind_M2p5,purchased_envelope,,244.75,53.25,99.79999542236328,247.25,55.75,105.5999984741211,RIG_도어_Y축회전_하강
+R3_keeper_inside_head,purchased_envelope,,243.64999389648438,52.150001525878906,97.80000305175781,248.35000610351562,56.849998474121094,99.80000305175781,RIG_도어_Y축회전_하강
+R3_keeper_blind_M2p5.001,purchased_envelope,,244.75,64.25,99.79999542236328,247.25,66.75,105.5999984741211,RIG_도어_Y축회전_하강
+R3_keeper_inside_head.001,purchased_envelope,,243.64999389648438,63.150001525878906,97.80000305175781,248.35000610351562,67.8499984741211,99.80000305175781,RIG_도어_Y축회전_하강
+R3_cell_loaded_M6,purchased_envelope,,117.94999694824219,154.6999969482422,60.0,128.5500030517578,165.3000030517578,80.94999694824219,LIFT_VERTICAL_27mm
+R3_cell_loaded_M6.001,purchased_envelope,,132.9499969482422,154.6999969482422,60.0,143.5500030517578,165.3000030517578,80.94999694824219,LIFT_VERTICAL_27mm
+R3_single_weighing_tray,sheet_fabrication,,24.0,8.0,78.0,237.5,316.0,81.0,LIFT_VERTICAL_27mm
+R3_L6D_3kg_envelope,purchased_envelope,Zemic L6D-C3-3kg-0.40B; actual beam/holes supplied by manufacturer,115.75,42.0,44.0,145.75,172.0,66.0,LIFT_VERTICAL_27mm
+R3_cell_loaded_spacer,metal_fabrication,,115.75,147.0,66.0,145.75,172.0,78.0,LIFT_VERTICAL_27mm
+L_front_wall,custom,,0.0,0.0,6.0,255.0,6.0,108.0,
+L_captive_service_panel,custom,,25.5,1.0,8.5,240.5,5.0,65.5,
+L_rear_wall,custom,,0.0,318.0,6.0,255.0,324.0,108.0,
+L_right_lower_extension,custom,,243.0,6.0,6.0,255.0,318.0,36.0,
+L_right_top_seal,custom,,251.5,6.0,100.0,255.0,318.0,108.0,
+L_left_outer_wall,custom,,0.0,12.0,6.0,4.0,312.0,108.0,
+L_slot_inner_extension,custom,,13.5,12.0,6.0,19.5,312.0,36.0,
+L_guide_lower_support_6,custom,,0.0,6.0,6.0,22.0,12.0,36.0,
+L_guide_lower_support_312,custom,,0.0,312.0,6.0,22.0,318.0,36.0,
+L_panel_internal_ear_29,custom,,26.0,4.0,60.0,32.0,20.0,66.0,
+L_panel_internal_ear_229,custom,,226.0,4.0,60.0,232.0,20.0,66.0,
+L_deck_post_37_185,custom,,34.0,182.0,6.0,40.0,188.0,71.0,
+L_deck_post_37_300,custom,,34.0,297.0,6.0,40.0,303.0,71.0,
+L_deck_post_224_185,custom,,221.0,182.0,6.0,227.0,188.0,71.0,
+L_deck_post_224_300,custom,,221.0,297.0,6.0,227.0,303.0,71.0,
+L_lock_pedestal_210_48,custom,,208.0,46.0,6.0,212.0,50.0,42.0,
+L_lock_pedestal_210_72,custom,,208.0,70.0,6.0,212.0,74.0,42.0,
+L_lock_pedestal_233_48,custom,,231.0,46.0,6.0,235.0,50.0,42.0,
+L_lock_pedestal_233_72,custom,,231.0,70.0,6.0,235.0,74.0,42.0,
+L_shaft_socket_84_140,custom,,77.0,133.0,6.0,91.0,147.0,17.0,
+L_shaft_socket_84_270,custom,,77.0,263.0,6.0,91.0,277.0,17.0,
+L_shaft_socket_194_140,custom,,187.0,133.0,6.0,201.0,147.0,17.0,
+L_shaft_socket_194_270,custom,,187.0,263.0,6.0,201.0,277.0,17.0,
+L_PQ12_fixed_mount,custom,,124.0,200.0,6.0,136.0,210.0,16.0,
+L_limit_switch_backplate_58,custom,,58.0,203.0,6.0,71.0,206.0,72.0,
+L_limit_switch_foot_58,custom,,55.0,203.0,6.0,74.0,209.0,9.0,
+L_limit_switch_backplate_210,custom,,210.0,203.0,6.0,223.0,206.0,72.0,
+L_limit_switch_foot_210,custom,,207.0,203.0,6.0,226.0,209.0,9.0,
+L_switch_mount_latch_retracted,custom,,242.79998779296875,86.69999694824219,44.0,245.0,99.5,54.0,
+L_switch_mount_latch_extended,custom,,226.0,35.80000305175781,6.0,239.0,39.0,54.0,
+L_switch_mount_panel,custom,,65.0,12.800000190734863,6.0,78.0,15.800000190734863,62.0,
+L_switch_mount_deck,custom,,205.0,299.79998779296875,6.0,218.0,302.79998779296875,71.0,
+L_switch_mount_closed,custom,,243.10000610351562,297.79998779296875,89.0,249.0,300.79998779296875,100.0,
+L_switch_mount_stowed,custom,,20.0,151.8000030517578,6.0,33.0,154.8000030517578,44.0,
+L_cradle_side_76,custom,,76.0,40.0,34.0,92.0,290.0,37.0,LIFT_VERTICAL_27mm
+L_cradle_side_186,custom,,186.0,40.0,34.0,202.0,290.0,37.0,LIFT_VERTICAL_27mm
+L_cradle_front,custom,,92.0,40.0,34.0,186.0,68.0,37.0,LIFT_VERTICAL_27mm
+L_cradle_rear,custom,,92.0,280.0,34.0,186.0,290.0,37.0,LIFT_VERTICAL_27mm
+L_cell_fixed_pedestal,custom,,112.75,42.0,37.0,148.75,67.0,44.0,LIFT_VERTICAL_27mm
+L_overload_stop_80_44,custom,,78.0,42.0,37.0,82.0,46.0,77.19999694824219,LIFT_VERTICAL_27mm
+L_overload_stop_80_284,custom,,78.0,282.0,37.0,82.0,286.0,77.19999694824219,LIFT_VERTICAL_27mm
+L_overload_stop_198_44,custom,,196.0,42.0,37.0,200.0,46.0,77.19999694824219,LIFT_VERTICAL_27mm
+L_overload_stop_198_284,custom,,196.0,282.0,37.0,200.0,286.0,77.19999694824219,LIFT_VERTICAL_27mm
+L_bearing_holder_84_140,custom,,76.0,132.0,30.0,92.0,148.0,43.0,LIFT_VERTICAL_27mm
+L_bushing_tab_84_140_-10,custom,,72.0,137.0,34.0,76.0,143.0,37.0,LIFT_VERTICAL_27mm
+L_bushing_tab_84_140_10,custom,,92.0,137.0,34.0,96.0,143.0,37.0,LIFT_VERTICAL_27mm
+L_bearing_holder_84_270,custom,,76.0,262.0,30.0,92.0,278.0,43.0,LIFT_VERTICAL_27mm
+L_bushing_tab_84_270_-10,custom,,72.0,267.0,34.0,76.0,273.0,37.0,LIFT_VERTICAL_27mm
+L_bushing_tab_84_270_10,custom,,92.0,267.0,34.0,96.0,273.0,37.0,LIFT_VERTICAL_27mm
+L_bearing_holder_194_140,custom,,186.0,132.0,30.0,202.0,148.0,43.0,LIFT_VERTICAL_27mm
+L_bushing_tab_194_140_-10,custom,,182.0,137.0,34.0,186.0,143.0,37.0,LIFT_VERTICAL_27mm
+L_bushing_tab_194_140_10,custom,,202.0,137.0,34.0,206.0,143.0,37.0,LIFT_VERTICAL_27mm
+L_bearing_holder_194_270,custom,,186.0,262.0,30.0,202.0,278.0,43.0,LIFT_VERTICAL_27mm
+L_bushing_tab_194_270_-10,custom,,182.0,267.0,34.0,186.0,273.0,37.0,LIFT_VERTICAL_27mm
+L_bushing_tab_194_270_10,custom,,202.0,267.0,34.0,206.0,273.0,37.0,LIFT_VERTICAL_27mm
+L_roller_bracket_100_110,custom,,88.0,106.0,26.0,94.0,114.0,37.0,LIFT_VERTICAL_27mm
+L_roller_bracket_100_250,custom,,88.0,246.0,26.0,94.0,254.0,37.0,LIFT_VERTICAL_27mm
+L_roller_bracket_178_110,custom,,184.0,106.0,26.0,190.0,114.0,37.0,LIFT_VERTICAL_27mm
+L_roller_bracket_178_250,custom,,184.0,246.0,26.0,190.0,254.0,37.0,LIFT_VERTICAL_27mm
+L_limit_flag_58,custom,,67.0,193.0,34.0,73.0,201.0,37.0,LIFT_VERTICAL_27mm
+L_flag_bridge_58,custom,,70.0,193.0,34.0,76.0,196.0,37.0,LIFT_VERTICAL_27mm
+L_limit_flag_210,custom,,219.0,193.0,34.0,225.0,201.0,37.0,LIFT_VERTICAL_27mm
+L_flag_bridge_210,custom,,202.0,193.0,34.0,225.0,196.0,37.0,LIFT_VERTICAL_27mm
+L_slide_spacer_100,custom,,92.0,169.0,14.0,108.0,191.0,16.0,SLIDER_Y_18mm
+L_slider_bar_100,custom,,91.5,82.0,16.0,108.5,280.0,18.0,SLIDER_Y_18mm
+L_POM_ramp_100_110,custom,,95.0,86.0,18.0,105.0,111.0,55.986122131347656,SLIDER_Y_18mm
+L_POM_ramp_100_250,custom,,95.0,226.0,18.0,105.0,251.0,55.986122131347656,SLIDER_Y_18mm
+L_slide_spacer_178,custom,,170.0,169.0,14.0,186.0,191.0,16.0,SLIDER_Y_18mm
+L_slider_bar_178,custom,,169.5,82.0,16.0,186.5,280.0,18.0,SLIDER_Y_18mm
+L_POM_ramp_178_110,custom,,173.0,86.0,18.0,183.0,111.0,55.986122131347656,SLIDER_Y_18mm
+L_POM_ramp_178_250,custom,,173.0,226.0,18.0,183.0,251.0,55.986122131347656,SLIDER_Y_18mm
+L_slider_crossbar,custom,,94.0,268.0,16.0,184.0,280.0,18.0,SLIDER_Y_18mm
+L_output_link,custom,,127.0,249.0,18.0,133.0,273.0,20.0,SLIDER_Y_18mm
+L_PQ12_link_clevis,custom,,124.0,245.0,14.5,136.0,252.0,24.5,SLIDER_Y_18mm
+L_panel_M3_29,purchased_envelope,,27.5,14.5,60.0,30.5,17.5,73.0,
+L_panel_M3_229,purchased_envelope,,227.5,14.5,60.0,230.5,17.5,73.0,
+L_deck_M3_37_185,purchased_envelope,,35.5,183.5,64.0,38.5,186.5,74.0,
+L_deck_M3_37_300,purchased_envelope,,35.5,298.5,64.0,38.5,301.5,74.0,
+L_deck_M3_224_185,purchased_envelope,,222.5,183.5,64.0,225.5,186.5,74.0,
+L_deck_M3_224_300,purchased_envelope,,222.5,298.5,64.0,225.5,301.5,74.0,
+L_cell_fixed_M6_123.25,purchased_envelope,,120.25,51.0,34.0,126.25,57.0,56.0,LIFT_VERTICAL_27mm
+L_cell_fixed_M6_138.25,purchased_envelope,,135.25,51.0,34.0,141.25,57.0,56.0,LIFT_VERTICAL_27mm
+L_6mm_shaft_84_140,purchased_envelope,"6 mm hardened smooth rod, cut to 68 mm",81.0,137.0,7.0,87.0,143.0,75.0,
+L_LM6UU_84_140,purchased_envelope,RobotDigg LM6UU 6x12x19,78.0,134.0,27.0,90.0,146.0,46.0,LIFT_VERTICAL_27mm
+L_6mm_shaft_84_270,purchased_envelope,"6 mm hardened smooth rod, cut to 68 mm",81.0,267.0,7.0,87.0,273.0,75.0,
+L_LM6UU_84_270,purchased_envelope,RobotDigg LM6UU 6x12x19,78.0,264.0,27.0,90.0,276.0,46.0,LIFT_VERTICAL_27mm
+L_6mm_shaft_194_140,purchased_envelope,"6 mm hardened smooth rod, cut to 68 mm",191.0,137.0,7.0,197.0,143.0,75.0,
+L_LM6UU_194_140,purchased_envelope,RobotDigg LM6UU 6x12x19,188.0,134.0,27.0,200.0,146.0,46.0,LIFT_VERTICAL_27mm
+L_6mm_shaft_194_270,purchased_envelope,"6 mm hardened smooth rod, cut to 68 mm",191.0,267.0,7.0,197.0,273.0,75.0,
+L_LM6UU_194_270,purchased_envelope,RobotDigg LM6UU 6x12x19,188.0,264.0,27.0,200.0,276.0,46.0,LIFT_VERTICAL_27mm
+L_MGN7_200_rail_100,purchased_envelope,RobotDigg SS_MGN7-200L with MGN7C,96.5,78.0,6.000000476837158,103.5,278.0,11.200000762939453,
+L_MGN7C_100,purchased_envelope,,91.5,168.75,10.0,108.5,191.25,14.0,SLIDER_Y_18mm
+L_623ZZ_100_110,purchased_envelope,623ZZ 3x10x4 mm,98.0,105.0,24.0,102.0,115.0,34.0,LIFT_VERTICAL_27mm
+L_roller_shoulder_M3_100_110,purchased_envelope,,88.0,108.5,27.5,104.0,111.5,30.5,LIFT_VERTICAL_27mm
+L_623ZZ_100_250,purchased_envelope,623ZZ 3x10x4 mm,98.0,245.0,24.0,102.0,255.0,34.0,LIFT_VERTICAL_27mm
+L_roller_shoulder_M3_100_250,purchased_envelope,,88.0,248.5,27.5,104.0,251.5,30.5,LIFT_VERTICAL_27mm
+L_MGN7_200_rail_178,purchased_envelope,RobotDigg SS_MGN7-200L with MGN7C,174.5,78.0,6.000000476837158,181.5,278.0,11.200000762939453,
+L_MGN7C_178,purchased_envelope,,169.5,168.75,10.0,186.5,191.25,14.0,SLIDER_Y_18mm
+L_623ZZ_178_110,purchased_envelope,623ZZ 3x10x4 mm,176.0,105.0,24.0,180.0,115.0,34.0,LIFT_VERTICAL_27mm
+L_roller_shoulder_M3_178_110,purchased_envelope,,174.0,108.5,27.5,190.0,111.5,30.5,LIFT_VERTICAL_27mm
+L_623ZZ_178_250,purchased_envelope,623ZZ 3x10x4 mm,176.0,245.0,24.0,180.0,255.0,34.0,LIFT_VERTICAL_27mm
+L_roller_shoulder_M3_178_250,purchased_envelope,,174.0,248.5,27.5,190.0,251.5,30.5,LIFT_VERTICAL_27mm
+L_PQ12_BODY,purchased_envelope,Actuonix PQ12-100-12-S,114.0,208.0,12.5,135.5,244.5,27.5,
+L_PQ12_rear_eye,purchased_envelope,,127.0,202.0,17.5,133.0,208.0,22.5,
+L_PQ12_rod,purchased_envelope,,127.0999984741211,244.5,17.100000381469727,132.89999389648438,248.0,22.899999618530273,
+L_PQ12_rod_eye,purchased_envelope,,127.0999984741211,245.10000610351562,17.5,132.89999389648438,250.89999389648438,22.5,SLIDER_Y_18mm
+L_PQ12_M3_pin_205,purchased_envelope,,128.5,203.5,16.0,131.5,206.5,25.0,
+L_PQ12_M3_pin_248,purchased_envelope,,128.5,246.5,16.0,131.5,249.5,25.0,SLIDER_Y_18mm
+L_DOWN_58,purchased_envelope,D2F-01L,58.0,197.0,26.5,70.80000305175781,202.79998779296875,33.0,
+L_DOWN_58_lever,purchased_envelope,,58.0,198.0,33.0,71.0,201.79998779296875,33.5,
+L_UP_58,purchased_envelope,D2F-01L,58.0,197.0,64.5,70.80000305175781,202.79998779296875,71.0,
+L_UP_58_lever,purchased_envelope,,58.0,198.0,64.0,71.0,201.79998779296875,64.5,
+L_DOWN_210,purchased_envelope,D2F-01L,210.0,197.0,26.5,222.79998779296875,202.79998779296875,33.0,
+L_DOWN_210_lever,purchased_envelope,,210.0,198.0,33.0,223.0,201.79998779296875,33.5,
+L_UP_210,purchased_envelope,D2F-01L,210.0,197.0,64.5,222.79998779296875,202.79998779296875,71.0,
+L_UP_210_lever,purchased_envelope,,210.0,198.0,64.0,223.0,201.79998779296875,64.5,
+L_latch_retracted,purchased_envelope,D2F-01L,237.0,86.69999694824219,46.5,242.79998779296875,99.5,53.0,
+L_latch_retracted_lever,purchased_envelope,,238.0,86.5999984741211,53.0,241.79998779296875,99.5999984741211,53.5,
+L_latch_extended,purchased_envelope,D2F-01L,226.0,30.000001907348633,46.5,238.79998779296875,35.80000305175781,53.0,
+L_latch_extended_lever,purchased_envelope,,226.0,31.000001907348633,53.0,239.0,34.80000305175781,53.5,
+L_panel_seated,purchased_envelope,D2F-01L,65.0,6.999999523162842,54.0,77.80000305175781,12.799999237060547,60.5,
+L_panel_seated_lever,purchased_envelope,,65.0,7.999999523162842,60.5,78.0,11.799999237060547,61.0,
+L_deck_seated,purchased_envelope,D2F-01L,205.0,294.0,64.0,217.79998779296875,299.79998779296875,70.5,
+L_deck_seated_lever,purchased_envelope,,205.0,295.0,70.5,218.0,298.79998779296875,71.0,
+L_lid_closed,purchased_envelope,D2F-01L,243.10000610351562,285.0,91.5,248.89999389648438,297.79998779296875,98.0,
+L_lid_closed_lever,purchased_envelope,,244.10000610351562,284.8999938964844,98.0,247.89999389648438,297.8999938964844,98.5,
+L_lid_stowed,purchased_envelope,D2F-01L,20.0,146.0,36.0,32.79999923706055,151.79998779296875,42.5,
+L_lid_stowed_lever,purchased_envelope,,20.0,147.0,42.5,33.0,150.79998779296875,43.0,
+L_Nano,purchased_envelope,Arduino A000005 18x45 mm,39.0,20.0,12.0,57.0,65.0,13.600000381469727,
+L_Nano_components,purchased_envelope,,41.0,22.0,13.59999942779541,55.0,63.0,24.0,
+L_Nano_standoff,custom,,39.5,20.5,6.0,42.5,23.5,12.0,
+L_Nano_standoff.001,custom,,53.5,61.5,6.0,56.5,64.5,12.0,
+L_HX711,purchased_envelope,Adafruit 5974,40.0,113.0,12.0,65.5,136.0,13.600000381469727,
+L_HX711_components,purchased_envelope,,42.0,115.0,13.600000381469727,63.5,134.0,24.100000381469727,
+L_HX711_standoff,custom,,40.5,113.5,6.0,43.5,116.5,12.0,
+L_HX711_standoff.001,custom,,62.0,132.5,6.0,65.0,135.5,12.0,
+L_BLE,purchased_envelope,Adafruit 2479 UART Friend,39.0,260.0,12.0,60.0,292.0,13.600000381469727,
+L_BLE_components,purchased_envelope,,41.0,262.0,13.600000381469727,58.0,290.0,17.0,
+L_BLE_standoff,custom,,39.5,260.5,6.0,42.5,263.5,12.0,
+L_BLE_standoff.001,custom,,56.5,288.5,6.0,59.5,291.5,12.0,
+L_D24V10F5,purchased_envelope,Pololu 2831,160.0,20.0,12.0,177.77999877929688,32.70000076293945,13.600000381469727,
+L_D24V10F5_components,purchased_envelope,,162.0,22.0,13.600000381469727,175.77999877929688,30.700000762939453,15.559999465942383,
+L_D24V10F5_standoff,custom,,160.5,20.5,6.0,163.5,23.5,12.0,
+L_D24V10F5_standoff.001,custom,,174.27999877929688,29.200000762939453,6.0,177.27999877929688,32.20000076293945,12.0,
+L_DRV8876,purchased_envelope,Pololu 4036,207.0,220.0,12.0,222.20001220703125,237.79998779296875,13.600000381469727,
+L_DRV8876_components,purchased_envelope,,209.0,222.0,13.600000381469727,220.20001220703125,235.79998779296875,17.0,
+L_DRV8876_standoff,custom,,207.5,220.5,6.0,210.5,223.5,12.0,
+L_DRV8876_standoff.001,custom,,218.6999969482422,234.3000030517578,6.0,221.6999969482422,237.3000030517578,12.0,
+L_MCP23017,purchased_envelope,Adafruit 5346,34.0,210.0,12.0,77.0,228.0,13.600000381469727,
+L_MCP23017_components,purchased_envelope,,36.0,212.0,13.600000381469727,75.0,226.0,17.0,
+L_MCP23017_standoff,custom,,34.5,210.5,6.0,37.5,213.5,12.0,
+L_MCP23017_standoff.001,custom,,73.5,224.5,6.0,76.5,227.5,12.0,
+L_power_and_latch_board,purchased_envelope,Custom perfboard IRLZ44N / diode / fuses / capacitors,203.0,112.0,12.0,233.0,167.0,13.600000381469727,
+L_power_and_latch_board_components,purchased_envelope,,205.0,114.0,13.59999942779541,231.0,165.0,27.0,
+L_power_and_latch_board_standoff,custom,,203.5,112.5,6.0,206.5,115.5,12.0,
+L_power_and_latch_board_standoff.001,custom,,229.5,163.5,6.0,232.5,166.5,12.0,
+L_IRLZ44N,purchased_envelope,,208.0,120.0,14.0,218.0,124.5,31.0,
+L_FUSE_MAIN,purchased_envelope,,160.0,9.0,12.0,185.0,17.0,20.0,
+L_FUSE_MOTOR,purchased_envelope,,207.0,180.0,12.0,232.0,188.0,20.0,
+L_12V_jack,purchased_envelope,,174.0,2.0,19.0,182.0,13.0,27.0,
+L_fixed_guard_deck,custom,,30.0,16.0,71.0,232.0,308.0,74.0,
+L_moving_skirt_left,custom,,25.0,10.0,44.0,25.799999237060547,314.0,78.0,LIFT_VERTICAL_27mm
+L_moving_skirt_right,custom,,235.70001220703125,10.0,44.0,236.5,314.0,78.0,LIFT_VERTICAL_27mm
+L_moving_skirt_front,custom,,25.800003051757812,10.0,74.0,235.6999969482422,10.799999237060547,78.0,LIFT_VERTICAL_27mm
+L_moving_skirt_rear,custom,,25.800003051757812,313.20001220703125,44.0,235.6999969482422,314.0,78.0,LIFT_VERTICAL_27mm
+L_A4_reference,reference,,25.75,13.5,81.14999389648438,235.75,310.5,81.25,LIFT_VERTICAL_27mm

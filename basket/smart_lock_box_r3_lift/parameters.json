@@ -1,0 +1,28 @@
+{
+  "revision": "R3-LIFT",
+  "source_sha256": "6ed63694638368050c0eb22d69837bc0f2a68b9f92c67729d8eb310fe0f39053",
+  "outside_mm": [
+    255,
+    324,
+    108
+  ],
+  "tray_surface_down_mm": 81,
+  "tray_surface_up_mm": 108,
+  "lift_mm": 27,
+  "slider_mm": 18,
+  "ramp_slope": 1.5,
+  "roller_radius_mm": 5,
+  "roller_centre_down_z_mm": 29,
+  "ramp_surface_at_roller_y_mm": 19.986121811340027,
+  "payload_design_target_kg": 0.5,
+  "motor_body_min_mm": [
+    114,
+    208,
+    12.5
+  ],
+  "motor_body_max_mm": [
+    135.5,
+    244.5,
+    27.5
+  ]
+}

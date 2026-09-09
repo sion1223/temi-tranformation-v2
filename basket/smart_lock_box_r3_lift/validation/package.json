@@ -1,0 +1,15 @@
+{
+  "source_preserved": true,
+  "glb_animation_count": 1,
+  "glb_unique_targets": 7,
+  "closed_glb_size_metres_xyz": [
+    0.255000019741245,
+    0.10800001299753823,
+    0.324000030647964
+  ],
+  "bom_rows": 32,
+  "drawings": 6,
+  "motion_frames_checked": 240,
+  "dynamic_mesh_check_pass": true,
+  "hardware_tested": false
+}
