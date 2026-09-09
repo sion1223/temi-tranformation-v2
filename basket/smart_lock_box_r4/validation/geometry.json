@@ -1,0 +1,21 @@
+{
+  "source_blender_warning": "R3 was written by Blender 5.2; opened in 4.5.3. Unmodified mesh extents checked against source inventory; old animations deliberately replaced.",
+  "sampled_frames": 143,
+  "collision_pairs": {},
+  "axis_collision_pairs": {},
+  "sequence_invariant_failures": [],
+  "fabrication_nonmanifold": [],
+  "retained_R3_meshes_checked": 77,
+  "retained_mesh_extent_errors": [],
+  "analytical_contact_cases": 121,
+  "analytical_errors": [],
+  "scope": "Nominal sampled mesh intersections for tray/lid vs rigid obstacles; explicit joint-interface exclusions. Not full FEA, tolerances, belt tooth meshing, sensor force, spring/damper proof or robot-mounted validation.",
+  "excluded_joint_interfaces": [
+    "hinge axle/bearings/hubs/springs",
+    "lead screw/nut/guide bush/shaft clamps",
+    "tray cradle and intentional roller/slot contact",
+    "wires/belts are routing envelopes"
+  ],
+  "hardware_tested": false,
+  "pass": true
+}

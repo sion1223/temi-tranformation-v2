@@ -1,0 +1,14 @@
+{
+  "format": "glTF 2.0 GLB",
+  "bytes": 2506016,
+  "animations": 1,
+  "metric_root_scale": [
+    0.0010000000474974513,
+    0.0010000000474974513,
+    0.0010000000474974513
+  ],
+  "nodes": 220,
+  "meshes": 215,
+  "animation_channels": 13,
+  "pass": true
+}

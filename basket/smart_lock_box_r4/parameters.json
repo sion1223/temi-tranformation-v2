@@ -1,0 +1,55 @@
+{
+  "revision": "R4-AUTO-LIFT",
+  "source_commit": "719c6429582e862e695bbf21333185b1ba9c1987",
+  "source_blend_sha256": "6ed63694638368050c0eb22d69837bc0f2a68b9f92c67729d8eb310fe0f39053",
+  "units": "millimetres, degrees, seconds",
+  "lid_pivot_mm": [
+    9,
+    0,
+    74
+  ],
+  "lid_open_deg": 105,
+  "lid_transmission_ratio": 3,
+  "tray_min_mm": [
+    24,
+    8,
+    48
+  ],
+  "tray_max_mm": [
+    237.5,
+    316,
+    51
+  ],
+  "tray_pivot_mm": [
+    35,
+    0,
+    43.3
+  ],
+  "tray_lift_mm": 35,
+  "tray_tilt_deg": 12,
+  "low_axis_x_mm": 35,
+  "high_axis_x_mm": 218,
+  "shaft_park_z_mm": 41.2,
+  "high_roller_radius_mm": 6,
+  "low_pickup_clearance_mm": 2.1,
+  "high_pickup_clearance_mm": 0.8,
+  "screw_lead_mm": 2,
+  "screw_diameter_mm": 8,
+  "screw_centres_y_mm": [
+    -22,
+    346
+  ],
+  "lead_screw_top_mm": 144,
+  "stepper_max_speed_mm_s": 4,
+  "lid_max_speed_deg_s": 10,
+  "paper_stack_max_mm": 10,
+  "paper_design_payload_kg": 1.0,
+  "tray_moving_mass_budget_kg": 0.7,
+  "lid_moving_mass_budget_kg": 1.0,
+  "load_factor": 2.0,
+  "screw_efficiency_assumed": 0.25,
+  "belt_efficiency_assumed": 0.8,
+  "fps": 24,
+  "frame_end": 1644,
+  "physical_hardware_tested": false
+}

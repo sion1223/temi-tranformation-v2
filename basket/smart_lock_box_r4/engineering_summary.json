@@ -1,0 +1,22 @@
+{
+  "low_edge_open_mm": [
+    22.63945637263139,
+    162,
+    83.54470792665495
+  ],
+  "high_edge_open_mm": [
+    231.4739691292989,
+    162,
+    127.93385391624656
+  ],
+  "low_edge_rise_mm": 32.54470792665495,
+  "high_edge_rise_mm": 76.93385391624656,
+  "low_screw_travel_mm": 37.099999999999994,
+  "high_screw_travel_mm": 74.6688080122895,
+  "design_force_per_side_N": 33.354,
+  "required_stepper_running_torque_Nm": 0.053084539718870775,
+  "lid_gravity_Nm": 1.1870100000000001,
+  "required_lid_motor_running_torque_Nm": 1.3749999999999998,
+  "lid_servo_travel_deg": 315,
+  "selection_note": "Running torque and thermal margins require bench measurement; stall/holding torque is not continuous torque."
+}

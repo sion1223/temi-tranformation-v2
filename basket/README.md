@@ -1,5 +1,18 @@
 # 스마트 잠금 상자 설계
 
+## R4 — 뚜껑 자동 개폐·종이 받침 상승/경사 추가
+
+[R4 설계와 모델 열기](smart_lock_box_r4/README.md)
+
+뚜껑 모터 1개와 받침 모터 2개를 추가한 별도 수정안입니다. 왼쪽 뚜껑을 105° 열고, 받침을 올린 뒤 오른쪽을 더 높여 12° 기울입니다. 닫을 때는 받침을 먼저 복귀시키고 뚜껑을 닫아 잠급니다. 기존 수동 격납 방식은 고정 힌지로 바뀌며 앞뒤에 구동 모듈이 추가됩니다. 실제 하드웨어 구동과 테미 장착은 검증 전입니다.
+
+- [R4 Blender 모델](smart_lock_box_r4/smart_lock_box_r4.blend) · [GLB 애니메이션](smart_lock_box_r4/smart_lock_box_r4.glb)
+- [모터·기구 계산](smart_lock_box_r4/MOTORS_AND_MECHANISM.md) · [제어·배선 설계](smart_lock_box_r4/CONTROL_AND_WIRING.md)
+
+![R4 자동 상승·경사 모델](smart_lock_box_r4/drawings/01_open_raised.webp)
+
+## R3 — 기존 단일 적재판 설계
+
 이번 수정본은 **R3-A4**입니다. 상부 칸막이를 없애고, 단일 적재판 아래에 전원·회로·로드셀·잠금장치를 둔 이중 바닥으로 변경했습니다.
 
 - [R3 편집 모델 및 개폐 애니메이션](smart_lock_box_r3/smart_lock_box_r3.blend)
