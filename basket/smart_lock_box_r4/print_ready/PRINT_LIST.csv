@@ -1,0 +1,68 @@
+﻿ID,STL,source,quantity,X_mm,Y_mm,Z_mm,material,joining
+P001,R3_base_255x324__01.stl,R3_base_255x324,1,131.425,165.925,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P002,R3_base_255x324__02.stl,R3_base_255x324,1,131.425,165.925,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P003,R3_base_255x324__03.stl,R3_base_255x324,1,131.425,165.925,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P004,R3_base_255x324__04.stl,R3_base_255x324,1,131.425,165.925,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P005,R3_captive_front_panel__01.stl,R3_captive_front_panel,1,112.025,31.0,19.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P006,R3_captive_front_panel__02.stl,R3_captive_front_panel,1,104.025,31.0,19.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P007,R3_deck_support__01.stl,R3_deck_support,1,8.0,35.0,6.0,PETG prototype,one piece
+P008,R3_deck_support_001__01.stl,R3_deck_support.001,1,8.0,35.0,6.0,PETG prototype,one piece
+P009,R3_deck_support_002__01.stl,R3_deck_support.002,1,8.0,35.0,6.0,PETG prototype,one piece
+P010,R3_deck_support_003__01.stl,R3_deck_support.003,1,8.0,35.0,6.0,PETG prototype,one piece
+P011,R3_fixed_electronics_deck__01.stl,R3_fixed_electronics_deck,1,17.6,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P012,R3_fixed_electronics_deck__02.stl,R3_fixed_electronics_deck,1,17.6,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P013,R3_fixed_electronics_deck__03.stl,R3_fixed_electronics_deck,1,166.1,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P014,R3_fixed_electronics_deck__04.stl,R3_fixed_electronics_deck,1,166.1,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P015,R3_fixed_electronics_deck__05.stl,R3_fixed_electronics_deck,1,4.5,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P016,R3_fixed_electronics_deck__06.stl,R3_fixed_electronics_deck,1,4.5,159.925,3.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P017,R3_front_top_seal__01.stl,R3_front_top_seal,1,26.1,14.0,6.0,PETG prototype,one piece
+P018,R3_front_top_seal__02.stl,R3_front_top_seal,1,166.1,14.0,1.0,PETG prototype,one piece
+P019,R3_front_top_seal__03.stl,R3_front_top_seal,1,4.5,14.0,1.0,PETG prototype,one piece
+P020,R3_front_wall__01.stl,R3_front_wall,1,131.425,72.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P021,R3_front_wall__02.stl,R3_front_wall,1,131.425,72.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P022,R3_front_wall__03.stl,R3_front_wall,1,166.1,38.5,6.0,PETG prototype,one piece
+P023,R3_overload_stop__01.stl,R3_overload_stop,1,5.0,5.0,3.2,PETG prototype,one piece
+P024,R3_overload_stop_001__01.stl,R3_overload_stop.001,1,5.0,5.0,3.2,PETG prototype,one piece
+P025,R3_overload_stop_002__01.stl,R3_overload_stop.002,1,5.0,5.0,3.2,PETG prototype,one piece
+P026,R3_overload_stop_003__01.stl,R3_overload_stop.003,1,5.0,5.0,3.2,PETG prototype,one piece
+P027,R3_rear_top_seal__01.stl,R3_rear_top_seal,1,26.1,14.0,6.0,PETG prototype,one piece
+P028,R3_rear_top_seal__02.stl,R3_rear_top_seal,1,166.1,14.0,1.0,PETG prototype,one piece
+P029,R3_rear_top_seal__03.stl,R3_rear_top_seal,1,4.5,14.0,1.0,PETG prototype,one piece
+P030,R3_rear_wall__01.stl,R3_rear_wall,1,131.425,72.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P031,R3_rear_wall__02.stl,R3_rear_wall,1,131.425,72.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P032,R3_right_top_seal__01.stl,R3_right_top_seal,1,159.925,8.0,3.5,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P033,R3_right_top_seal__02.stl,R3_right_top_seal,1,159.925,8.0,3.5,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P034,R3_right_wall__01.stl,R3_right_wall,1,159.925,64.0,12.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P035,R3_right_wall__02.stl,R3_right_wall,1,159.925,64.0,12.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P036,R4_M1_mount__01.stl,R4_M1_mount,1,57.0,65.0,45.0,PETG prototype,one piece
+P037,R4_M2_LOW_bearing_support_m22_144__01.stl,R4_M2_LOW_bearing_support_-22_144,1,40.0,26.0,7.0,PETG prototype,one piece
+P038,R4_M2_LOW_bearing_support_m22_24__01.stl,R4_M2_LOW_bearing_support_-22_24,1,40.0,26.0,7.0,PETG prototype,one piece
+P039,R4_M2_LOW_bearing_support_346_144__01.stl,R4_M2_LOW_bearing_support_346_144,1,40.0,26.0,7.0,PETG prototype,one piece
+P040,R4_M2_LOW_bearing_support_346_16__01.stl,R4_M2_LOW_bearing_support_346_16,1,40.0,26.0,7.0,PETG prototype,one piece
+P041,R4_M2_LOW_column_guard_m40__01.stl,R4_M2_LOW_column_guard_-40,1,69.0,152.0,2.0,PETG prototype,one piece
+P042,R4_M2_LOW_column_guard_362__01.stl,R4_M2_LOW_column_guard_362,1,69.0,152.0,2.0,PETG prototype,one piece
+P043,R4_M2_LOW_motor_mount__01.stl,R4_M2_LOW_motor_mount,1,50.0,50.0,4.0,PETG prototype,one piece
+P044,R4_M2_LOW_rear_base__01.stl,R4_M2_LOW_rear_base,1,54.0,40.0,6.0,PETG prototype,one piece
+P045,R4_M2_LOW_slider_m22__01.stl,R4_M2_LOW_slider_-22,1,50.0,24.0,16.0,PETG prototype,one piece
+P046,R4_M2_LOW_slider_346__01.stl,R4_M2_LOW_slider_346,1,50.0,24.0,16.0,PETG prototype,one piece
+P047,R4_M3_HIGH_bearing_support_m22_144__01.stl,R4_M3_HIGH_bearing_support_-22_144,1,40.0,26.0,7.0,PETG prototype,one piece
+P048,R4_M3_HIGH_bearing_support_m22_24__01.stl,R4_M3_HIGH_bearing_support_-22_24,1,40.0,26.0,7.0,PETG prototype,one piece
+P049,R4_M3_HIGH_bearing_support_346_144__01.stl,R4_M3_HIGH_bearing_support_346_144,1,40.0,26.0,7.0,PETG prototype,one piece
+P050,R4_M3_HIGH_bearing_support_346_16__01.stl,R4_M3_HIGH_bearing_support_346_16,1,40.0,26.0,7.0,PETG prototype,one piece
+P051,R4_M3_HIGH_column_guard_m40__01.stl,R4_M3_HIGH_column_guard_-40,1,69.0,152.0,2.0,PETG prototype,one piece
+P052,R4_M3_HIGH_column_guard_362__01.stl,R4_M3_HIGH_column_guard_362,1,69.0,152.0,2.0,PETG prototype,one piece
+P053,R4_M3_HIGH_motor_mount__01.stl,R4_M3_HIGH_motor_mount,1,50.0,50.0,4.0,PETG prototype,one piece
+P054,R4_M3_HIGH_rear_base__01.stl,R4_M3_HIGH_rear_base,1,54.0,40.0,6.0,PETG prototype,one piece
+P055,R4_M3_HIGH_slider_m22__01.stl,R4_M3_HIGH_slider_-22,1,50.0,24.0,16.0,PETG prototype,one piece
+P056,R4_M3_HIGH_slider_346__01.stl,R4_M3_HIGH_slider_346,1,50.0,24.0,16.0,PETG prototype,one piece
+P057,R4_fixed_hinge_plate_312__01.stl,R4_fixed_hinge_plate_312,1,22.0,78.0,6.0,PETG prototype,one piece
+P058,R4_fixed_hinge_plate_6__01.stl,R4_fixed_hinge_plate_6,1,22.0,78.0,6.0,PETG prototype,one piece
+P059,R4_paper_tray_with_end_fences__01.stl,R4_paper_tray_with_end_fences,1,215.5,157.925,18.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P060,R4_paper_tray_with_end_fences__02.stl,R4_paper_tray_with_end_fences,1,215.5,157.925,18.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P061,R4_rear_hinge_support__01.stl,R4_rear_hinge_support,1,37.0,101.0,17.0,PETG prototype,one piece
+P062,lid__01.stl,도어_본체,1,124.501,153.425,8.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P063,lid__02.stl,도어_본체,1,124.501,153.425,8.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P064,lid__03.stl,도어_본체,1,124.501,153.425,8.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P065,lid__04.stl,도어_본체,1,124.501,153.425,8.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P066,slot_inner_wall__01.stl,셸_격납슬롯내벽,1,153.924,64.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance
+P067,slot_inner_wall__02.stl,셸_격납슬롯내벽,1,153.924,64.0,6.0,PETG prototype,8 mm adhesive lap; 0.15 mm clearance

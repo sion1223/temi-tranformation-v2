@@ -1,0 +1,4746 @@
+{
+  "pass": true,
+  "source_blend_sha256": "b2de5ec50c01d2143d5a8fa758633ed98f37c65e883b53356560dd30e75fe748",
+  "software": {
+    "bpy": "4.5.3 LTS",
+    "trimesh": "5.1.0"
+  },
+  "units": "mm",
+  "bed_mm": [
+    220,
+    220,
+    250
+  ],
+  "reserved_edge_mm": 2,
+  "stl_count": 67,
+  "source_part_count": 44,
+  "all_stl_readback_watertight": true,
+  "all_grounded_and_within_bed": true,
+  "non_printed_objects": [
+    {
+      "object": "R3_door_magnet",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "잠금_5065_프레임",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "잠금_5065_코일",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "잠금_5065_플랜지",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_lock_bolt_4p3mm",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "잠금_S1_후퇴확인_NC",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "잠금_S2_전진확인_NO",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_lock_base",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R3_door_keeper",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R3_D3_closed_reed",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_Arduino_Nano",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_Arduino_Nano_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_Arduino_Nano_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_Arduino_Nano_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_Nano_USB_internal",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_HX711_5V_carrier",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_HX711_5V_carrier_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_HX711_5V_carrier_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_HX711_5V_carrier_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D24V10F5",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D24V10F5_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D24V10F5_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D24V10F5_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_MOSFET_driver",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_MOSFET_driver_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_MOSFET_driver_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_IRLZ44N",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_F1_T1A",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_SB310",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_BLE_3V3",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_BLE_3V3_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_BLE_3V3_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_BLE_3V3_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_LDO_level_shift",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_LDO_level_shift_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_LDO_level_shift_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_LDO_level_shift_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D12_electronics_seated",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_A3_panel_closed",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_power_sense_100k33k",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_power_sense_100k33k_IC",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_power_sense_100k33k_spacer",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_power_sense_100k33k_spacer.001",
+      "kind": "print",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_bulk_cap",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_bulk_cap.001",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_D1_flyback",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_12V_jack",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_status_LED",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_S1_adjustable_lever",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_S2_adjustable_lever",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_internal_manual_release",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "J1_COIL",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "J2_LATCH",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "J3_CELL",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "J4_DECK",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_CELL_SHIELDED",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_5V_to_HX",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_HX_CLOCK_DATA",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_12V_fused",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_COIL_pair",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_GND_star",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_BLE_UART",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_PANEL_switch",
+      "kind": "wire_route",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R3_lock_M3",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_lock_M3.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_lock_M3.002",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_lock_M3.003",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_keeper_blind_M2p5",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_keeper_inside_head",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_keeper_blind_M2p5.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_keeper_inside_head.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_inside_M3",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_head",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_inside_M3.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_head.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_inside_M3.002",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_head.002",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_inside_M3.003",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_deck_head.003",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_cell_fixed_M6",
+      "kind": "purchased_envelope",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R3_cell_fixed_M6.001",
+      "kind": "purchased_envelope",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R3_panel_inside_M3",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_panel_inside_head",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_panel_inside_M3.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_panel_inside_head.001",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_cell_fixed_pedestal",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R3_L6D_3kg_envelope",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R3_cell_loaded_spacer",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_lid_8mm_axle",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_lid_bearing_-3",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_lid_bearing_319",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_keyed_lid_hub_19",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_lid_hub_arm_19",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_keyed_lid_hub_293",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_lid_hub_arm_293",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_M1_horn",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M1_20T_pulley",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_lid_60T_pulley",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_lid_spring_envelope_-38",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_lid_spring_envelope_333",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_lid_rotary_damper",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_open_stop_adjuster",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_lid_stop_arm",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_LID_OPEN_switch",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_weighing_cradle",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_cradle_M6_123.25",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_cradle_M6_138.25",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_low_pickup_ear_24",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_low_pickup_ear_296",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_M2_LOW_motor_shaft",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_Tr8x2_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_guide_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_Tr8_nut_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_guide_bush_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_20T_sync_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_HOME_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_UPPER_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_linear_feedback_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_Tr8x2_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_guide_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_Tr8_nut_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_guide_bush_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_20T_sync_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_HOME_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_UPPER_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_linear_feedback_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_6mm_lift_shaft",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_M2_LOW_coupler",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_motor_shaft",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_Tr8x2_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_guide_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_Tr8_nut_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_guide_bush_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_20T_sync_-22",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_HOME_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_UPPER_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_linear_feedback_-22",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_Tr8x2_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_guide_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_Tr8_nut_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_guide_bush_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_20T_sync_346",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_HOME_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_UPPER_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_linear_feedback_346",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_HIGH_6mm_lift_shaft",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_high_roller_24",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_high_roller_296",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_coupler",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M1_XM430_W350_T",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_17HS13_motor",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_17HS13_motor",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M1_belt_run_A",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M1_belt_run_B",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_D3_wire",
+      "kind": "route_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_LOW_sync_belt_-1",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M2_LOW_sync_belt_1",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_sync_belt_-1",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_M3_HIGH_sync_belt_1",
+      "kind": "route_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_motor_supply_route",
+      "kind": "route_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M1_signal_route",
+      "kind": "route_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_power_route",
+      "kind": "route_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_power_route",
+      "kind": "route_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_A4_stack_reference",
+      "kind": "reference_only",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_motion_MCU",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M2_current_driver",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_M3_current_driver",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_protected_power_branches",
+      "kind": "purchased_envelope",
+      "reason": "circuit_or_wiring"
+    },
+    {
+      "object": "R4_carry_handle_front",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_handle_front_M4_92_12",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_92_12_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_92_12_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_92_28",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_92_28_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_92_28_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_12",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_12_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_12_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_28",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_28_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_front_M4_199_28_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_carry_handle_rear",
+      "kind": "metal_fabrication",
+      "reason": "metal_hardware_keep_metal"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_12",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_12_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_12_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_28",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_28_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_92_28_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_12",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_12_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_12_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_28",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_28_washer",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    },
+    {
+      "object": "R4_handle_rear_M4_199_28_locknut",
+      "kind": "purchased_envelope",
+      "reason": "purchased_or_reference_envelope"
+    }
+  ],
+  "source_reconstruction": [
+    {
+      "object": "R3_base_255x324",
+      "parts": 4,
+      "original_mm3": 493885.2537684069,
+      "added_mm3": 3.874157678790213e-05,
+      "joint_clearance_removed_mm3": 1198.7008314593113
+    },
+    {
+      "object": "R3_captive_front_panel",
+      "parts": 2,
+      "original_mm3": 26224.10288916962,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 18.600000000002183
+    },
+    {
+      "object": "R3_deck_support",
+      "parts": 1,
+      "original_mm3": 1631.0556910587475,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_deck_support.001",
+      "parts": 1,
+      "original_mm3": 1631.055796906352,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_deck_support.002",
+      "parts": 1,
+      "original_mm3": 1631.055855621118,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_deck_support.003",
+      "parts": 1,
+      "original_mm3": 1631.0559614673257,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_fixed_electronics_deck",
+      "parts": 6,
+      "original_mm3": 171746.9518238178,
+      "added_mm3": 1.3877787807814457e-16,
+      "joint_clearance_removed_mm3": 243.705020141555
+    },
+    {
+      "object": "R3_front_top_seal",
+      "parts": 3,
+      "original_mm3": 3628.8001708984375,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_front_wall",
+      "parts": 3,
+      "original_mm3": 60542.94504548353,
+      "added_mm3": -1.0658141036401503e-14,
+      "joint_clearance_removed_mm3": 3.1499999999941792
+    },
+    {
+      "object": "R3_overload_stop",
+      "parts": 1,
+      "original_mm3": 62.42883742052086,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_overload_stop.001",
+      "parts": 1,
+      "original_mm3": 62.428822208591825,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_overload_stop.002",
+      "parts": 1,
+      "original_mm3": 62.42873858484507,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_overload_stop.003",
+      "parts": 1,
+      "original_mm3": 62.4287233733817,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_rear_top_seal",
+      "parts": 3,
+      "original_mm3": 3628.8001708984375,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R3_rear_wall",
+      "parts": 2,
+      "original_mm3": 100616.70629357127,
+      "added_mm3": 6.35760078193659e-08,
+      "joint_clearance_removed_mm3": 151.19999993640522
+    },
+    {
+      "object": "R3_right_top_seal",
+      "parts": 2,
+      "original_mm3": 8736.0,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 13.799999999997453
+    },
+    {
+      "object": "R3_right_wall",
+      "parts": 2,
+      "original_mm3": 233869.98386114484,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 191.9999999999709
+    },
+    {
+      "object": "R4_M1_mount",
+      "parts": 1,
+      "original_mm3": 25014.826502355994,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_bearing_support_-22_144",
+      "parts": 1,
+      "original_mm3": 6565.759265201312,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_bearing_support_-22_24",
+      "parts": 1,
+      "original_mm3": 6565.759265201312,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_bearing_support_346_144",
+      "parts": 1,
+      "original_mm3": 6565.759321626509,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_bearing_support_346_16",
+      "parts": 1,
+      "original_mm3": 6565.759321626509,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_column_guard_-40",
+      "parts": 1,
+      "original_mm3": 20976.0,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_column_guard_362",
+      "parts": 1,
+      "original_mm3": 20976.0,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_motor_mount",
+      "parts": 1,
+      "original_mm3": 8285.478375967665,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_rear_base",
+      "parts": 1,
+      "original_mm3": 12778.285946403164,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_slider_-22",
+      "parts": 1,
+      "original_mm3": 14124.479115017515,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M2_LOW_slider_346",
+      "parts": 1,
+      "original_mm3": 14124.474152781244,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_bearing_support_-22_144",
+      "parts": 1,
+      "original_mm3": 6565.759215793078,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_bearing_support_-22_24",
+      "parts": 1,
+      "original_mm3": 6565.759215793078,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_bearing_support_346_144",
+      "parts": 1,
+      "original_mm3": 6565.7592722219415,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_bearing_support_346_16",
+      "parts": 1,
+      "original_mm3": 6565.7592722219415,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_column_guard_-40",
+      "parts": 1,
+      "original_mm3": 20976.0,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_column_guard_362",
+      "parts": 1,
+      "original_mm3": 20976.0,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_motor_mount",
+      "parts": 1,
+      "original_mm3": 8285.478098428808,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_rear_base",
+      "parts": 1,
+      "original_mm3": 12778.285973221064,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_slider_-22",
+      "parts": 1,
+      "original_mm3": 14124.480981505942,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_M3_HIGH_slider_346",
+      "parts": 1,
+      "original_mm3": 14124.476019257214,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_fixed_hinge_plate_312",
+      "parts": 1,
+      "original_mm3": 9856.356593788896,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_fixed_hinge_plate_6",
+      "parts": 1,
+      "original_mm3": 9856.356593788896,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "R4_paper_tray_with_end_fences",
+      "parts": 2,
+      "original_mm3": 215922.18362083286,
+      "added_mm3": 8.43769498715119e-15,
+      "joint_clearance_removed_mm3": 362.77499313344015
+    },
+    {
+      "object": "R4_rear_hinge_support",
+      "parts": 1,
+      "original_mm3": 13342.473615821918,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 0.0
+    },
+    {
+      "object": "도어_본체",
+      "parts": 4,
+      "original_mm3": 569594.4054520192,
+      "added_mm3": 2.8993424533614587e-07,
+      "joint_clearance_removed_mm3": 1279.414973028819
+    },
+    {
+      "object": "셸_격납슬롯내벽",
+      "parts": 2,
+      "original_mm3": 113981.67197371068,
+      "added_mm3": 0.0,
+      "joint_clearance_removed_mm3": 120.52499928473844
+    }
+  ],
+  "parts": [
+    {
+      "id": "P001",
+      "file": "R3_base_255x324__01.stl",
+      "source": "R3_base_255x324",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        165.925,
+        6.0
+      ],
+      "volume_mm3": 123454.95,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 162.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          255.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          324.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "ad2493cd52b0eb68533c560a45d4a7582317204a5b0e5ff1a3cf066d6107e869"
+    },
+    {
+      "id": "P002",
+      "file": "R3_base_255x324__02.stl",
+      "source": "R3_base_255x324",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        165.925,
+        6.0
+      ],
+      "volume_mm3": 123267.749,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 162.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          131.425
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          324.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e52916c7e668659f0e821ca560222e6e5a3d916555f3ce4cd6eabf30e2eaf49f"
+    },
+    {
+      "id": "P003",
+      "file": "R3_base_255x324__03.stl",
+      "source": "R3_base_255x324",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        165.925,
+        6.0
+      ],
+      "volume_mm3": 122753.025,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 162.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          255.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "0d68b19b8941b2fc77767ad1646aff51c5c50b27718cd4105b2946007a931c2c"
+    },
+    {
+      "id": "P004",
+      "file": "R3_base_255x324__04.stl",
+      "source": "R3_base_255x324",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        165.925,
+        6.0
+      ],
+      "volume_mm3": 123210.85,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 162.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          131.42499999999995
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "4c5b1a04539e10528400e2afbc2fd12b1171f8d55f5f5c84d16ebe9dc3bd0029"
+    },
+    {
+      "id": "P005",
+      "file": "R3_captive_front_panel__01.stl",
+      "source": "R3_captive_front_panel",
+      "quantity": 1,
+      "dimensions_mm": [
+        112.025,
+        31.0,
+        19.0
+      ],
+      "volume_mm3": 13816.746,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 108.10000610351562,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 9.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          240.60000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "a0f8dd0f25746aeaa497e0cf6e939afed5bb048559719df1ce9015e00994bd3b"
+    },
+    {
+      "id": "P006",
+      "file": "R3_captive_front_panel__02.stl",
+      "source": "R3_captive_front_panel",
+      "quantity": 1,
+      "dimensions_mm": [
+        104.025,
+        31.0,
+        19.0
+      ],
+      "volume_mm3": 12388.758,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 108.10000610351562,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 9.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          128.42499999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e4e82f5a36f5d00f3b7e19088a8fc586f1f6bbceee863951f0b3b377e17e3d65"
+    },
+    {
+      "id": "P007",
+      "file": "R3_deck_support__01.stl",
+      "source": "R3_deck_support",
+      "quantity": 1,
+      "dimensions_mm": [
+        8.0,
+        35.0,
+        6.0
+      ],
+      "volume_mm3": 1631.056,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          24.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          86.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "26b346f94af9ed02f0369dc19123d6ab0e5845cbc487a3baa17e866f60bd3aa9"
+    },
+    {
+      "id": "P008",
+      "file": "R3_deck_support_001__01.stl",
+      "source": "R3_deck_support.001",
+      "quantity": 1,
+      "dimensions_mm": [
+        8.0,
+        35.0,
+        6.0
+      ],
+      "volume_mm3": 1631.056,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          235.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          86.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "9d935a01a4e373d0601644c9e954af672b50cb22621b639973498a8ac45b8889"
+    },
+    {
+      "id": "P009",
+      "file": "R3_deck_support_002__01.stl",
+      "source": "R3_deck_support.002",
+      "quantity": 1,
+      "dimensions_mm": [
+        8.0,
+        35.0,
+        6.0
+      ],
+      "volume_mm3": 1631.056,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          24.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          246.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "ee88e999761078d889bdae91639b44fe086924962adfa04d69300bfb82a6ea8d"
+    },
+    {
+      "id": "P010",
+      "file": "R3_deck_support_003__01.stl",
+      "source": "R3_deck_support.003",
+      "quantity": 1,
+      "dimensions_mm": [
+        8.0,
+        35.0,
+        6.0
+      ],
+      "volume_mm3": 1631.056,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          235.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          246.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "523eaf7d91b845a2e64d4e5d8a86fd9452b0b67becb5e0c7606d14b40c536828"
+    },
+    {
+      "id": "P011",
+      "file": "R3_fixed_electronics_deck__01.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        17.6,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 8181.736,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          243.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          318.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "5b84a9095edee71df72fa036953b2f8018dccb935aa2f870a4c6cb9f615c263c"
+    },
+    {
+      "id": "P012",
+      "file": "R3_fixed_electronics_deck__02.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        17.6,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 7881.116,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          243.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "74703f6eb13bd882163fec2b718c9dee9c808f3dbe15705f925882a00adfc104"
+    },
+    {
+      "id": "P013",
+      "file": "R3_fixed_electronics_deck__03.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        166.1,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 75930.184,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          210.60000610351562
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          318.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "fd4ff34a7b94edead6f862dd6678585b5a71aab195f954f628885aab51d43694"
+    },
+    {
+      "id": "P014",
+      "file": "R3_fixed_electronics_deck__04.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        166.1,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 75322.684,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          210.60000610351562
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "bc59e32edc572d98c4da513f7c649f6edd01a62f7c601fd2f6c97de41a9c291f"
+    },
+    {
+      "id": "P015",
+      "file": "R3_fixed_electronics_deck__05.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.5,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 2093.765,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          26.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          318.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "fdb23f4e668141202ce6eeaa4b407070ae5c10d20feb59e83b9f9315b6c04ca7"
+    },
+    {
+      "id": "P016",
+      "file": "R3_fixed_electronics_deck__06.stl",
+      "source": "R3_fixed_electronics_deck",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.5,
+        159.925,
+        3.0
+      ],
+      "volume_mm3": 2093.765,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          26.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          41.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "230d179f54a73d48bebcc7fc225b6da793ca6fbd59443dafb8788128d7103ed0"
+    },
+    {
+      "id": "P017",
+      "file": "R3_front_top_seal__01.stl",
+      "source": "R3_front_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        26.1,
+        14.0,
+        6.0
+      ],
+      "volume_mm3": 1240.4,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          251.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "0425f47dcf1e28c7ef1abaf426d29adb295676dbd77464d63483865ef7cf288f"
+    },
+    {
+      "id": "P018",
+      "file": "R3_front_top_seal__02.stl",
+      "source": "R3_front_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        166.1,
+        14.0,
+        1.0
+      ],
+      "volume_mm3": 2325.4,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          210.60000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "adc061fb435ccc916ca570af2a49e604d2dcc12faf7b7c70ffa4da8fd00b696b"
+    },
+    {
+      "id": "P019",
+      "file": "R3_front_top_seal__03.stl",
+      "source": "R3_front_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.5,
+        14.0,
+        1.0
+      ],
+      "volume_mm3": 63.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          26.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          64.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "896bb54251dcae904237d8e2edbbb041f92f7e1451b6b6a668e4c84923de441e"
+    },
+    {
+      "id": "P020",
+      "file": "R3_front_wall__01.stl",
+      "source": "R3_front_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        72.0,
+        6.0
+      ],
+      "volume_mm3": 10648.007,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          255.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e4da030a08d1b6c3e15df043330b09cb6bd09b0a1e58c52e86727515d7c89e91"
+    },
+    {
+      "id": "P021",
+      "file": "R3_front_wall__02.stl",
+      "source": "R3_front_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        72.0,
+        6.0
+      ],
+      "volume_mm3": 11522.687,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          131.42499999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "c85a1b6c12f1a11a907ffc16161a99048aea514ab10fb1d6bf788d439d985a8c"
+    },
+    {
+      "id": "P022",
+      "file": "R3_front_wall__03.stl",
+      "source": "R3_front_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        166.1,
+        38.5,
+        6.0
+      ],
+      "volume_mm3": 38369.101,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          210.60000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          39.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "1146b23d94a8bf724768bef99030dc67296c67e9a78fa92e3cefbe1da907fa35"
+    },
+    {
+      "id": "P023",
+      "file": "R3_overload_stop__01.stl",
+      "source": "R3_overload_stop",
+      "quantity": 1,
+      "dimensions_mm": [
+        5.0,
+        5.0,
+        3.2
+      ],
+      "volume_mm3": 62.429,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          31.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          52.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          44.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "79a7b8cd2907ff90ab06ce3d7f2ba7db8ebe125ecd0b9b061c2e352da2155886"
+    },
+    {
+      "id": "P024",
+      "file": "R3_overload_stop_001__01.stl",
+      "source": "R3_overload_stop.001",
+      "quantity": 1,
+      "dimensions_mm": [
+        5.0,
+        5.0,
+        3.2
+      ],
+      "volume_mm3": 62.429,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          235.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          52.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          44.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e0c76cb720f31d44dffad0ec00899e637c59b8e16c63f07c2cc1eb54cd533760"
+    },
+    {
+      "id": "P025",
+      "file": "R3_overload_stop_002__01.stl",
+      "source": "R3_overload_stop.002",
+      "quantity": 1,
+      "dimensions_mm": [
+        5.0,
+        5.0,
+        3.2
+      ],
+      "volume_mm3": 62.429,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          31.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          308.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          44.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "082944773965ba84e184ee4de1a43f190ed292119d513d07382d3acb6b8caeef"
+    },
+    {
+      "id": "P026",
+      "file": "R3_overload_stop_003__01.stl",
+      "source": "R3_overload_stop.003",
+      "quantity": 1,
+      "dimensions_mm": [
+        5.0,
+        5.0,
+        3.2
+      ],
+      "volume_mm3": 62.429,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          235.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          308.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          44.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "c82109a78a6b536607e1876325b446ab280550023f06a88e250dc03869f37aa6"
+    },
+    {
+      "id": "P027",
+      "file": "R3_rear_top_seal__01.stl",
+      "source": "R3_rear_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        26.1,
+        14.0,
+        6.0
+      ],
+      "volume_mm3": 1240.4,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          251.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          318.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "a6c18bbc30f8058c3d8ac3e893bbc06cb9ed5484a2b8b0b7c1e60bca100e2d9a"
+    },
+    {
+      "id": "P028",
+      "file": "R3_rear_top_seal__02.stl",
+      "source": "R3_rear_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        166.1,
+        14.0,
+        1.0
+      ],
+      "volume_mm3": 2325.4,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          210.60000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          318.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "6ab7faa302b1ebe8be80ff6e932b01dab2609b71f2ed4559a7413fa69168fef3"
+    },
+    {
+      "id": "P029",
+      "file": "R3_rear_top_seal__03.stl",
+      "source": "R3_rear_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        4.5,
+        14.0,
+        1.0
+      ],
+      "volume_mm3": 63.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          26.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          318.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "fc5afd841b6fabfb38039bb5cf3ef073ff5e7cab118a634e5b66c4d36ed582ce"
+    },
+    {
+      "id": "P030",
+      "file": "R3_rear_wall__01.stl",
+      "source": "R3_rear_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        72.0,
+        6.0
+      ],
+      "volume_mm3": 50838.965,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          255.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          318.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "1ea2265463d2244a2c235a46b0c353c44b8fd46b93f6898a99089e07a7c240ca"
+    },
+    {
+      "id": "P031",
+      "file": "R3_rear_wall__02.stl",
+      "source": "R3_rear_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        131.425,
+        72.0,
+        6.0
+      ],
+      "volume_mm3": 49626.544,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 127.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          131.42499999999998
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          318.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "4c489b64e23c91d290ab73599ffcd3eb7156ddde60824d19323808f4a733f38f"
+    },
+    {
+      "id": "P032",
+      "file": "R3_right_top_seal__01.stl",
+      "source": "R3_right_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        159.925,
+        8.0,
+        3.5
+      ],
+      "volume_mm3": 4361.1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.75
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          251.5
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          318.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "65277ca1ebd00427d4e6119cdee6c5dcb3480102436d8a0b1aee95eeeac28b0a"
+    },
+    {
+      "id": "P033",
+      "file": "R3_right_top_seal__02.stl",
+      "source": "R3_right_top_seal",
+      "quantity": 1,
+      "dimensions_mm": [
+        159.925,
+        8.0,
+        3.5
+      ],
+      "volume_mm3": 4361.1,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.75
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          251.5
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          165.92499999999998
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "daf15c280a6b680803c77cd4a84fe4202d3f19b558156321f1d4576135e15c9a"
+    },
+    {
+      "id": "P034",
+      "file": "R3_right_wall__01.stl",
+      "source": "R3_right_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        159.925,
+        64.0,
+        12.0
+      ],
+      "volume_mm3": 119255.996,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 6.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          255.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          318.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "fdbfb3b8979ad7eb3006f05fb909555e888089afab8968758480ff88209f65d6"
+    },
+    {
+      "id": "P035",
+      "file": "R3_right_wall__02.stl",
+      "source": "R3_right_wall",
+      "quantity": 1,
+      "dimensions_mm": [
+        159.925,
+        64.0,
+        12.0
+      ],
+      "volume_mm3": 114421.993,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 156.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 6.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          -1.0,
+          255.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e6858e5737fcd45cb016a6afb33a51cd9392e5569a56115cac9a00a625810c33"
+    },
+    {
+      "id": "P036",
+      "file": "R4_M1_mount__01.stl",
+      "source": "R4_M1_mount",
+      "quantity": 1,
+      "dimensions_mm": [
+        57.0,
+        65.0,
+        45.0
+      ],
+      "volume_mm3": 25014.827,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          -18.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          45.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "aa313ce517bc2ba91030edf3c287b3bf0f5c6d26602a15c8058a626566e56e6d"
+    },
+    {
+      "id": "P037",
+      "file": "R4_M2_LOW_bearing_support_m22_144__01.stl",
+      "source": "R4_M2_LOW_bearing_support_-22_144",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          79.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "3412507fd0b517ec1c6233d6fefb90ed5be0a537133f387632334eddf1bbe188"
+    },
+    {
+      "id": "P038",
+      "file": "R4_M2_LOW_bearing_support_m22_24__01.stl",
+      "source": "R4_M2_LOW_bearing_support_-22_24",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          79.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "3412507fd0b517ec1c6233d6fefb90ed5be0a537133f387632334eddf1bbe188"
+    },
+    {
+      "id": "P039",
+      "file": "R4_M2_LOW_bearing_support_346_144__01.stl",
+      "source": "R4_M2_LOW_bearing_support_346_144",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          79.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "497448e41ff68dc7d08674042f155ec2ee50d6da1f8ebcdd714a52062cb39262"
+    },
+    {
+      "id": "P040",
+      "file": "R4_M2_LOW_bearing_support_346_16__01.stl",
+      "source": "R4_M2_LOW_bearing_support_346_16",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          79.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "497448e41ff68dc7d08674042f155ec2ee50d6da1f8ebcdd714a52062cb39262"
+    },
+    {
+      "id": "P041",
+      "file": "R4_M2_LOW_column_guard_m40__01.stl",
+      "source": "R4_M2_LOW_column_guard_-40",
+      "quantity": 1,
+      "dimensions_mm": [
+        69.0,
+        152.0,
+        2.0
+      ],
+      "volume_mm3": 20976.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -38.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          154.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "b70af6a82267ca833f185990b355182eb9f32495f9f52ac6401e029bd0ca3ce8"
+    },
+    {
+      "id": "P042",
+      "file": "R4_M2_LOW_column_guard_362__01.stl",
+      "source": "R4_M2_LOW_column_guard_362",
+      "quantity": 1,
+      "dimensions_mm": [
+        69.0,
+        152.0,
+        2.0
+      ],
+      "volume_mm3": 20976.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          92.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          364.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          154.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "b70af6a82267ca833f185990b355182eb9f32495f9f52ac6401e029bd0ca3ce8"
+    },
+    {
+      "id": "P043",
+      "file": "R4_M2_LOW_motor_mount__01.stl",
+      "source": "R4_M2_LOW_motor_mount",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        50.0,
+        4.0
+      ],
+      "volume_mm3": 8285.478,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          74.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "a16e352202466bac4e153b6e102027bce53c28249716097c8a101acc1c02e2b0"
+    },
+    {
+      "id": "P044",
+      "file": "R4_M2_LOW_rear_base__01.stl",
+      "source": "R4_M2_LOW_rear_base",
+      "quantity": 1,
+      "dimensions_mm": [
+        54.0,
+        40.0,
+        6.0
+      ],
+      "volume_mm3": 12778.286,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          91.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          364.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "5f27ab962e87d5cbf4029c0215df7d8209e81d50d008c43c186fabbc4da6387e"
+    },
+    {
+      "id": "P045",
+      "file": "R4_M2_LOW_slider_m22__01.stl",
+      "source": "R4_M2_LOW_slider_-22",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        24.0,
+        16.0
+      ],
+      "volume_mm3": 14124.479,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          77.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          33.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "05b194448dbd4498bf32f13324dc34460e340b2565888a87f47808021ed2c55e"
+    },
+    {
+      "id": "P046",
+      "file": "R4_M2_LOW_slider_346__01.stl",
+      "source": "R4_M2_LOW_slider_346",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        24.0,
+        16.0
+      ],
+      "volume_mm3": 14124.474,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          77.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          358.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          33.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "01227c474ddfd0211e2118999eba03577b8acf5aff8ea5e29a35d6e31e3acbb5"
+    },
+    {
+      "id": "P047",
+      "file": "R4_M3_HIGH_bearing_support_m22_144__01.stl",
+      "source": "R4_M3_HIGH_bearing_support_-22_144",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          262.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "f7fcc70ed41713a3ac7a067fa03aac27212664c0e69c84bdc102684492db3cbe"
+    },
+    {
+      "id": "P048",
+      "file": "R4_M3_HIGH_bearing_support_m22_24__01.stl",
+      "source": "R4_M3_HIGH_bearing_support_-22_24",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          262.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "f7fcc70ed41713a3ac7a067fa03aac27212664c0e69c84bdc102684492db3cbe"
+    },
+    {
+      "id": "P049",
+      "file": "R4_M3_HIGH_bearing_support_346_144__01.stl",
+      "source": "R4_M3_HIGH_bearing_support_346_144",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          262.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          144.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "bb1da32881c651e64f19bb1bbe148e1aa62c6b90f1ade8623887ba3de79a6320"
+    },
+    {
+      "id": "P050",
+      "file": "R4_M3_HIGH_bearing_support_346_16__01.stl",
+      "source": "R4_M3_HIGH_bearing_support_346_16",
+      "quantity": 1,
+      "dimensions_mm": [
+        40.0,
+        26.0,
+        7.0
+      ],
+      "volume_mm3": 6565.759,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          262.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          359.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          16.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "bb1da32881c651e64f19bb1bbe148e1aa62c6b90f1ade8623887ba3de79a6320"
+    },
+    {
+      "id": "P051",
+      "file": "R4_M3_HIGH_column_guard_m40__01.stl",
+      "source": "R4_M3_HIGH_column_guard_-40",
+      "quantity": 1,
+      "dimensions_mm": [
+        69.0,
+        152.0,
+        2.0
+      ],
+      "volume_mm3": 20976.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          275.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          -38.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          154.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "b70af6a82267ca833f185990b355182eb9f32495f9f52ac6401e029bd0ca3ce8"
+    },
+    {
+      "id": "P052",
+      "file": "R4_M3_HIGH_column_guard_362__01.stl",
+      "source": "R4_M3_HIGH_column_guard_362",
+      "quantity": 1,
+      "dimensions_mm": [
+        69.0,
+        152.0,
+        2.0
+      ],
+      "volume_mm3": 20976.0,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          275.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          364.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          154.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "b70af6a82267ca833f185990b355182eb9f32495f9f52ac6401e029bd0ca3ce8"
+    },
+    {
+      "id": "P053",
+      "file": "R4_M3_HIGH_motor_mount__01.stl",
+      "source": "R4_M3_HIGH_motor_mount",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        50.0,
+        4.0
+      ],
+      "volume_mm3": 8285.478,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          257.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          3.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -2.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "dc70dde5ac62d2589c246145b9c37095cf0fc5065ea153a38b6d1e30671887f0"
+    },
+    {
+      "id": "P054",
+      "file": "R4_M3_HIGH_rear_base__01.stl",
+      "source": "R4_M3_HIGH_rear_base",
+      "quantity": 1,
+      "dimensions_mm": [
+        54.0,
+        40.0,
+        6.0
+      ],
+      "volume_mm3": 12778.286,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          274.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          364.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "488e6e933aa754369f7c4abef290e24cf7c88c021e450b1519d6b989511ac7fb"
+    },
+    {
+      "id": "P055",
+      "file": "R4_M3_HIGH_slider_m22__01.stl",
+      "source": "R4_M3_HIGH_slider_-22",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        24.0,
+        16.0
+      ],
+      "volume_mm3": 14124.481,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          260.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          -10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          33.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "8b07b5db448f5619b2fe92720f8602292dfd2835f28d45bf7e4e071244994f2b"
+    },
+    {
+      "id": "P056",
+      "file": "R4_M3_HIGH_slider_346__01.stl",
+      "source": "R4_M3_HIGH_slider_346",
+      "quantity": 1,
+      "dimensions_mm": [
+        50.0,
+        24.0,
+        16.0
+      ],
+      "volume_mm3": 14124.476,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          260.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          358.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          33.20000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "363202fc312735136308057a831b64999aacf91accd373bd5690dc0ad01960f5"
+    },
+    {
+      "id": "P057",
+      "file": "R4_fixed_hinge_plate_312__01.stl",
+      "source": "R4_fixed_hinge_plate_312",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.0,
+        78.0,
+        6.0
+      ],
+      "volume_mm3": 9856.357,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          22.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          312.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "8907f8f6271eec116f68e4fa1d8cf23e977d9d9818b5051f74463a712ebb7a17"
+    },
+    {
+      "id": "P058",
+      "file": "R4_fixed_hinge_plate_6__01.stl",
+      "source": "R4_fixed_hinge_plate_6",
+      "quantity": 1,
+      "dimensions_mm": [
+        22.0,
+        78.0,
+        6.0
+      ],
+      "volume_mm3": 9856.357,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          22.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          6.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "8907f8f6271eec116f68e4fa1d8cf23e977d9d9818b5051f74463a712ebb7a17"
+    },
+    {
+      "id": "P059",
+      "file": "R4_paper_tray_with_end_fences__01.stl",
+      "source": "R4_paper_tray_with_end_fences",
+      "quantity": 1,
+      "dimensions_mm": [
+        215.5,
+        157.925,
+        18.0
+      ],
+      "volume_mm3": 107587.707,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 154.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          237.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          316.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          48.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "9384df46c21e1b19e9ff19f3f04c0295cbca7ca839713b0da1d78ccfccde8fb4"
+    },
+    {
+      "id": "P060",
+      "file": "R4_paper_tray_with_end_fences__02.stl",
+      "source": "R4_paper_tray_with_end_fences",
+      "quantity": 1,
+      "dimensions_mm": [
+        215.5,
+        157.925,
+        18.0
+      ],
+      "volume_mm3": 107971.706,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 154.0,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 1.5
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          237.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          48.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "d02fe8b0ed9f9ac2efd4068178d4ec826bf1779060ee4ec389e5499106959de3"
+    },
+    {
+      "id": "P061",
+      "file": "R4_rear_hinge_support__01.stl",
+      "source": "R4_rear_hinge_support",
+      "quantity": 1,
+      "dimensions_mm": [
+        37.0,
+        101.0,
+        17.0
+      ],
+      "volume_mm3": 13342.474,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [],
+      "support": "inspect overhangs in slicer",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          335.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          101.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "a01f9ee5353f51059e189e9e0ffc62bf0e46a397b3946b45f6a95a9f11c05f6e"
+    },
+    {
+      "id": "P062",
+      "file": "lid__01.stl",
+      "source": "도어_본체",
+      "quantity": 1,
+      "dimensions_mm": [
+        124.501,
+        153.425,
+        8.0
+      ],
+      "volume_mm3": 143632.932,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 149.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 120.57618713378906,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          251.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "b2dc2e6029d883b57bf992b48e03729d7c8f4c7e54b3d16b6a68c052d5f491ed"
+    },
+    {
+      "id": "P063",
+      "file": "lid__02.stl",
+      "source": "도어_본체",
+      "quantity": 1,
+      "dimensions_mm": [
+        124.501,
+        153.425,
+        8.0
+      ],
+      "volume_mm3": 140426.858,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 149.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 120.57618713378906,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          134.34881286621092
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.5
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "f6672565bd408a1fb4dab859b370434c11d274c893c7fd8f24ab439b758cf02f"
+    },
+    {
+      "id": "P064",
+      "file": "lid__03.stl",
+      "source": "도어_본체",
+      "quantity": 1,
+      "dimensions_mm": [
+        124.501,
+        153.425,
+        8.0
+      ],
+      "volume_mm3": 143577.17,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 149.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 120.57618713378906,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          251.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          158.075
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "e041ec724a262f26128393e96d31398fd3d3be9d01a9cabe263a12f57182e5c4"
+    },
+    {
+      "id": "P065",
+      "file": "lid__04.stl",
+      "source": "도어_본체",
+      "quantity": 1,
+      "dimensions_mm": [
+        124.501,
+        153.425,
+        8.0
+      ],
+      "volume_mm3": 140678.057,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 1,
+          "centre_mm": 149.5,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        },
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 120.57618713378906,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 4.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          -1.0,
+          0.0,
+          0.0,
+          134.34881286621095
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          158.075
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          78.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "10620cb85ff70fbf654587d2b86a1861b2072a59cfc7eb8020385b2562dc21f8"
+    },
+    {
+      "id": "P066",
+      "file": "slot_inner_wall__01.stl",
+      "source": "셸_격납슬롯내벽",
+      "quantity": 1,
+      "dimensions_mm": [
+        153.924,
+        64.0,
+        6.0
+      ],
+      "volume_mm3": 57285.518,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 149.99899291992188,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          13.5
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          311.9989929199219
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "da62986783de265741846b82de1c9812d6577eb8a59890be47584c8f9c369552"
+    },
+    {
+      "id": "P067",
+      "file": "slot_inner_wall__02.stl",
+      "source": "셸_격납슬롯내벽",
+      "quantity": 1,
+      "dimensions_mm": [
+        153.924,
+        64.0,
+        6.0
+      ],
+      "volume_mm3": 56575.631,
+      "watertight": true,
+      "winding_consistent": true,
+      "connected_solids": 1,
+      "bed_contact_z_mm": 0.0,
+      "material": "PETG prototype",
+      "joints": [
+        {
+          "axis_in_print_frame": 0,
+          "centre_mm": 149.99899291992188,
+          "lap_mm": 8.0,
+          "clearance_mm": 0.15,
+          "step_z_mm": 3.0
+        }
+      ],
+      "support": "lap/overhang supports from build plate as needed",
+      "print_to_assembly_mm": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          13.5
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0,
+          165.925
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          70.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "sha256": "9947661be7c4b1af5c5f5ab2170fbbe8b171a7b5b5956022d646b80fc6869e06"
+    }
+  ],
+  "physical_print_tested": false,
+  "scope": "Closed positive solids, serialized STL read-back, nominal build envelope, split volume conservation. No slicer G-code, stress, deflection, adhesion or physical fit certification.",
+  "objects_removed_from_mechanical_blend": [
+    "R3_D3_closed_reed",
+    "R3_Arduino_Nano",
+    "R3_Arduino_Nano_IC",
+    "R3_Arduino_Nano_spacer",
+    "R3_Arduino_Nano_spacer.001",
+    "R3_Nano_USB_internal",
+    "R3_HX711_5V_carrier",
+    "R3_HX711_5V_carrier_IC",
+    "R3_HX711_5V_carrier_spacer",
+    "R3_HX711_5V_carrier_spacer.001",
+    "R3_D24V10F5",
+    "R3_D24V10F5_IC",
+    "R3_D24V10F5_spacer",
+    "R3_D24V10F5_spacer.001",
+    "R3_MOSFET_driver",
+    "R3_MOSFET_driver_spacer",
+    "R3_MOSFET_driver_spacer.001",
+    "R3_IRLZ44N",
+    "R3_F1_T1A",
+    "R3_SB310",
+    "R3_BLE_3V3",
+    "R3_BLE_3V3_IC",
+    "R3_BLE_3V3_spacer",
+    "R3_BLE_3V3_spacer.001",
+    "R3_LDO_level_shift",
+    "R3_LDO_level_shift_IC",
+    "R3_LDO_level_shift_spacer",
+    "R3_LDO_level_shift_spacer.001",
+    "R3_D12_electronics_seated",
+    "R3_A3_panel_closed",
+    "R3_power_sense_100k33k",
+    "R3_power_sense_100k33k_IC",
+    "R3_power_sense_100k33k_spacer",
+    "R3_power_sense_100k33k_spacer.001",
+    "R3_bulk_cap",
+    "R3_bulk_cap.001",
+    "R3_D1_flyback",
+    "R3_12V_jack",
+    "R3_status_LED",
+    "R3_S1_adjustable_lever",
+    "R3_S2_adjustable_lever",
+    "R3_internal_manual_release",
+    "J1_COIL",
+    "J2_LATCH",
+    "J3_CELL",
+    "J4_DECK",
+    "R3_CELL_SHIELDED",
+    "R3_5V_to_HX",
+    "R3_HX_CLOCK_DATA",
+    "R3_12V_fused",
+    "R3_COIL_pair",
+    "R3_GND_star",
+    "R3_BLE_UART",
+    "R3_PANEL_switch",
+    "R4_LID_OPEN_switch",
+    "R4_M2_LOW_HOME_-22",
+    "R4_M2_LOW_UPPER_-22",
+    "R4_M2_LOW_linear_feedback_-22",
+    "R4_M2_LOW_HOME_346",
+    "R4_M2_LOW_UPPER_346",
+    "R4_M2_LOW_linear_feedback_346",
+    "R4_M3_HIGH_HOME_-22",
+    "R4_M3_HIGH_UPPER_-22",
+    "R4_M3_HIGH_linear_feedback_-22",
+    "R4_M3_HIGH_HOME_346",
+    "R4_M3_HIGH_UPPER_346",
+    "R4_M3_HIGH_linear_feedback_346",
+    "R4_D3_wire",
+    "R4_motor_supply_route",
+    "R4_M1_signal_route",
+    "R4_M2_power_route",
+    "R4_M3_power_route",
+    "R4_A4_stack_reference",
+    "R4_motion_MCU",
+    "R4_M2_current_driver",
+    "R4_M3_current_driver",
+    "R4_protected_power_branches"
+  ]
+}
