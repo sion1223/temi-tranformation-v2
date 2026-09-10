@@ -1,0 +1,8 @@
+# Small R4 meshes are ordinary Git blobs, not unresolved inherited LFS pointers.
+parts/*.stl -filter -diff -merge -text
+print_ready/STL_print/*.stl -filter -diff -merge -text
+print_ready/*.blend -text
+print_ready/*.csv -text
+*.blend -text
+*.glb -text
+drawings/*.webp -text
